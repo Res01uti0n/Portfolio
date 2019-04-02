@@ -52,7 +52,7 @@ gulp.task(`img`, ()=> {
     .pipe(gulp.dest(`main/img`));
 });
 
-gulp.task(`build`, [`img`, `sass`,], () => {
+gulp.task(`build`, [`img`, `sass`], () => {
 
   const buildCss = gulp.src([
     `source/css/styles.css`,

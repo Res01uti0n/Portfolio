@@ -1,0 +1,36 @@
+/*Шапка*/
+
+.header__block {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  min-height: 70px;
+  padding: 0 20px;
+}
+
+%events-1 {
+  &:hover,
+  &:focus {
+    opacity: .6;
+    outline-color: transparent;
+  }
+  &:active {
+    opacity: .3;
+  }
+}
+
+.header__logo {
+  height: 30px;
+  width: 120px;
+  @extend %events-1;
+}
+
+.menu__btn {
+  background: transparent url(../img/menu.jpg) no-repeat 0 0;
+  border: none;
+  color: transparent;
+  font-size: 1px;
+  height: 21px;
+  width: 30px;
+  @extend %events-1;
+}
