@@ -1,0 +1,71 @@
+.color__block {
+  padding-top: 33px;
+}
+
+.color__text {
+  line-height: 22.2px;
+}
+
+.color__list {
+  display: flex;
+  list-style: none;
+  padding: 13px 0 0 50px;
+}
+
+.color__block input[type='radio'] {
+  margin: 10px 0 0 7px;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.color__block input[type='radio'] + label {
+  cursor: pointer;
+  padding: 0 0 15px 45px;
+  position: relative;
+}
+
+.color__block input[type='radio'] + label::before {
+  border-radius: 50%;
+  content: "";
+  height: 20px;
+  left: 0;
+  opacity: .7;
+  position: absolute;
+  top: -6px;
+  width: 20px;
+}
+
+.color__block input[type='radio']:hover + label::before,
+.color__block input[type='radio']:focus + label::before {
+  opacity: .3;
+  outline-color: transparent;
+}
+
+.color__block input[type='radio']:checked + label::before {
+  opacity: 1;
+}
+
+#yellow + label::before {
+  background: $yell;
+  left: -9px;
+}
+
+#blue + label::before {
+  background: $blue1;
+  left: -3px;
+}
+
+#red + label::before {
+  background: $red;
+}
+
+#grey + label::before {
+  background: $grey;
+  left: 3px;
+}
+
+#black + label::before {
+  background: $bl1;
+  left: 9px;
+}

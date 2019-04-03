@@ -13,7 +13,7 @@
         <a href="#"><img class="header__logo" src="img/logo.svg" alt="Логотип"></a>
         <button class="menu__btn">Меню</button>
       </header>
-      <nav>
+      <nav class="nav__block">
         <ul>
           <li><a href="#">Преимущества</a></li>
           <li><a href="#">Характеристики</a></li>
@@ -21,36 +21,37 @@
         </ul>
       </nav>
       <main>
-        <section>
-          <h1>RIzor Hovertrax 4.0</h1>
-          <span>Маневренность, легкость, экологичность</span>
-          <video src="#" poster="img/video-1-desk.jpg"></video>
+        <section class="intro__block">
+          <h1 class="intro__title">RIzor Hovertrax <span class="title__number">4.0</span></h1>
+          <p class="intro__moto">Маневренность, легкость, экологичность</p>
+          <video class="intro__video" src="#" poster="img/video-1-desk.jpg"></video>
         </section>
-          <section>
-            <h2>Преимущества</h2>
-              <section>
-                <h3>Дизайн</h3>
-                <p>Внешний вид скутера дышит идеями футуризма:</p>
-                  <ul>
-                    <li>Плавные линии</li>
-                    <li>Подсветка светодиодными индикаторами</li>
-                    <li>Рельефные бамперы оснащенные защитными панелями</li>
+          <section class="features__block design__block">
+            <h2 class="section__title">Преимущества</h2>
+              <section class="feature__block">
+                <h3 class="feature__title">Дизайн</h3>
+                <p class="feature__text">Внешний вид скутера дышит идеями футуризма:</p>
+                  <ul class="feature__characters">
+                    <li class="character__item">плавные линии</li>
+                    <li class="character__item">подсветка светодиодными индикаторами</li>
+                    <li class="character__item">рельефные бамперы оснащенные защитными панелями</li>
                   </ul>
-                  <video src="#" poster="img/video-2-desk.jpg"></video>
+                  <video class="feature__video" src="#" poster="img/video-2-desk.jpg"></video>
               </section>
-              <section>
-                <h3>Цвет</h3>
-                <ul>
-                  <li><input id="yellow" type="radio" name="color">
-                    <label for="yellow">Желтый</label></li>
-                  <li><input id="blue" type="radio" name="color">
-                    <label for="blue">Синий</label></li>
-                  <li><input id="red" type="radio" name="color">
-                    <label for="red">Красный</label></li>
-                  <li><input id="white" type="radio" name="color">
-                    <label for="white">Белый</label></li>
-                  <li><input id="black" type="radio" name="color">
-                    <label for="black">Черный</label></li>
+              <section class="feature__block color__block">
+                <h3 class="feature__title">Цвет</h3>
+                <p class="feature__text color__text">Модель представлена сразу в нескольких цветах.</p>
+                <ul class="color__list">
+                  <li><input class="color__yellow" id="yellow" type="radio" name="color">
+                    <label class="color__label hidden" for="yellow">Желтый</label></li>
+                  <li><input class="color__blue" id="blue" type="radio" name="color">
+                    <label class="color__label hidden" for="blue">Синий</label></li>
+                  <li><input class="color__red" id="red" type="radio" name="color">
+                    <label class="color__label hidden" for="red">Красный</label></li>
+                  <li><input class="color__grey" id="grey" type="radio" name="color">
+                    <label class="color__label hidden" for="grey">Белый</label></li>
+                  <li><input class="color__black" id="black" type="radio" name="color">
+                    <label class="color__label hidden" for="black">Черный</label></li>
                 </ul>
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/photo1-desk.jpg">
@@ -64,7 +65,7 @@
                       мгновенно реагируют на смещение центра тяжести в правую или левую сторону.</p>
                   <p>Как только ваше движение продолжит- ся по прямой, мерцание прекратится, подсветка снова станет в виде сплош-
                       ной линии.</p>
-                  <video src="#" poster="img/video-3-desk.jpg"></video>
+                  <video class="feature__video" src="#" poster="img/video-3-desk.jpg"></video>
               </section>
               <section>
                 <h3>Режимы</h3>

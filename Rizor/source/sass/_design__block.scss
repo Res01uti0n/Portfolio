@@ -1,0 +1,40 @@
+.feature__title {
+  font-family: 'Rubik', sans-serif;
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.feature__text {
+  line-height: 30px;
+  padding: 8px 0 0 40px;
+  width: 215px;
+}
+
+.feature__characters {
+  list-style: none;
+  padding-top: 7px;
+}
+
+.character__item {
+  line-height: 25px;
+  margin-bottom: 14px;
+  padding-left: 38px;
+  position: relative;
+  &::before {
+    background: $bl;
+    content: '';
+    left: .5px;
+    height: 5px;
+    position: absolute;
+    top: 11px;
+    width: 30px;
+  }
+}
+
+.feature__video {
+  display: none;
+}
+
+

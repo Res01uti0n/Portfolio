@@ -30,6 +30,7 @@
 /*Каркас*/
 
 body {
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 16px;
@@ -43,6 +44,26 @@ body {
   width: 320px;
 }
 
+.hidden {
+  color: transparent;
+  font-size: 1px;
+  position: absolute;
+}
+
+$wh: #fff;
+$blue: #3a30f8;
+$bl: #000;
+$yell: #e2e837;
+$blue1: #00b6f1;
+$red: #e23232;
+$grey: #f0efef;
+$bl1: #0c0c0c;
+
 @import "header__block";
+@import "nav__block";
+@import "intro__block";
+@import "features__block";
+@import "design__block";
+@import "color__block";
 
 
