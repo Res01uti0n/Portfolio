@@ -1,3 +1,5 @@
+/*Цвет*/
+
 .color__block {
   padding-top: 33px;
 }
@@ -30,7 +32,6 @@
   content: "";
   height: 20px;
   left: 0;
-  opacity: .7;
   position: absolute;
   top: -6px;
   width: 20px;
@@ -38,11 +39,23 @@
 
 .color__block input[type='radio']:hover + label::before,
 .color__block input[type='radio']:focus + label::before {
-  opacity: .3;
+  opacity: .5;
   outline-color: transparent;
 }
 
-.color__block input[type='radio']:checked + label::before {
+.color__block input[type='radio'] + label::after {
+  background: url(../img/arrow-part2.png) no-repeat center 100%,
+  url(../img/arrow-part1.png) no-repeat center 0;
+  content: "";
+  height: 50px;
+  left: 13px;
+  opacity: 0;
+  position: absolute;
+  top: 20px;
+  width: 10px;
+}
+
+.color__block input[type='radio']:checked + label::after {
   opacity: 1;
 }
 
@@ -51,13 +64,25 @@
   left: -9px;
 }
 
+#yellow + label::after {
+  left: -5px;
+}
+
 #blue + label::before {
   background: $blue1;
   left: -3px;
 }
 
+#blue + label::after {
+  left: 2px;
+}
+
 #red + label::before {
   background: $red;
+}
+
+#red + label::after {
+  left: 5px;
 }
 
 #grey + label::before {
@@ -65,7 +90,15 @@
   left: 3px;
 }
 
+#grey + label::after {
+  left: 8px;
+}
+
 #black + label::before {
   background: $bl1;
   left: 9px;
+}
+
+.color__img {
+  margin: 30px 0 0 10px;
 }

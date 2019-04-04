@@ -1,0 +1,47 @@
+/*Характеристики*/
+
+.characters__block {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 31px;
+}
+
+.hovertrax__title {
+  font-family: 'Rubik', sans-serif;
+  font-size: 24px;
+  letter-spacing: 2px;
+  line-height: 36px;
+  margin-top: 15px;
+  text-align: center;
+  width: 200px;
+}
+
+.char__num {
+  margin-left: -6px;
+}
+
+.character__block {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 23px;
+}
+
+.img--body {
+  height: 51px;
+  position: relative;
+  top: 5px;
+  width: 68px;
+}
+
+.character__title {
+  letter-spacing: 2px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.character__text {
+  font-size: 14px;
+  line-height: 25px;
+}

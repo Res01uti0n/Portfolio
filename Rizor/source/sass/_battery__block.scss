@@ -1,0 +1,33 @@
+/*Аккумулятор*/
+
+.battery__block {
+  padding-top: 55px;
+}
+
+.battery__text {
+  line-height: 24px;
+  padding: 5px 0 0 11px;
+}
+
+.battery__table {
+  padding: 23px 0 0 32px;
+}
+
+.value--battery {
+  width: 150px;
+}
+
+.name__battery--1 {
+  padding-left: 5px;
+}
+
+.name__battery-2 {
+  padding-left: 2px;
+}
+
+.battery__img {
+  margin: -25px 0 0 10px;
+}
+
+/*<source media="(min-width: 1200px)" srcset="img/battery-desk.png">
+                  <source media="(min-width: 770px)" srcset="img/battery-tab.png">*/

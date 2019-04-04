@@ -57,7 +57,9 @@ $yell: #e2e837;
 $blue1: #00b6f1;
 $red: #e23232;
 $grey: #f0efef;
+$grey1: #666666;
 $bl1: #0c0c0c;
+$wh: rgba(255, 255, 255, .8);
 
 @import "header__block";
 @import "nav__block";
@@ -65,5 +67,10 @@ $bl1: #0c0c0c;
 @import "features__block";
 @import "design__block";
 @import "color__block";
+@import "indicators__block";
+@import "modes__block";
+@import "battery__block";
+@import "electronics__block";
+@import "characters__block";
 
 

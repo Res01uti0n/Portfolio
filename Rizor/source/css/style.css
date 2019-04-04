@@ -70,12 +70,14 @@ body {
   height: 21px;
   width: 30px; }
 
+/*Навигация*/
 .nav__block {
   display: none; }
 
+/*Интро*/
 .intro__block {
   background: url(../img/intro-fon.jpg) no-repeat 0 0;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
   min-height: 317px;
   padding: 113px 10px 0 10px; }
 
@@ -103,6 +105,7 @@ body {
 .intro__video {
   display: none; }
 
+/*Преимущества*/
 .features__block {
   padding-top: 12px; }
 
@@ -114,6 +117,7 @@ body {
   text-align: center;
   text-transform: uppercase; }
 
+/*Дизайн*/
 .feature__title {
   font-family: 'Rubik', sans-serif;
   font-size: 24px;
@@ -147,6 +151,7 @@ body {
 .feature__video {
   display: none; }
 
+/*Цвет*/
 .color__block {
   padding-top: 33px; }
 
@@ -175,34 +180,265 @@ body {
   content: "";
   height: 20px;
   left: 0;
-  opacity: .7;
   position: absolute;
   top: -6px;
   width: 20px; }
 
 .color__block input[type='radio']:hover + label::before,
 .color__block input[type='radio']:focus + label::before {
-  opacity: .3;
+  opacity: .5;
   outline-color: transparent; }
 
-.color__block input[type='radio']:checked + label::before {
+.color__block input[type='radio'] + label::after {
+  background: url(../img/arrow-part2.png) no-repeat center 100%, url(../img/arrow-part1.png) no-repeat center 0;
+  content: "";
+  height: 50px;
+  left: 13px;
+  opacity: 0;
+  position: absolute;
+  top: 20px;
+  width: 10px; }
+
+.color__block input[type='radio']:checked + label::after {
   opacity: 1; }
 
 #yellow + label::before {
   background: #e2e837;
   left: -9px; }
 
+#yellow + label::after {
+  left: -5px; }
+
 #blue + label::before {
   background: #00b6f1;
   left: -3px; }
 
+#blue + label::after {
+  left: 2px; }
+
 #red + label::before {
   background: #e23232; }
+
+#red + label::after {
+  left: 5px; }
 
 #grey + label::before {
   background: #f0efef;
   left: 3px; }
 
+#grey + label::after {
+  left: 8px; }
+
 #black + label::before {
   background: #0c0c0c;
   left: 9px; }
+
+.color__img {
+  margin: 30px 0 0 10px; }
+
+/*Индикаторы*/
+.indicators__block {
+  background: url(../img/indicators-back.jpg) no-repeat center 100%;
+  padding: 52px 0 275px 0; }
+
+.indicators__text {
+  line-height: 24px;
+  padding: 6px 0 0 11px; }
+
+.text--2 {
+  margin-top: -10px; }
+
+/*<source media="(min-width: 1200px)" srcset="img/photo1-desk.jpg">
+                  <source media="(min-width: 770px)" srcset="img/photo1-tab.jpg">*/
+/*Режимы*/
+.modes__block {
+  background: url(../img/modes-back.jpg) no-repeat center 100%;
+  padding: 52px 0 342px 0; }
+
+.modes__text {
+  line-height: 25px;
+  margin-top: -5px;
+  width: 220px; }
+
+.hovertrax {
+  font-weight: bold; }
+
+.modes__list {
+  list-style: none;
+  padding: 12px 0 0 80px; }
+
+.modes__item {
+  line-height: 22px;
+  margin-bottom: 20px;
+  position: relative; }
+  .modes__item::before {
+    background: #000;
+    content: '';
+    height: 5px;
+    left: -38px;
+    position: absolute;
+    top: 7px;
+    width: 20px; }
+
+.modes__table {
+  -ms-flex-align: baseline;
+      align-items: baseline;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-top: 50px;
+  padding-left: 30px;
+  width: 320px; }
+
+.cell__value {
+  color: #3a30f8;
+  font-family: 'Rubik', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 13px; }
+
+.value__system {
+  font-size: 18px; }
+
+.cell__name {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  padding-left: 10px;
+  text-align: left; }
+
+/*Аккумулятор*/
+.battery__block {
+  padding-top: 55px; }
+
+.battery__text {
+  line-height: 24px;
+  padding: 5px 0 0 11px; }
+
+.battery__table {
+  padding: 23px 0 0 32px; }
+
+.value--battery {
+  width: 150px; }
+
+.name__battery--1 {
+  padding-left: 5px; }
+
+.name__battery-2 {
+  padding-left: 2px; }
+
+.battery__img {
+  margin: -25px 0 0 10px; }
+
+/*<source media="(min-width: 1200px)" srcset="img/battery-desk.png">
+                  <source media="(min-width: 770px)" srcset="img/battery-tab.png">*/
+/*Электроника*/
+.electronic__block {
+  padding-top: 50px; }
+
+.electronic__text {
+  line-height: 25px;
+  padding: 5px 0 0 21px;
+  width: 260px; }
+
+.text--type2 {
+  margin-top: -11px;
+  width: 275px; }
+
+.electronic__list {
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px; }
+
+.electronic__item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
+
+.electronic__img--1 {
+  height: 42px;
+  margin-left: 15px;
+  width: 54px; }
+
+.electronic__img--2 {
+  height: 22px;
+  margin-left: 2px;
+  width: 69px; }
+
+.img__text {
+  color: #666666;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 19px 0 0 15px; }
+
+.type--2 {
+  margin-left: 3px; }
+
+.electronic__video {
+  background: url(../img/electronic-poster-mob.jpg) no-repeat;
+  height: 275px;
+  margin-top: 28px;
+  width: 320px; }
+
+.video__wrapper {
+  position: relative; }
+
+.video-play__btn {
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  height: 60px;
+  left: 130px;
+  position: absolute;
+  top: 138px;
+  width: 60px; }
+
+/*Характеристики*/
+.characters__block {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding-top: 31px; }
+
+.hovertrax__title {
+  font-family: 'Rubik', sans-serif;
+  font-size: 24px;
+  letter-spacing: 2px;
+  line-height: 36px;
+  margin-top: 15px;
+  text-align: center;
+  width: 200px; }
+
+.char__num {
+  margin-left: -6px; }
+
+.character__block {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding-top: 23px; }
+
+.img--body {
+  height: 51px;
+  position: relative;
+  top: 5px;
+  width: 68px; }
+
+.character__title {
+  letter-spacing: 2px;
+  line-height: 30px;
+  text-transform: uppercase; }
+
+.character__text {
+  font-size: 14px;
+  line-height: 25px; }

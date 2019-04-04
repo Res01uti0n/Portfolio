@@ -42,101 +42,103 @@
                 <h3 class="feature__title">Цвет</h3>
                 <p class="feature__text color__text">Модель представлена сразу в нескольких цветах.</p>
                 <ul class="color__list">
-                  <li><input class="color__yellow" id="yellow" type="radio" name="color">
+                  <li><input id="yellow" type="radio" name="color">
                     <label class="color__label hidden" for="yellow">Желтый</label></li>
-                  <li><input class="color__blue" id="blue" type="radio" name="color">
+                  <li><input id="blue" type="radio" name="color">
                     <label class="color__label hidden" for="blue">Синий</label></li>
-                  <li><input class="color__red" id="red" type="radio" name="color">
+                  <li><input id="red" type="radio" name="color">
                     <label class="color__label hidden" for="red">Красный</label></li>
-                  <li><input class="color__grey" id="grey" type="radio" name="color">
+                  <li><input id="grey" type="radio" name="color">
                     <label class="color__label hidden" for="grey">Белый</label></li>
-                  <li><input class="color__black" id="black" type="radio" name="color">
+                  <li><input id="black" type="radio" name="color" checked>
                     <label class="color__label hidden" for="black">Черный</label></li>
                 </ul>
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo1-desk.jpg">
-                  <source media="(min-width: 770px)" srcset="img/photo1-tab.jpg">
-                  <img src="img/photo1-mob.jpg" alt="Гироскутер">
+
+                  <img class="color__img" src="img/photo1-mob.jpg" alt="Гироскутер">
                 </picture>
               </section>
-              <section>
-                <h3>Индикаторы</h3>
-                  <p>Cветодиодные индикаторы сообщают окружающим о запланированном повороте. Своим мерцанием они
+              <section class="indicators__block">
+                <h3 class="feature__title">Индикаторы</h3>
+                  <p class="indicators__text">Cветодиодные индикаторы сообщают окружающим о запланированном повороте. Своим мерцанием они
                       мгновенно реагируют на смещение центра тяжести в правую или левую сторону.</p>
-                  <p>Как только ваше движение продолжит- ся по прямой, мерцание прекратится, подсветка снова станет в виде сплош-
+                  <p class="indicators__text text--2">Как только ваше движение продолжит- ся по прямой, мерцание прекратится, подсветка снова станет в виде сплош-
                       ной линии.</p>
                   <video class="feature__video" src="#" poster="img/video-3-desk.jpg"></video>
               </section>
-              <section>
-                <h3>Режимы</h3>
-                <p>Помимо «умной» подсветки,  <b>Hovertrax 4.0</b> снабжён двумя  скоростными режимами.</p>
-                <ul>
-                  <li>Один для продвинутых пользователей</li>
-                  <li>Второй для новичков</li>
+              <section class="modes__block">
+                <h3 class="feature__title">Режимы</h3>
+                <p class="feature__text modes__text">Помимо «умной» подсветки, <b class="hovertrax">Hovertrax 4.0</b> снабжён двумя скоростными режимами.</p>
+                <ul class="modes__list">
+                  <li class="modes__item">Один для продвинутых пользователей</li>
+                  <li class="modes__item">Второй для новичков</li>
                 </ul>
-                  <table>
+                  <table class="modes__table">
                     <tr>
-                      <td>13 км/ч</td><td>2</td>
+                      <td class="cell__value">13<span class="value__system">км/ч</span></td><td class="cell__value">2</td>
                     </tr>
                     <tr>
-                      <th>Максимальная скорость</th><th>Скоростных режимов</th>
+                      <th class="cell__name">Максимальная скорость</th><th class="cell__name">Скоростных режимов</th>
                     </tr>
                   </table>
-                  <video src="#" poster="img/video-4-desk.jpg"></video>
+                  <video class="feature__video" src="#" poster="img/video-4-desk.jpg"></video>
               </section>
-              <section>
-                <h3>Аккамулятор</h3>
-                <p>Имеет съемную аккумуляторную батарею. Это позволяет легко выта- щить сам АКБ и, к примеру, перевезти
+              <section class="battery__block">
+                <h3 class="feature__title">Аккумулятор</h3>
+                <p class="battery__text">Имеет съемную аккумуляторную батарею. Это позволяет легко выта- щить сам АКБ и, к примеру, перевезти
                   весь гиробордв самолёте – это кстати единственный гироскутер, с которым проходит такой «трюк», да и есть
                   документы, подтверждающие лицен- зию на его производство и использо- вание.</p>
-                <table>
+                <table class="battery__table">
                   <tr>
-                    <td>25 км</td><td>2ч</td>
+                    <td class="cell__value value--battery">25<span class="value__system">км</span></td><td class="cell__value value--battery">2<span class="value__system">ч</span></td>
                   </tr>
                   <tr>
-                    <th>Запас хода</th><th>Время зарядки</th>
+                    <th class="cell__name name__battery--1">Запас хода</th><th class="cell__name name__battery-2">Время зарядки</th>
                   </tr>
                 </table>
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/battery-desk.png">
-                  <source media="(min-width: 770px)" srcset="img/battery-tab.png">
-                  <img src="img/battery.png" alt="Батарея">
+
+
+                  <img class="battery__img" src="img/battery.png" alt="Батарея">
                 </picture>
               </section>
-              <section>
-                <h3>Электроника</h3>
-                <p>При эксплуатации <b>Rizor Hovertrax 4.0</b> нельзя не отметить плавность торможения и быстроту набора скорости.</p>
-                <p>В копилку «плюсов» нужно отнести и безупречную отзывчивость электронной начинки.</p>
-                <ul>
-                  <li><img src="img/engine.svg" alt="Двигатель"><span>Бесшумный двигатель</span></li>
-                  <li><img src="img/gyroscope.svg" alt="Гироскоп"><span>Встроенный гироскоп</span></li>
+              <section class="electronic__block">
+                <h3 class="feature__title">Электроника</h3>
+                <p class="electronic__text">При эксплуатации <b class="hovertrax">Rizor Hovertrax 4.0</b> нельзя не отметить плавность торможения и быстроту набора скорости.</p>
+                <p class="electronic__text text--type2">В копилку «плюсов» нужно отнести и безупречную отзывчивость электронной начинки.</p>
+                <ul class="electronic__list">
+                  <li class="electronic__item"><img class="electronic__img--1" src="img/engine.svg" alt="Двигатель"><span class="img__text">Бесшумный двигатель</span></li>
+                  <li class="electronic__item"><img class="electronic__img--2" src="img/gyroscope.svg" alt="Гироскоп"><span class="img__text type--2">Встроенный гироскоп</span></li>
                 </ul>
-                <video src="#" poster="img/electricity-poster.jpg"></video>
+                <div class="video__wrapper">
+                  <video class="electronic__video" src="#"></video>
+                  <button class="video-play__btn"></button>
+                </div>
               </section>
           </section>
-          <section>
-            <h2>Характеристики</h2>
-            <b>Rizor Hovertrax 4.0</b>
-            <div>
-              <img src="img/body.svg" alt="Корпус">
-              <h4>Корпус</h4>
-              <p>выполнен из прочного пластика, и имеет приятную LED подсветку, дополняющую общий дизайн. Платформы для ног покрыты
+          <section class="characters__block">
+            <h2 class="section__title">Характеристики</h2>
+            <p class="hovertrax__title">Rizor Hovertrax <span class="title__number char__num">4.0</span></p>
+            <div class="character__block">
+              <img class="img--body" src="img/body.svg" alt="Корпус">
+              <h4 class="character__title">Корпус</h4>
+              <p class="character__text">выполнен из прочного пластика, и имеет приятную LED подсветку, дополняющую общий дизайн. Платформы для ног покрыты
                 антискользящим покрытием.</p>
               </div>
-              <div>
+              <div class="character__block">
                 <img src="img/wheel.svg" alt="Колесо">
-                <h4>Колеса</h4>
-                <p><b>Rizor Hovertrax 4.0</b> получил относительно небольшие, но, в целом, среднего диаметра колёса в <b>6,5 дюймов.</b></p>
+                <h4 class="character__title">Колеса</h4>
+                <p class="character__text"><b>Rizor Hovertrax 4.0</b> получил относительно небольшие, но, в целом, среднего диаметра колёса в <b>6,5 дюймов.</b></p>
               </div>
-              <div>
+              <div class="character__block">
                 <img src="img/power.svg" alt="Мощность">
-                <h4>Мощность</h4>
-                <p>двигателя в <b>350 Вт</b> обеспечивает комфортное и безопасное передвижение при максимальной скорости в <b>13 км/ч.</b></p>
+                <h4 class="character__title">Мощность</h4>
+                <p class="character__text">двигателя в <b>350 Вт</b> обеспечивает комфортное и безопасное передвижение при максимальной скорости в <b>13 км/ч.</b></p>
               </div>
-              <div>
+              <div class="character__block">
                 <img src="img/weight.svg" alt="Весы">
-                <h4>Вес</h4>
-                <p>небольшой вес, приблизительно в <b>12 кг</b> , позволяет относительно компактно переносить гироборд с собой.</p>
+                <h4 class="character__title">Вес</h4>
+                <p class="character__text">небольшой вес, приблизительно в <b>12 кг</b> , позволяет относительно компактно переносить гироборд с собой.</p>
               </div>
           </section>
           <section>

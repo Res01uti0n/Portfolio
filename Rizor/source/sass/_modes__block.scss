@@ -1,0 +1,66 @@
+/*Режимы*/
+
+.modes__block {
+  background: url(../img/modes-back.jpg) no-repeat center 100%;
+  padding: 52px 0 342px 0;
+}
+
+.modes__text {
+  line-height: 25px;
+  margin-top: -5px;
+  width: 220px;
+}
+
+.hovertrax {
+  font-weight: bold;
+}
+
+.modes__list {
+  list-style: none;
+  padding: 12px 0 0 80px;
+}
+
+.modes__item {
+  line-height: 22px;
+  margin-bottom: 20px;
+  position: relative;
+  &::before {
+    background: $bl;
+    content: '';
+    height: 5px;
+    left: -38px;
+    position: absolute;
+    top: 7px;
+    width: 20px;
+  }
+}
+
+.modes__table {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding-left: 30px;
+  width: 320px;
+}
+
+.cell__value {
+  color: $blue;
+  font-family: 'Rubik', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 13px;
+}
+
+.value__system {
+  font-size: 18px;
+}
+
+.cell__name {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  padding-left: 10px;
+  text-align: left;
+}
+
