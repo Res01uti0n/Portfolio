@@ -1,0 +1,14 @@
+/*Футер*/
+
+.footer__block {
+  background: $footerBack;
+  justify-content: center;
+  margin-top: -12px;
+}
+
+.footer__text {
+  color: $footerColor;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: center;
+}

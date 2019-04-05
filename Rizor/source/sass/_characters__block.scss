@@ -25,6 +25,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  margin-bottom: 22px;
   padding-top: 23px;
 }
 
@@ -33,6 +34,27 @@
   position: relative;
   top: 5px;
   width: 68px;
+}
+
+.img--wheel {
+  height: 53px;
+  position: relative;
+  top: 5px;
+  width: 53px;
+}
+
+.img--power {
+  height: 40px;
+  position: relative;
+  top: 10px;
+  width: 49px;
+}
+
+.img--weight {
+  height: 52px;
+  position: relative;
+  top: 5px;
+  width: 47px;
 }
 
 .character__title {
@@ -44,4 +66,27 @@
 .character__text {
   font-size: 14px;
   line-height: 25px;
+  margin: -14px 0 0 -2px;
+  text-align: center;
+  width: 295px;
+}
+
+.text--wheel {
+  width: 210px;
+}
+
+.title--power {
+  margin-top: 26px;
+}
+
+.text--power {
+  width: 270px;
+}
+
+.title--weight {
+  margin-top: 24px;
+}
+
+.text--weight {
+  width: 215px;
 }

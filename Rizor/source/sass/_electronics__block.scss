@@ -61,7 +61,7 @@
 }
 
 .video-play__btn {
-  background: $wh;
+  background: $wh url(../img/play.png) no-repeat center center;
   border: none;
   border-radius: 50%;
   height: 60px;
@@ -69,4 +69,5 @@
   position: absolute;
   top: 138px;
   width: 60px;
+  @extend %events-1;
 }

@@ -1,0 +1,66 @@
+/*Потребители*/
+
+/*<source media="(min-width: 1200px)" srcset="img/consumers-desk.png">
+              <source media="(min-width: 770px)" srcset="img/consumers-tab.png">*/
+
+.consumer__block {
+  background: $blueBack;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 110px;
+  padding-bottom: 80px;
+}
+
+.consumer__img {
+  margin-top: -65px;
+}
+
+.consumer__title {
+  font-size: 14px;
+  letter-spacing: .8px;
+  line-height: 30px;
+  margin: 19px 0 0 -2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.consumer__text {
+  line-height: 24px;
+  padding: 9px 0 0 11px;
+}
+
+.consumer__text--2 {
+  margin-top: -13px;
+  width: 248px;
+}
+
+.catalog__btn {
+  align-self: center;
+  align-items: center;
+  background: $white;
+  border-radius: 30px;
+  box-shadow: 0 5px 5px 0 $shadow;
+  color: $blueBack;
+  display: flex;
+  font-size: 14px;
+  font-weight: bold;
+  justify-content: center;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+  margin-top: 28px;
+  min-height: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 270px;
+  &:hover,
+  &:focus {
+    box-shadow: inset 0 5px 5px 0 $shadow;
+    outline: none;
+  }
+  &:active {
+    opacity: .8;
+  }
+}
+
+

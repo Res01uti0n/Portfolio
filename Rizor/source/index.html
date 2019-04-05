@@ -10,14 +10,14 @@
     <body>
     <div class="container">
       <header class="header__block">
-        <a href="#"><img class="header__logo" src="img/logo.svg" alt="Логотип"></a>
+        <a class="header__anchor" href="#"><img class="header__logo" src="img/logo.svg" alt="Логотип"></a>
         <button class="menu__btn">Меню</button>
       </header>
       <nav class="nav__block">
-        <ul>
-          <li><a href="#">Преимущества</a></li>
-          <li><a href="#">Характеристики</a></li>
-          <li><a href="#">Для кого</a></li>
+        <ul class="nav__list">
+          <li><a class="nav__item" href="#">Преимущества</a></li>
+          <li><a class="nav__item" href="#">Характеристики</a></li>
+          <li><a class="nav__item" href="#">Для кого</a></li>
         </ul>
       </nav>
       <main>
@@ -126,36 +126,34 @@
                 антискользящим покрытием.</p>
               </div>
               <div class="character__block">
-                <img src="img/wheel.svg" alt="Колесо">
+                <img class="img--wheel" src="img/wheel.svg" alt="Колесо">
                 <h4 class="character__title">Колеса</h4>
-                <p class="character__text"><b>Rizor Hovertrax 4.0</b> получил относительно небольшие, но, в целом, среднего диаметра колёса в <b>6,5 дюймов.</b></p>
+                <p class="character__text text--wheel"><b class="hovertrax">Rizor Hovertrax 4.0</b> получил относительно небольшие,<br> но, в целом, среднего диаметра колёса в <b class="hovertrax">6,5 дюймов.</b></p>
               </div>
               <div class="character__block">
-                <img src="img/power.svg" alt="Мощность">
-                <h4 class="character__title">Мощность</h4>
-                <p class="character__text">двигателя в <b>350 Вт</b> обеспечивает комфортное и безопасное передвижение при максимальной скорости в <b>13 км/ч.</b></p>
+                <img class="img--power" src="img/power.svg" alt="Мощность">
+                <h4 class="character__title title--power">Мощность</h4>
+                <p class="character__text text--power">двигателя в <b class="hovertrax">350 Вт</b> обеспечивает комфортное и безопасное передвижение при максимальной скорости<br> в <b class="hovertrax">13 км/ч.</b></p>
               </div>
               <div class="character__block">
-                <img src="img/weight.svg" alt="Весы">
-                <h4 class="character__title">Вес</h4>
-                <p class="character__text">небольшой вес, приблизительно в <b>12 кг</b> , позволяет относительно компактно переносить гироборд с собой.</p>
+                <img class="img--weight" src="img/weight.svg" alt="Весы">
+                <h4 class="character__title title--weight">Вес</h4>
+                <p class="character__text text--weight">небольшой вес, приблизительно в <b class="hovertrax">12 кг</b> , позволяет относительно компактно переносить гироборд с собой.</p>
               </div>
           </section>
-          <section>
+          <section class="consumer__block">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/consumers-desk.png">
-              <source media="(min-width: 770px)" srcset="img/consumers-tab.png">
-              <img src="img/consumers.png" alt="Потребители">
+              <img class="consumer__img" src="img/consumers.png" alt="Потребители">
             </picture>
-            <h2>Для кого</h2>
-            <p>При максимально выдерживаемой нагрузке в <b>100 кг</b> отлично подойдёт, как для подрастающего поколения,
-              так и для более взрослых «наездников».</p>
-            <p>Это единственный гироскутер со специальным детским режимом езды.</p>
-            <a href="#">Перейти в каталог</a>
+            <h2 class="consumer__title">Для кого</h2>
+            <p class="consumer__text">При максимально выдерживаемой нагрузке в <b class="hovertrax">100 кг</b> отлично подойдёт,<br> как для подрастающего поколения,
+              <br> так и для более взрослых «наездников».</p>
+            <p class="consumer__text consumer__text--2">Это единственный гироскутер со специальным детским режимом езды.</p>
+            <a class="catalog__btn" href="#">Перейти в каталог</a>
           </section>
       </main>
-      <footer>
-        <p>© All rights reserved, 2017</p>
+      <footer class="footer__block">
+        <p class="footer__text">© All rights reserved, 2017</p>
       </footer>
     </div>
     </body>

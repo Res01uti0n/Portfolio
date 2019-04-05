@@ -1,5 +1,31 @@
 /*Навигация*/
 
 .nav__block {
+  align-items: center;
   display: none;
+  flex-direction: column;
+}
+
+.nav--show {
+  display: flex;
+}
+
+.nav__list {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+}
+
+.nav__item {
+  align-items: center;
+  border-bottom: 1px solid $bl;
+  color: $bl;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  justify-content: center;
+  min-height: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  @extend %events-1;
 }

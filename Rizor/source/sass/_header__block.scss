@@ -25,6 +25,10 @@
   @extend %events-1;
 }
 
+.header__block a {
+  @extend %events-1;
+}
+
 .menu__btn {
   background: transparent url(../img/menu.jpg) no-repeat 0 0;
   border: none;
