@@ -34,3 +34,22 @@
 .intro__video {
   display: none;
 }
+
+@media (min-width: 768px) {
+  .intro__block {
+    background: url(../img/intro-fon.jpg) no-repeat 0 0;
+    color: $bl;
+    min-height: 750px;
+    padding: 197px 22px 0 22px;
+  }
+
+  .intro__title {
+    font-family: 'Rubik', sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    line-height: 78px;
+    margin-left: -4px;
+    width: 520px;
+  }
+}

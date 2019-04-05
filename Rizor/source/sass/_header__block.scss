@@ -25,8 +25,10 @@
   @extend %events-1;
 }
 
-.header__block a {
-  @extend %events-1;
+.header__anchor {
+  &:focus {
+    outline-color: transparent;
+  }
 }
 
 .menu__btn {
@@ -37,4 +39,22 @@
   height: 21px;
   width: 30px;
   @extend %events-1;
+}
+
+@media (min-width: 768px) {
+  .header__block {
+    min-height: 100px;
+    padding: 0 22px 0 22px;
+  }
+
+  .header__logo {
+    height: 39px;
+    position: relative;
+    width: 157px;
+    z-index: 10;
+  }
+
+  .menu__btn {
+    display: none;
+  }
 }
