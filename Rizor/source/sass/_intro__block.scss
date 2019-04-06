@@ -31,25 +31,62 @@
   width: 200px;
 }
 
-.intro__video {
+.watch__btn {
   display: none;
+  @extend %events-1;
 }
 
 @media (min-width: 768px) {
   .intro__block {
-    background: url(../img/intro-fon.jpg) no-repeat 0 0;
+    background: url(../img/arrow-part-2.jpg) no-repeat 235px 225px,
+    url(../img/arrow-part.jpg) no-repeat 249.5px 153px,
+    url(../img/arrow-2-intro.jpg) no-repeat 250px 153px,
+    url(../img/arrow-intro.jpg) no-repeat 53px 580px,
+    url(../img/intro-fon-tab.jpg) no-repeat 100% 0;
     color: $bl;
-    min-height: 750px;
+    min-height: 573px;
     padding: 197px 22px 0 22px;
+    position: relative;
   }
 
   .intro__title {
-    font-family: 'Rubik', sans-serif;
     font-size: 64px;
-    font-weight: 400;
     letter-spacing: 5px;
     line-height: 78px;
     margin-left: -4px;
     width: 520px;
+  }
+
+  .title__number {
+    letter-spacing: -10px;
+  }
+
+  .intro__moto {
+    bottom: 18px;
+    font-size: 14px;
+    width: 230px;
+  }
+
+  .watch__btn {
+    color: $bl;
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    height: 81px;
+    letter-spacing: 1px;
+    left: 245px;
+    line-height: 14px;
+    position: absolute;
+    top: 65px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transform: rotate(270deg);
+    width: 75px;
+  }
+
+  .img--watch {
+    position: relative;
+    right: 5px;
+    transform: rotate(90deg);
   }
 }

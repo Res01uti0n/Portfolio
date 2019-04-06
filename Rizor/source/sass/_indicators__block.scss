@@ -14,8 +14,32 @@
   margin-top: -10px;
 }
 
-/*<source media="(min-width: 1200px)" srcset="img/photo1-desk.jpg">
-                  <source media="(min-width: 770px)" srcset="img/photo1-tab.jpg">*/
+@media (min-width: 768px) {
+  .indicators__block {
+    background: url(../img/poster-video-3-tab.jpg) no-repeat center 100%;
+    padding: 82px 0 347px 53px;
+    position: relative;
+  }
+
+  .indicators__text {
+    padding: 6px 0 0 61px;
+    width: 570px;
+  }
+
+  .text--2 {
+    width: 570px;
+  }
+
+  .carry {
+    display: none;
+  }
+
+  .watch--indicators {
+    left: 70px;
+    top: 453px;
+  }
+}
+/*<source media="(min-width: 1200px)" srcset="img/photo1-desk.jpg">*/
 
 
 

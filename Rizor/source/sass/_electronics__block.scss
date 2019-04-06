@@ -71,3 +71,16 @@
   width: 60px;
   @extend %events-1;
 }
+
+@media (min-width: 768px) {
+  .video-play__btn {
+    background: $wh url(../img/play-tab.png) no-repeat 35px center;
+    border: none;
+    border-radius: 50%;
+    height: 100px;
+    left: 113px;
+    position: absolute;
+    top: 250px;
+    width: 100px;
+  }
+}

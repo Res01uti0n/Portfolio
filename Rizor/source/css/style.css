@@ -55,11 +55,11 @@ body {
   min-height: 70px;
   padding: 0 20px 0 15px; }
 
-.header__logo:hover, .menu__btn:hover, .nav__item:hover, .video-play__btn:hover, .header__logo:focus, .menu__btn:focus, .nav__item:focus, .video-play__btn:focus {
+.header__logo:hover, .menu__btn:hover, .nav__item:hover, .watch__btn:hover, .video-play__btn:hover, .header__logo:focus, .menu__btn:focus, .nav__item:focus, .watch__btn:focus, .video-play__btn:focus {
   opacity: .6;
   outline-color: transparent; }
 
-.header__logo:active, .menu__btn:active, .nav__item:active, .video-play__btn:active {
+.header__logo:active, .menu__btn:active, .nav__item:active, .watch__btn:active, .video-play__btn:active {
   opacity: .3; }
 
 .header__logo {
@@ -189,23 +189,47 @@ body {
   text-transform: uppercase;
   width: 200px; }
 
-.intro__video {
+.watch__btn {
   display: none; }
 
 @media (min-width: 768px) {
   .intro__block {
-    background: url(../img/intro-fon.jpg) no-repeat 0 0;
+    background: url(../img/arrow-part-2.jpg) no-repeat 235px 225px, url(../img/arrow-part.jpg) no-repeat 249.5px 153px, url(../img/arrow-2-intro.jpg) no-repeat 250px 153px, url(../img/arrow-intro.jpg) no-repeat 53px 580px, url(../img/intro-fon-tab.jpg) no-repeat 100% 0;
     color: #000;
-    min-height: 750px;
-    padding: 197px 22px 0 22px; }
+    min-height: 573px;
+    padding: 197px 22px 0 22px;
+    position: relative; }
   .intro__title {
-    font-family: 'Rubik', sans-serif;
     font-size: 64px;
-    font-weight: 400;
     letter-spacing: 5px;
     line-height: 78px;
     margin-left: -4px;
-    width: 520px; } }
+    width: 520px; }
+  .title__number {
+    letter-spacing: -10px; }
+  .intro__moto {
+    bottom: 18px;
+    font-size: 14px;
+    width: 230px; }
+  .watch__btn {
+    color: #000;
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    height: 81px;
+    letter-spacing: 1px;
+    left: 245px;
+    line-height: 14px;
+    position: absolute;
+    top: 65px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transform: rotate(270deg);
+    width: 75px; }
+  .img--watch {
+    position: relative;
+    right: 5px;
+    transform: rotate(90deg); } }
 
 /*Преимущества*/
 .features__block {
@@ -218,6 +242,12 @@ body {
   line-height: 80px;
   text-align: center;
   text-transform: uppercase; }
+
+@media (min-width: 768px) {
+  .section__title {
+    left: 125px;
+    position: relative;
+    top: 159.5px; } }
 
 /*Дизайн*/
 .feature__title {
@@ -252,6 +282,40 @@ body {
 
 .feature__video {
   display: none; }
+
+@media (min-width: 768px) {
+  .feature__block {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    margin-top: 0; }
+  .design-info__wrapper {
+    padding-top: 170px;
+    width: 380px; }
+  .feature__video {
+    display: block;
+    height: 600px;
+    width: 375px; }
+  .design__video {
+    background: url(../img/poster-video-2-tab.jpg) no-repeat 0 0; }
+  .feature__title {
+    padding-left: 60px;
+    text-align: left; }
+  .feature__text {
+    line-height: 30px;
+    padding: 6px 0 0 58px; }
+  .character__item {
+    padding-left: 58px;
+    width: 200px; }
+    .character__item::before {
+      left: 17px;
+      height: 5px;
+      position: absolute;
+      top: 11px;
+      width: 30px; }
+  .video-play__btn .design--btn {
+    top: 250px; } }
 
 /*Цвет*/
 .color__block {
@@ -338,6 +402,22 @@ body {
 .color__img {
   margin: 30px 0 0 10px; }
 
+@media (min-width: 768px) {
+  .color__block {
+    padding: 68px 105px 0 0;
+    position: relative; }
+  .color-info__wrapper {
+    padding: 100px 0 0 54px;
+    width: 170px; }
+  .color__text {
+    line-height: 24px;
+    width: 165px; }
+  .color__list {
+    right: -100px;
+    position: absolute;
+    top: 206px;
+    transform: rotate(90deg); } }
+
 /*Индикаторы*/
 .indicators__block {
   background: url(../img/indicators-back.jpg) no-repeat center 100%;
@@ -350,8 +430,23 @@ body {
 .text--2 {
   margin-top: -10px; }
 
-/*<source media="(min-width: 1200px)" srcset="img/photo1-desk.jpg">
-                  <source media="(min-width: 770px)" srcset="img/photo1-tab.jpg">*/
+@media (min-width: 768px) {
+  .indicators__block {
+    background: url(../img/poster-video-3-tab.jpg) no-repeat center 100%;
+    padding: 82px 0 347px 53px;
+    position: relative; }
+  .indicators__text {
+    padding: 6px 0 0 61px;
+    width: 570px; }
+  .text--2 {
+    width: 570px; }
+  .carry {
+    display: none; }
+  .watch--indicators {
+    left: 70px;
+    top: 453px; } }
+
+/*<source media="(min-width: 1200px)" srcset="img/photo1-desk.jpg">*/
 /*Режимы*/
 .modes__block {
   background: url(../img/modes-back.jpg) no-repeat center 100%;
@@ -498,6 +593,17 @@ body {
   position: absolute;
   top: 138px;
   width: 60px; }
+
+@media (min-width: 768px) {
+  .video-play__btn {
+    background: rgba(255, 255, 255, 0.8) url(../img/play-tab.png) no-repeat 35px center;
+    border: none;
+    border-radius: 50%;
+    height: 100px;
+    left: 113px;
+    position: absolute;
+    top: 250px;
+    width: 100px; } }
 
 /*Характеристики*/
 .characters__block {

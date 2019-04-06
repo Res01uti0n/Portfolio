@@ -12,3 +12,11 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+@media (min-width: 768px) {
+  .section__title {
+    left: 125px;
+    position: relative;
+    top: 159.5px;
+  }
+}

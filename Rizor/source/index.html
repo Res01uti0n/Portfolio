@@ -24,46 +24,54 @@
         <section class="intro__block">
           <h1 class="intro__title">RIzor Hovertrax <span class="title__number">4.0</span></h1>
           <p class="intro__moto">Маневренность, легкость, экологичность</p>
+          <a class="watch__btn" href="#">Смотреть видео <img class="img--watch" src="img/watch.png" alt="Смотреть"></a>
         </section>
-          <section class="features__block design__block">
+          <section class="features__block">
             <h2 class="section__title">Преимущества</h2>
-              <section class="feature__block">
-                <h3 class="feature__title">Дизайн</h3>
-                <p class="feature__text">Внешний вид скутера дышит идеями футуризма:</p>
+              <section class="feature__block design__block">
+                <div class="video__wrapper">
+                  <video class="feature__video design__video" src="#"></video>
+                  <button class="video-play__btn design--btn"></button>
+                </div>
+                <div class="design-info__wrapper">
+                  <h3 class="feature__title">Дизайн</h3>
+                  <p class="feature__text">Внешний вид скутера дышит идеями футуризма:</p>
                   <ul class="feature__characters">
                     <li class="character__item">плавные линии</li>
                     <li class="character__item">подсветка светодиодными индикаторами</li>
                     <li class="character__item">рельефные бамперы оснащенные защитными панелями</li>
                   </ul>
-                  <video class="feature__video" src="#" poster="img/video-2-desk.jpg"></video>
+                </div>
               </section>
               <section class="feature__block color__block">
-                <h3 class="feature__title">Цвет</h3>
-                <p class="feature__text color__text">Модель представлена сразу в нескольких цветах.</p>
-                <ul class="color__list">
-                  <li><input id="yellow" type="radio" name="color">
-                    <label class="color__label hidden" for="yellow">Желтый</label></li>
-                  <li><input id="blue" type="radio" name="color">
-                    <label class="color__label hidden" for="blue">Синий</label></li>
-                  <li><input id="red" type="radio" name="color">
-                    <label class="color__label hidden" for="red">Красный</label></li>
-                  <li><input id="grey" type="radio" name="color">
-                    <label class="color__label hidden" for="grey">Белый</label></li>
-                  <li><input id="black" type="radio" name="color" checked>
-                    <label class="color__label hidden" for="black">Черный</label></li>
-                </ul>
+                <div class="color-info__wrapper">
+                  <h3 class="feature__title">Цвет</h3>
+                  <p class="feature__text color__text">Модель представлена сразу в нескольких цветах.</p>
+                  <ul class="color__list">
+                    <li><input id="yellow" type="radio" name="color">
+                      <label class="color__label hidden" for="yellow">Желтый</label></li>
+                    <li><input id="blue" type="radio" name="color">
+                      <label class="color__label hidden" for="blue">Синий</label></li>
+                    <li><input id="red" type="radio" name="color">
+                      <label class="color__label hidden" for="red">Красный</label></li>
+                    <li><input id="grey" type="radio" name="color">
+                      <label class="color__label hidden" for="grey">Белый</label></li>
+                    <li><input id="black" type="radio" name="color" checked>
+                      <label class="color__label hidden" for="black">Черный</label></li>
+                  </ul>
+                </div>
                 <picture>
-
+                  <source media="(min-width: 770px)" srcset="img/photo1-tab.jpg">
                   <img class="color__img" src="img/photo1-mob.jpg" alt="Гироскутер">
                 </picture>
               </section>
               <section class="indicators__block">
                 <h3 class="feature__title">Индикаторы</h3>
-                  <p class="indicators__text">Cветодиодные индикаторы сообщают окружающим о запланированном повороте. Своим мерцанием они
+                <p class="indicators__text">Cветодиодные индикаторы сообщают окружающим о запланированном повороте. Своим мерцанием они
                       мгновенно реагируют на смещение центра тяжести в правую или левую сторону.</p>
-                  <p class="indicators__text text--2">Как только ваше движение продолжит- ся по прямой, мерцание прекратится, подсветка снова станет в виде сплош-
-                      ной линии.</p>
-                  <video class="feature__video" src="#" poster="img/video-3-desk.jpg"></video>
+                <p class="indicators__text text--2">Как только ваше движение продолжит<span class="carry">-</span>ся по прямой, мерцание прекратится, подсветка снова станет в виде сплош<span class="carry">-
+                </span>ной линии.</p>
+                <a class="watch__btn watch--indicators" href="#">Смотреть видео <img class="img--watch" src="img/watch.png" alt="Смотреть"></a>
               </section>
               <section class="modes__block">
                 <h3 class="feature__title">Режимы</h3>

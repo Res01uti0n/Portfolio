@@ -39,4 +39,53 @@
   display: none;
 }
 
+@media (min-width: 768px) {
+  .feature__block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+
+  .design-info__wrapper {
+    padding-top: 170px;
+    width: 380px;
+  }
+
+  .feature__video {
+    display: block;
+    height: 600px;
+    width: 375px;
+  }
+
+  .design__video {
+    background: url(../img/poster-video-2-tab.jpg) no-repeat 0 0;
+  }
+
+  .feature__title {
+    padding-left: 60px;
+    text-align: left;
+  }
+
+  .feature__text {
+    line-height: 30px;
+    padding: 6px 0 0 58px;
+  }
+
+  .character__item {
+    padding-left: 58px;
+    width: 200px;
+    &::before {
+      left: 17px;
+      height: 5px;
+      position: absolute;
+      top: 11px;
+      width: 30px;
+    }
+  }
+
+  .video-play__btn .design--btn {
+    top: 250px;
+  }
+}
+
 
