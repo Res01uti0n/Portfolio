@@ -29,5 +29,48 @@
   margin: -25px 0 0 10px;
 }
 
-/*<source media="(min-width: 1200px)" srcset="img/battery-desk.png">
-                  <source media="(min-width: 770px)" srcset="img/battery-tab.png">*/
+@media (min-width: 768px) {
+  .battery__block {
+    display: flex;
+    padding-top: 0;
+  }
+
+  .battery__wrapper {
+    order: 1;
+  }
+
+  .battery__title {
+    padding-left: 34px;
+  }
+
+  .battery__text {
+    line-height: 24px;
+    padding: 5px 0 0 31px;
+    width: 353px;
+  }
+
+  .battery__table {
+    left: 55px;
+    position: relative;
+    top: 215px;
+  }
+
+  .battery__img {
+    left: 10px;
+    margin: -110px 0 0 10px;
+    position: relative;
+  }
+
+  .name__battery-2 {
+    right: 6px;
+    position: relative;
+  }
+
+  .battery--2 {
+    position: relative;
+    right: 7px;
+  }
+
+}
+
+/*<source media="(min-width: 1200px)" srcset="img/battery-desk.png">*/

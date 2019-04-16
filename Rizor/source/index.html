@@ -74,82 +74,100 @@
                 <a class="watch__btn watch--indicators" href="#">Смотреть видео <img class="img--watch" src="img/watch.png" alt="Смотреть"></a>
               </section>
               <section class="modes__block">
-                <h3 class="feature__title">Режимы</h3>
-                <p class="feature__text modes__text">Помимо «умной» подсветки, <b class="hovertrax">Hovertrax 4.0</b> снабжён двумя скоростными режимами.</p>
-                <ul class="modes__list">
-                  <li class="modes__item">Один для продвинутых пользователей</li>
-                  <li class="modes__item">Второй для новичков</li>
-                </ul>
+                <div class="modes__wrapper">
+                  <h3 class="feature__title">Режимы</h3>
+                  <p class="feature__text modes__text">Помимо «умной» подсветки, <b class="hovertrax">Hovertrax 4.0</b> снабжён двумя скоростными режимами.</p>
+                  <ul class="modes__list">
+                    <li class="modes__item">Один для продвинутых пользователей</li>
+                    <li class="modes__item">Второй для новичков</li>
+                  </ul>
                   <table class="modes__table">
                     <tr>
-                      <td class="cell__value">13<span class="value__system">км/ч</span></td><td class="cell__value">2</td>
+                      <td class="cell__value">13<span class="value__system">км/ч</span></td><td class="cell__value value--two">2</td>
                     </tr>
                     <tr>
                       <th class="cell__name">Максимальная скорость</th><th class="cell__name">Скоростных режимов</th>
                     </tr>
                   </table>
-                  <video class="feature__video" src="#" poster="img/video-4-desk.jpg"></video>
+                </div>
+                <video class="feature__video modes__video" src="#"></video>
+                <a class="watch__btn modes--watch" href="#">Смотреть видео <img class="img--watch" src="img/watch.png" alt="Смотреть"></a>
               </section>
               <section class="battery__block">
-                <h3 class="feature__title">Аккумулятор</h3>
-                <p class="battery__text">Имеет съемную аккумуляторную батарею. Это позволяет легко выта- щить сам АКБ и, к примеру, перевезти
-                  весь гиробордв самолёте – это кстати единственный гироскутер, с которым проходит такой «трюк», да и есть
-                  документы, подтверждающие лицен- зию на его производство и использо- вание.</p>
-                <table class="battery__table">
-                  <tr>
-                    <td class="cell__value value--battery">25<span class="value__system">км</span></td><td class="cell__value value--battery">2<span class="value__system">ч</span></td>
-                  </tr>
-                  <tr>
-                    <th class="cell__name name__battery--1">Запас хода</th><th class="cell__name name__battery-2">Время зарядки</th>
-                  </tr>
-                </table>
-                <picture>
+                <div class="battery__wrapper">
+                  <h3 class="feature__title battery__title">Аккумулятор</h3>
+                  <p class="battery__text">Имеет съемную аккумуляторную батарею.<br> Это позволяет легко выта<span class="carry">-</span>щить сам АКБ и,<br> к примеру, перевезти
+                    весь гиробордв самолёте  – это кстати единственный гироскутер, с которым проходит такой «трюк», да и есть
+                    документы, подтверждающие лицен<span class="carry">-</span>зию на<br> его производство и использо<span class="carry">-</span>вание.</p>
+                </div>
+                <div class="battery__wrapper-2">
+                  <table class="battery__table">
+                    <tr>
+                      <td class="cell__value value--battery">25<span class="value__system">км</span></td><td class="cell__value value--battery battery--2">2<span class="value__system">ч</span></td>
+                    </tr>
+                    <tr>
+                      <th class="cell__name name__battery--1">Запас хода</th><th class="cell__name name__battery-2">Время зарядки</th>
+                    </tr>
+                  </table>
+                  <picture>
 
-
-                  <img class="battery__img" src="img/battery.png" alt="Батарея">
-                </picture>
+                    <source media="(min-width: 770px)" srcset="img/battery-tab.png">
+                    <img class="battery__img" src="img/battery.png" alt="Батарея">
+                  </picture>
+                </div>
               </section>
               <section class="electronic__block">
-                <h3 class="feature__title">Электроника</h3>
-                <p class="electronic__text">При эксплуатации <b class="hovertrax">Rizor Hovertrax 4.0</b> нельзя не отметить плавность торможения и быстроту набора скорости.</p>
-                <p class="electronic__text text--type2">В копилку «плюсов» нужно отнести и безупречную отзывчивость электронной начинки.</p>
-                <ul class="electronic__list">
-                  <li class="electronic__item"><img class="electronic__img--1" src="img/engine.svg" alt="Двигатель"><span class="img__text">Бесшумный двигатель</span></li>
-                  <li class="electronic__item"><img class="electronic__img--2" src="img/gyroscope.svg" alt="Гироскоп"><span class="img__text type--2">Встроенный гироскоп</span></li>
-                </ul>
+                <div class="electronic__wrapper">
+                  <div class="electronic__box">
+                    <h3 class="feature__title electronic__title">Электроника</h3>
+                    <p class="electronic__text">При эксплуатации <b class="hovertrax">Rizor Hovertrax 4.0</b> нельзя не отметить плавность торможения и быстроту набора скорости.</p>
+                    <p class="electronic__text text--type2">В копилку «плюсов» нужно отнести и безупречную отзывчивость электронной начинки.</p>
+                  </div>
+                  <div class="electronic__box">
+                    <ul class="electronic__list">
+                      <li class="electronic__item"><img class="electronic__img--1" src="img/engine.svg" alt="Двигатель"><span class="img__text">Бесшумный двигатель</span></li>
+                      <li class="electronic__item electronic--2"><img class="electronic__img--2" src="img/gyroscope.svg" alt="Гироскоп"><span class="img__text type--2">Встроенный гироскоп</span></li>
+                    </ul>
+                  </div>
+                </div>
                 <div class="video__wrapper">
                   <video class="electronic__video" src="#"></video>
-                  <button class="video-play__btn"></button>
+                  <button class="video-play__btn electronic--play"></button>
                 </div>
               </section>
           </section>
           <section class="characters__block">
-            <h2 class="section__title">Характеристики</h2>
-            <p class="hovertrax__title">Rizor Hovertrax <span class="title__number char__num">4.0</span></p>
-            <div class="character__block">
-              <img class="img--body" src="img/body.svg" alt="Корпус">
-              <h4 class="character__title">Корпус</h4>
-              <p class="character__text">выполнен из прочного пластика, и имеет приятную LED подсветку, дополняющую общий дизайн. Платформы для ног покрыты
-                антискользящим покрытием.</p>
-              </div>
+            <div class="character__wrapper">
+              <h2 class="section__title characters__title">Характеристики</h2>
+              <p class="hovertrax__title">Rizor Hovertrax <span class="title__number char__num">4.0</span></p>
+            </div>
+            <div class="character__wrapper-2">
               <div class="character__block">
+                <img class="img--body" src="img/body.svg" alt="Корпус">
+                <h4 class="character__title">Корпус</h4>
+                <p class="character__text">выполнен из прочного пластика, и имеет приятную LED подсветку, дополняющую общий дизайн. Платформы для ног покрыты
+                  антискользящим покрытием.</p>
+              </div>
+              <div class="character__block block--2">
                 <img class="img--wheel" src="img/wheel.svg" alt="Колесо">
-                <h4 class="character__title">Колеса</h4>
+                <h4 class="character__title title--wheel">Колеса</h4>
                 <p class="character__text text--wheel"><b class="hovertrax">Rizor Hovertrax 4.0</b> получил относительно небольшие,<br> но, в целом, среднего диаметра колёса в <b class="hovertrax">6,5 дюймов.</b></p>
               </div>
               <div class="character__block">
                 <img class="img--power" src="img/power.svg" alt="Мощность">
                 <h4 class="character__title title--power">Мощность</h4>
-                <p class="character__text text--power">двигателя в <b class="hovertrax">350 Вт</b> обеспечивает комфортное и безопасное передвижение при максимальной скорости<br> в <b class="hovertrax">13 км/ч.</b></p>
+                <p class="character__text text--power">двигателя в <b class="hovertrax">350 Вт</b> обеспечивает комфортное<br> и безопасное передвижение при максимальной скорости<br class="br__mob"> в <b class="hovertrax">13 км/ч.</b></p>
               </div>
-              <div class="character__block">
+              <div class="character__block block--2">
                 <img class="img--weight" src="img/weight.svg" alt="Весы">
                 <h4 class="character__title title--weight">Вес</h4>
                 <p class="character__text text--weight">небольшой вес, приблизительно в <b class="hovertrax">12 кг</b> , позволяет относительно компактно переносить гироборд с собой.</p>
               </div>
+            </div>
           </section>
           <section class="consumer__block">
             <picture>
+              <source media="(min-width: 770px)" srcset="img/consumers-tab.png">
               <img class="consumer__img" src="img/consumers.png" alt="Потребители">
             </picture>
             <h2 class="consumer__title">Для кого</h2>

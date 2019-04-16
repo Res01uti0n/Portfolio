@@ -505,6 +505,42 @@ body {
   padding-left: 10px;
   text-align: left; }
 
+@media (min-width: 768px) {
+  .modes__block {
+    background: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    padding: 52px 0 125px 0;
+    position: relative; }
+  .modes__wrapper {
+    padding: 130px 0 0 30px;
+    width: 250px; }
+  .modes__text {
+    margin-top: 2px;
+    line-height: 24px;
+    padding-left: 61px; }
+  .modes__list {
+    padding: 12px 0 0 100px; }
+  .modes__item {
+    width: 175px; }
+  .modes__table {
+    padding-left: 55px; }
+  .value--two {
+    position: relative;
+    bottom: 3px; }
+  .cell__name {
+    padding-left: 8px; }
+  .modes__video {
+    background: url(../img/video-4-tab.jpg) no-repeat 0 0;
+    height: 600px;
+    margin-top: 50px;
+    width: 394px; }
+  .modes--watch {
+    left: 328px;
+    top: 597px; } }
+
 /*Аккумулятор*/
 .battery__block {
   padding-top: 55px; }
@@ -528,8 +564,36 @@ body {
 .battery__img {
   margin: -25px 0 0 10px; }
 
-/*<source media="(min-width: 1200px)" srcset="img/battery-desk.png">
-                  <source media="(min-width: 770px)" srcset="img/battery-tab.png">*/
+@media (min-width: 768px) {
+  .battery__block {
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 0; }
+  .battery__wrapper {
+    -ms-flex-order: 1;
+        order: 1; }
+  .battery__title {
+    padding-left: 34px; }
+  .battery__text {
+    line-height: 24px;
+    padding: 5px 0 0 31px;
+    width: 353px; }
+  .battery__table {
+    left: 55px;
+    position: relative;
+    top: 215px; }
+  .battery__img {
+    left: 10px;
+    margin: -110px 0 0 10px;
+    position: relative; }
+  .name__battery-2 {
+    right: 6px;
+    position: relative; }
+  .battery--2 {
+    position: relative;
+    right: 7px; } }
+
+/*<source media="(min-width: 1200px)" srcset="img/battery-desk.png">*/
 /*Электроника*/
 .electronic__block {
   padding-top: 50px; }
@@ -595,15 +659,50 @@ body {
   width: 60px; }
 
 @media (min-width: 768px) {
+  .electronic__block {
+    -ms-flex-align: center;
+        align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .electronic__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-order: 1;
+        order: 1;
+    margin-top: 33px;
+    width: 578px; }
+  .electronic__title {
+    padding-left: 0; }
+  .electronic__text {
+    padding: 5px 0 0 0; }
+  .electronic__list {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    margin: 46.5px 123px 0 0; }
+  .electronic__item {
+    margin-bottom: 38px;
+    width: 80px; }
+  .electronic--2 {
+    left: 15px;
+    position: relative; }
+  .electronic__video {
+    background: url(../img/video-3-tab.jpg) no-repeat;
+    height: 275px;
+    margin-top: 65px;
+    width: 578px; }
   .video-play__btn {
     background: rgba(255, 255, 255, 0.8) url(../img/play-tab.png) no-repeat 35px center;
-    border: none;
-    border-radius: 50%;
     height: 100px;
     left: 113px;
-    position: absolute;
     top: 250px;
-    width: 100px; } }
+    width: 100px; }
+  .electronic--play {
+    left: 240px;
+    top: 155px; } }
 
 /*Характеристики*/
 .characters__block {
@@ -688,9 +787,65 @@ body {
 .text--weight {
   width: 215px; }
 
+@media (min-width: 768px) {
+  .characters__block {
+    background: url(../img/character-back.jpg) no-repeat 0 105px; }
+  .character__wrapper {
+    padding-left: 465px; }
+  .characters__title {
+    left: -80px;
+    top: 130px; }
+  .hovertrax__title {
+    margin: 166px 0 0 -80px;
+    text-align: left; }
+  .char__num {
+    letter-spacing: -2.5px;
+    margin-left: 0; }
+  .character__wrapper-2 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    margin-top: 70px;
+    width: 590px; }
+  .character__block {
+    -ms-flex-align: start;
+        align-items: flex-start; }
+  .img--body {
+    left: 3px;
+    top: 5px; }
+  .img--wheel {
+    height: 53px;
+    top: 3px; }
+  .img--power {
+    left: 5px;
+    top: 7px; }
+  .img--weight {
+    left: 1px;
+    top: -5px; }
+  .character__text {
+    margin: -14px 0 0 3px;
+    text-align: left; }
+  .block--2 {
+    width: 215px; }
+  .title--wheel {
+    margin-top: 20px; }
+  .text--wheel {
+    margin-top: -16px; }
+  .title--power {
+    margin-top: 24px; }
+  .text--power {
+    margin-left: 5px;
+    width: 315px; }
+  .title--weight {
+    margin-top: 11px; }
+  .br__mob {
+    display: none; } }
+
 /*Потребители*/
-/*<source media="(min-width: 1200px)" srcset="img/consumers-desk.png">
-              <source media="(min-width: 770px)" srcset="img/consumers-tab.png">*/
+/*<source media="(min-width: 1200px)" srcset="img/consumers-desk.png">*/
 .consumer__block {
   background: #3a2ff8;
   color: #fff;
@@ -747,6 +902,19 @@ body {
     outline: none; }
   .catalog__btn:active {
     opacity: .8; }
+
+@media (min-width: 768px) {
+  .consumer__block {
+    margin-top: 184px; }
+  .consumer__img {
+    margin-left: 10px; }
+  .consumer__title {
+    font-size: 14px;
+    letter-spacing: .8px;
+    line-height: 30px;
+    margin: 19px 0 0 -2px;
+    text-align: left;
+    text-transform: uppercase; } }
 
 /*Футер*/
 .footer__block {

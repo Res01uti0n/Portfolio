@@ -1,7 +1,6 @@
 /*Потребители*/
 
-/*<source media="(min-width: 1200px)" srcset="img/consumers-desk.png">
-              <source media="(min-width: 770px)" srcset="img/consumers-tab.png">*/
+/*<source media="(min-width: 1200px)" srcset="img/consumers-desk.png">*/
 
 .consumer__block {
   background: $blueBack;
@@ -60,6 +59,25 @@
   }
   &:active {
     opacity: .8;
+  }
+}
+
+@media (min-width: 768px) {
+  .consumer__block {
+    margin-top: 184px;
+  }
+
+  .consumer__img {
+    margin-left: 10px;
+  }
+
+  .consumer__title {
+    font-size: 14px;
+    letter-spacing: .8px;
+    line-height: 30px;
+    margin: 19px 0 0 -2px;
+    text-align: left;
+    text-transform: uppercase;
   }
 }
 
