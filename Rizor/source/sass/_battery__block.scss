@@ -7,6 +7,7 @@
 .battery__text {
   line-height: 24px;
   padding: 5px 0 0 11px;
+  width: 300px;
 }
 
 .battery__table {
@@ -29,10 +30,18 @@
   margin: -25px 0 0 10px;
 }
 
+.br__tab {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .battery__block {
     display: flex;
     padding-top: 0;
+  }
+
+  .br__tab {
+    display: block;
   }
 
   .battery__wrapper {

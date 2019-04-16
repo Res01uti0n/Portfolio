@@ -283,6 +283,9 @@ body {
 .feature__video {
   display: none; }
 
+.design--btn {
+  display: none; }
+
 @media (min-width: 768px) {
   .feature__block {
     display: -ms-flexbox;
@@ -547,7 +550,8 @@ body {
 
 .battery__text {
   line-height: 24px;
-  padding: 5px 0 0 11px; }
+  padding: 5px 0 0 11px;
+  width: 300px; }
 
 .battery__table {
   padding: 23px 0 0 32px; }
@@ -564,11 +568,16 @@ body {
 .battery__img {
   margin: -25px 0 0 10px; }
 
+.br__tab {
+  display: none; }
+
 @media (min-width: 768px) {
   .battery__block {
     display: -ms-flexbox;
     display: flex;
     padding-top: 0; }
+  .br__tab {
+    display: block; }
   .battery__wrapper {
     -ms-flex-order: 1;
         order: 1; }
@@ -719,7 +728,7 @@ body {
   font-size: 24px;
   letter-spacing: 2px;
   line-height: 36px;
-  margin-top: 15px;
+  margin-top: 25px;
   text-align: center;
   width: 200px; }
 
@@ -763,6 +772,7 @@ body {
 .character__title {
   letter-spacing: 2px;
   line-height: 30px;
+  padding-top: 0;
   text-transform: uppercase; }
 
 .character__text {
@@ -905,16 +915,34 @@ body {
 
 @media (min-width: 768px) {
   .consumer__block {
-    margin-top: 184px; }
+    background: #3a2ff8 url(../img/consumer-back.jpg) no-repeat 0 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    margin-top: 184px;
+    padding-bottom: 100px; }
+  .consumer__title {
+    padding: 7px 0 0 96px; }
   .consumer__img {
     margin-left: 10px; }
+  .consumer__text {
+    line-height: 24px;
+    padding: 17px 0 0 22px;
+    width: 322px; }
+  .consumer__text--2 {
+    margin: 17px 0 0 0;
+    width: 248px; }
   .consumer__title {
-    font-size: 14px;
-    letter-spacing: .8px;
-    line-height: 30px;
-    margin: 19px 0 0 -2px;
-    text-align: left;
-    text-transform: uppercase; } }
+    text-align: left; }
+  .consumer__wrapper {
+    -ms-flex-align: start;
+        align-items: flex-start;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 70px; }
+  .catalog__btn {
+    margin-top: 30px; } }
 
 /*Футер*/
 .footer__block {
