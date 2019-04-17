@@ -48,7 +48,7 @@ body {
   .container {
     width: 1920px; }
   body {
-    background: url(../img/intro-back.jpg) no-repeat 0 65px, url(../img/body-back.jpg) no-repeat 1440px 940px; } }
+    background: url(../img/intro-back.jpg) no-repeat 0 65px, url(../img/body-back.jpg) no-repeat 1440px 940px, url(../img/intro-back.jpg) no-repeat 0 2225px; } }
 
 /*Шапка*/
 .header__block {
@@ -334,7 +334,8 @@ body {
 .feature__video {
   display: none; }
 
-.design--btn {
+.design--btn,
+.br__desk {
   display: none; }
 
 @media (min-width: 768px) {
@@ -505,7 +506,7 @@ body {
 
 @media (min-width: 1200px) {
   .color__block {
-    background: url(../img/arrow-part-2.jpg) no-repeat 58px 215px, url(../img/arrow-part.jpg) no-repeat 103.5px 53px, url(../img/color-arr-1.jpg) no-repeat 58px 215.5px;
+    background: url(../img/arrow-part-2.jpg) no-repeat 58px 215px, url(../img/arrow-part.jpg) no-repeat 57.5px 503px, url(../img/color-arr-1.jpg) no-repeat 58px 215.5px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -553,6 +554,22 @@ body {
   .watch--indicators {
     left: 70px;
     top: 453px; } }
+
+@media (min-width: 1200px) {
+  .indicators__block {
+    background: url(../img/video-3-desk.jpg) no-repeat center 100%, url(../img/indicator-arr.jpg) no-repeat 498px 13px, url(../img/indicator-arr-2.jpg) no-repeat 498px 13px, url(../img/arrow-part.jpg) no-repeat 497.5px 373px;
+    margin-top: -440px;
+    padding: 0 0 425px 513px; }
+  .indicators__text {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 0 0 61px;
+    width: 440px; }
+  .watch--indicators {
+    left: 495px;
+    top: 383px; }
+  .br__desk {
+    display: block; } }
 
 /*Режимы*/
 .modes__block {
@@ -647,6 +664,16 @@ body {
   .modes--watch {
     left: 328px;
     top: 597px; } }
+
+@media (min-width: 1200px) {
+  .modes__block {
+    background: url(../img/video-4-desk.jpg) no-repeat 100% 150px;
+    padding: 52px 0 342px 0; }
+  .modes__video {
+    background: url(../img/video-4-tab.jpg) no-repeat 0 0;
+    height: 600px;
+    margin-top: 50px;
+    width: 394px; } }
 
 /*Аккумулятор*/
 .battery__block {

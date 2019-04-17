@@ -40,6 +40,33 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .indicators__block {
+    background: url(../img/video-3-desk.jpg) no-repeat center 100%,
+    url(../img/indicator-arr.jpg) no-repeat 498px 13px,
+    url(../img/indicator-arr-2.jpg) no-repeat 498px 13px,
+    url(../img/arrow-part.jpg) no-repeat 497.5px 373px;
+    margin-top: -440px;
+    padding: 0 0 425px 513px;
+  }
+
+  .indicators__text {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 0 0 61px;
+    width: 440px;
+  }
+
+  .watch--indicators {
+    left: 495px;
+    top: 383px;
+  }
+
+  .br__desk {
+    display: block;
+  }
+}
+
 
 
 
