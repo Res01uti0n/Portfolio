@@ -74,3 +74,23 @@
     margin-left: 10px;
   }
 }
+
+@media (min-width: 1200px) {
+  .nav__block {
+    width: 1920px;
+  }
+
+  .nav__list {
+    padding: 0 376px 0 0;
+  }
+
+  .nav__list:first-child {
+    margin-left: 1046px;
+  }
+
+  .nav__item {
+    font-size: 14px;
+  }
+
+}
+

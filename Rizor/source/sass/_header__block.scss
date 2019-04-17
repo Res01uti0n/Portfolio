@@ -44,7 +44,7 @@
 @media (min-width: 768px) {
   .header__block {
     min-height: 100px;
-    padding: 0 22px 0 22px;
+    padding: 0 22px;
   }
 
   .header__logo {
@@ -58,3 +58,12 @@
     display: none;
   }
 }
+
+@media (min-width: 1200px) {
+  .header__block {
+    min-height: 100px;
+    padding: 0 375px;
+  }
+}
+
+

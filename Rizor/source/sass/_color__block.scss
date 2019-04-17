@@ -126,3 +126,34 @@
     transform: rotate(90deg);
   }
 }
+
+@media (min-width: 1200px) {
+  .color__block {
+    background: url(../img/arrow-part-2.jpg) no-repeat 58px 215px,
+    url(../img/arrow-part.jpg) no-repeat 103.5px 53px,
+    url(../img/color-arr-1.jpg) no-repeat 58px 215.5px;
+    display: flex;
+    flex-direction: column;
+    margin: -487px 0 0 1164px;
+    padding: 68px 105px 300px 0;
+    width: 400px;
+  }
+
+  .color__text {
+    margin-left: -2px;
+    line-height: 28px;
+    width: 240px;
+  }
+
+  .color__img {
+    margin: 90px 0 0 10px;
+    position: relative;
+    z-index: -1;
+  }
+
+  .color__list {
+    right: 123px;
+    top: 346px;
+    transform: rotate(0deg);
+  }
+}

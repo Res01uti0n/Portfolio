@@ -50,11 +50,21 @@ body {
   position: absolute;
 }
 
-@media (min-width: 770px) {
+@media (min-width: 768px) {
   .container {
     width: 768px;
   }
+}
 
+@media (min-width: 1200px) {
+  .container {
+    width: 1920px;
+  }
+
+  body {
+    background: url(../img/intro-back.jpg) no-repeat 0 65px,
+    url(../img/body-back.jpg) no-repeat 1440px 940px;
+  }
 }
 
 $wh: #fff;

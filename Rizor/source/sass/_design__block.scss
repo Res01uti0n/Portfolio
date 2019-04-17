@@ -87,8 +87,56 @@
     }
   }
 
+  .design--btn {
+    display: block;
+  }
+
   .video-play__btn .design--btn {
     top: 250px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .feature__block {
+    justify-content: flex-start;
+    margin-top: 93px;
+  }
+
+  .design-info__wrapper {
+    padding: 165px 0 0 40px;
+    width: 300px;
+  }
+
+  .feature__title {
+    font-size: 40px;
+    letter-spacing: 2.5px;
+  }
+
+  .feature__text {
+    font-size: 18px;
+    margin-top: -3px;
+    padding: 0 0 0 58px;
+    width: 300px;
+  }
+
+  .feature__characters {
+    padding-top: 5px;
+  }
+
+  .character__item {
+    font-size: 18px;
+    line-height: 31px;
+    padding: 0 0 4px 62px;
+    width: 250px;
+  }
+
+  .feature__video {
+    height: 750px;
+    width: 745px;
+  }
+
+  .design__video {
+    background: url(../img/video-2-desk.jpg) no-repeat 0 0;
   }
 }
 

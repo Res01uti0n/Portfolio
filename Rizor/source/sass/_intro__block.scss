@@ -90,3 +90,41 @@
     transform: rotate(90deg);
   }
 }
+
+@media (min-width: 1200px) {
+  .intro__block {
+    background: url(../img/arrow-part-2.jpg) no-repeat 768px 225px,
+    url(../img/arrow-part.jpg) no-repeat 783.5px 153px,
+    url(../img/arrow-2-intro.jpg) no-repeat 785px 153.5px,
+    url(../img/arrow-intro.jpg) no-repeat 404px 584px,
+    url(../img/video-1-desk.jpg) no-repeat 100% 0;
+    padding: 133px 375px 45px 375px;
+  }
+
+  .intro__title {
+    font-size: 80px;
+    letter-spacing: 5.5px;
+    line-height: 95px;
+    width: 660px;
+  }
+
+  .intro__moto {
+    bottom: 32px;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    width: 330px;
+  }
+
+  .watch__btn {
+    font-size: 12px;
+    left: 783px;
+  }
+
+  .img--watch {
+    right: 12px;
+    top: -5px;
+    height: 82px;
+    width: 80px;
+  }
+}
