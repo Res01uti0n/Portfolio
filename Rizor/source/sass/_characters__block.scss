@@ -182,3 +182,22 @@
     display: none;
   }
 }
+
+@media (min-width: 1200px) {
+  .characters__block {
+    align-items: flex-start;
+    background: url(../img/characters-back.jpg) no-repeat 0 195px;
+  }
+
+  .character__wrapper {
+    padding-left: 455px;
+  }
+
+  .hovertrax__title {
+    font-size: 40px;
+    letter-spacing: 1.5px;
+    margin: 274px 0 0 -82px;
+    text-align: left;
+    width: 745px;
+  }
+}

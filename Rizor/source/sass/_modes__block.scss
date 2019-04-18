@@ -85,11 +85,23 @@
   }
 
   .modes__list {
-    padding: 12px 0 0 100px;
+    padding: 8px 0 0 100px;
   }
 
   .modes__item {
+    line-height: 22px;
+    margin-bottom: 28px;
+    position: relative;
     width: 175px;
+    &::before {
+      background: $bl;
+      content: '';
+      height: 5px;
+      left: -38px;
+      position: absolute;
+      top: 7px;
+      width: 20px;
+    }
   }
 
   .modes__table {
@@ -97,8 +109,8 @@
   }
 
   .value--two {
-    position: relative;
     bottom: 3px;
+    position: relative;
   }
 
   .cell__name {
@@ -120,15 +132,73 @@
 
 @media (min-width: 1200px) {
   .modes__block {
-    background: url(../img/video-4-desk.jpg) no-repeat 100% 150px;
-    padding: 52px 0 342px 0;
+    background: url(../img/video-4-desk.jpg) no-repeat 100% 150px,
+    url(../img/modes-arr.jpg) no-repeat 645px 256px,
+    url(../img/modes-arr-2.jpg) no-repeat 798px 256px,
+    url(../img/arrow-part.jpg) no-repeat 797.5px 728px;
+    padding: 75px 0 342px 280px;
+  }
+
+  .modes__text {
+    margin-top: -2px;
+    line-height: 28px;
+    width: 360px;
+  }
+
+  .modes__item {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 0 28px 5px;
+    width: 350px;
+    &::before {
+      width: 30px;
+    }
+  }
+
+  .modes__table {
+    margin-top: 100px;
+    padding-left: 55px;
+    width: 500px;
+  }
+
+  .cell__value {
+    font-size: 60px;
+    padding-bottom: 23px;
+  }
+
+  .value__system {
+    font-size: 24px;
+  }
+
+  .value--two {
+    bottom: 4px;
+    padding-left: 58px;
+  }
+
+  .cell__name {
+    bottom: 18px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 10px;
+    position: relative;
+  }
+
+  .cell__text {
+    font-size: 16px;
+    width: 100px;
   }
 
   .modes__video {
-    background: url(../img/video-4-tab.jpg) no-repeat 0 0;
-    height: 600px;
-    margin-top: 50px;
-    width: 394px;
+    display: none;
+  }
+
+  .modes--watch {
+    left: 795px;
+    top: 737px;
+  }
+
+  .text--speed {
+    margin-left: 53px;
   }
 }
 
