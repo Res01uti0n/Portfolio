@@ -101,6 +101,7 @@
   .feature__block {
     justify-content: flex-start;
     margin-top: 93px;
+    position: relative;
   }
 
   .design-info__wrapper {
@@ -138,6 +139,68 @@
 
   .design__video {
     background: url(../img/video-2-desk.jpg) no-repeat 0 0;
+  }
+
+  .pagination {
+    display: flex;
+    font-size: 1px;
+    position: absolute;
+    right: 83px;
+    top: 317px;
+  }
+
+  .pagination__list {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: center;
+    position: relative;
+    &::before{
+      background: $blue;
+      content: '';
+      height: 325px;
+      position: absolute;
+      top: 120px;
+      width: 1px;
+    }
+    &::after{
+      background: $blue;
+      content: '';
+      height: 325px;
+      position: absolute;
+      bottom: 110px;
+      width: 1px;
+    }
+  }
+
+  .pag__item {
+    background: $blue;
+    border: none;
+    border-radius: 50%;
+    height: 7px;
+    margin: 7.5px;
+    width: 7px;
+    &:hover{
+      background: none;
+      border: 2px solid $blue;
+      height: 15px;
+      outline-color: transparent;
+      text-align: center;
+      width: 15px;
+    }
+  }
+
+  .pag__item a {
+    color: transparent;
+  }
+
+  .pag--active {
+    background: none;
+    border: 2px solid $blue;
+    height: 15px;
+    text-align: center;
+    width: 15px;
   }
 }
 

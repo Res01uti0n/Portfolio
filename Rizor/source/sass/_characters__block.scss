@@ -188,6 +188,7 @@
     align-items: flex-start;
     background: url(../img/characters-back.jpg) no-repeat 0 195px;
     padding-bottom: 60px;
+    position: relative;
   }
 
   .character__wrapper {
@@ -203,19 +204,14 @@
     font-size: 40px;
     letter-spacing: 1px;
     margin: 274px 0 0 -82px;
-    text-align: left;
     width: 745px;
   }
 
   .char__num {
     letter-spacing: -7.5px;
-    margin-left: 0;
   }
 
   .character__wrapper-2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     margin-top: 40px;
     padding-left: 900px;
     width: 700px;
@@ -228,24 +224,19 @@
 
   .character__title {
     font-size: 18px;
-    letter-spacing: 2px;
     line-height: 30px;
     margin: -31px 0 0 -2px;
-    padding-top: 0;
-    text-transform: uppercase;
   }
 
   .character__text {
     font-size: 16px;
     line-height: 24px;
     margin: 14px 0 0 -5px;
-    text-align: left;
   }
 
   .img--body {
     height: 67px;
     left: -65px;
-    top: 5px;
     width: 90px;
     z-index: -1;
   }
@@ -253,7 +244,6 @@
   .img--wheel {
     height: 70px;
     left: -80px;
-    top: 3px;
     width: 70px;
     z-index: -1;
   }
@@ -261,7 +251,6 @@
   .img--power {
     height: 53px;
     left: -53px;
-    top: 7px;
     width: 68px;
     z-index: -1;
   }
@@ -269,7 +258,6 @@
   .img--weight {
     height: 68px;
     left: -68px;
-    top: -5px;
     width: 63px;
     z-index: -1;
   }
@@ -299,6 +287,10 @@
   .text--weight {
     margin-left: -24px;
     width: 250px;
+  }
+
+  .pag--character {
+    top: 520px;
   }
 
 }

@@ -25,6 +25,14 @@
           <h1 class="intro__title">RIzor Hovertrax <span class="title__number">4.0</span></h1>
           <p class="intro__moto">Маневренность, легкость, экологичность</p>
           <a class="watch__btn" href="#">Смотреть видео <img class="img--watch" src="img/watch.png" alt="Смотреть"></a>
+          <div class="pagination">
+            <ul class="pagination__list">
+              <li class="pag__item pag--active"><a href="#">Шапка</a></li>
+              <li class="pag__item"><a href="#">Характеристики</a></li>
+              <li class="pag__item"><a href="#">Преимущества</a></li>
+              <li class="pag__item"><a href="#">Подвал</a></li>
+            </ul>
+          </div>
         </section>
           <section class="features__block">
             <h2 class="section__title">Преимущества</h2>
@@ -40,6 +48,14 @@
                     <li class="character__item">плавные линии</li>
                     <li class="character__item">подсветка светодиодными индикаторами</li>
                     <li class="character__item">рельефные бамперы оснащенные защитными панелями</li>
+                  </ul>
+                </div>
+                <div class="pagination">
+                  <ul class="pagination__list">
+                    <li class="pag__item"><a href="#">Шапка</a></li>
+                    <li class="pag__item pag--active"><a href="#">Характеристики</a></li>
+                    <li class="pag__item"><a href="#">Преимущества</a></li>
+                    <li class="pag__item"><a href="#">Подвал</a></li>
                   </ul>
                 </div>
               </section>
@@ -167,19 +183,30 @@
                 <p class="character__text text--weight">небольшой вес, приблизительно в <b class="hovertrax">12 кг</b> , позволяет относительно компактно переносить гироборд с собой.</p>
               </div>
             </div>
+            <div class="pagination pag--character">
+              <ul class="pagination__list">
+                <li class="pag__item"><a href="#">Шапка</a></li>
+                <li class="pag__item"><a href="#">Характеристики</a></li>
+                <li class="pag__item pag--active"><a href="#">Преимущества</a></li>
+                <li class="pag__item"><a href="#">Подвал</a></li>
+              </ul>
+            </div>
           </section>
           <section class="consumer__block">
             <picture>
+              <source media="(min-width: 1200px)" srcset="img/consumers-desk.png">
               <source media="(min-width: 770px)" srcset="img/consumers-tab.png">
               <img class="consumer__img" src="img/consumers.png" alt="Потребители">
             </picture>
-            <h2 class="consumer__title">Для кого</h2>
-            <div class="consumer__wrapper">
-              <p class="consumer__text">При максимально выдерживаемой нагрузке в <b class="hovertrax">100 кг</b> отлично подойдёт,<br> как для подрастающего поколения,
-                <br> так и для более взрослых «наездников».</p>
-              <p class="consumer__text consumer__text--2">Это единственный гироскутер со специальным детским режимом езды.</p>
+            <div class="consumer__info">
+              <h2 class="consumer__title">Для кого</h2>
+              <div class="consumer__wrapper">
+                <p class="consumer__text">При максимально выдерживаемой нагрузке в <b class="hovertrax">100 кг</b> отлично подойдёт,<br> как для подрастающего поколения,
+                  <br> так и для более взрослых «наездников».</p>
+                <p class="consumer__text consumer__text--2">Это единственный гироскутер со специальным детским режимом езды.</p>
+              </div>
+              <a class="catalog__btn" href="#">Перейти в каталог</a>
             </div>
-            <a class="catalog__btn" href="#">Перейти в каталог</a>
           </section>
       </main>
       <footer class="footer__block">
