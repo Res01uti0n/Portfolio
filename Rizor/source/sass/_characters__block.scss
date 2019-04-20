@@ -4,7 +4,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding-top: 31px;
+  padding-top: 33px;
 }
 
 .hovertrax__title {
@@ -95,6 +95,7 @@
 @media (min-width: 768px) {
   .characters__block {
     background: url(../img/character-back.jpg) no-repeat 0 105px;
+    margin-top: 3px;
   }
 
   .character__wrapper {
@@ -183,10 +184,11 @@
   }
 }
 
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
   .characters__block {
     align-items: flex-start;
     background: url(../img/characters-back.jpg) no-repeat 0 195px;
+    margin-top: -2px;
     padding-bottom: 60px;
     position: relative;
   }
@@ -243,7 +245,7 @@
 
   .img--wheel {
     height: 70px;
-    left: -80px;
+    left: -77px;
     width: 70px;
     z-index: -1;
   }
@@ -293,4 +295,4 @@
     top: 520px;
   }
 
-}
+}*/

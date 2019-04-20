@@ -40,7 +40,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
   .indicators__block {
     background: url(../img/video-3-desk.jpg) no-repeat center 100%,
     url(../img/indicator-arr.jpg) no-repeat 498px 13px,
@@ -53,8 +53,13 @@
   .indicators__text {
     font-size: 18px;
     line-height: 30px;
+    margin-top: -2px;
     padding: 0 0 0 61px;
     width: 440px;
+  }
+
+  .text--2 {
+    margin-top: -8px;
   }
 
   .watch--indicators {
@@ -65,7 +70,7 @@
   .br__desk {
     display: block;
   }
-}
+}*/
 
 
 

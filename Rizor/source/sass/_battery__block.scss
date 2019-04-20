@@ -1,7 +1,7 @@
 /*Аккумулятор*/
 
 .battery__block {
-  padding-top: 55px;
+  padding: 40px 0 1px 0;
 }
 
 .battery__text {
@@ -19,11 +19,11 @@
 }
 
 .name__battery--1 {
-  padding-left: 5px;
+  padding: 12px 0 0 5px;
 }
 
 .name__battery-2 {
-  padding-left: 2px;
+  padding: 12px 0 0 3px;
 }
 
 .battery__img {
@@ -37,6 +37,7 @@
 @media (min-width: 768px) {
   .battery__block {
     display: flex;
+    padding-bottom: 0px;
     padding-top: 0;
   }
 
@@ -70,19 +71,23 @@
     position: relative;
   }
 
+  .value--battery {
+    padding-bottom: 3px;
+  }
+
   .name__battery-2 {
     right: 6px;
     position: relative;
   }
 
   .battery--2 {
-    position: relative;
     right: 7px;
+    position: relative;
   }
 
 }
 
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
   .blocks__wrapper {
     background: url(../img/battery-arr.jpg) no-repeat 828px 163px,
     url(../img/battary-arr-2.jpg) no-repeat 743px 163px,
@@ -96,11 +101,13 @@
   .battery__block {
     flex-direction: column;
     padding-top: 20px;
+    padding-bottom: 0;
     width: 520px;
   }
 
   .battery__table {
     left: 90px;
+    padding-bottom: 12px;
     top: 230px;
   }
 
@@ -111,6 +118,11 @@
   .name__battery--1,
   .name__battery-2 {
     bottom: 13px;
+    padding-top: 0;
+  }
+
+  .value--battery {
+    padding-bottom: 0;
   }
 
   .battery--2 {
@@ -138,4 +150,4 @@
     display: none;
   }
 
-}
+}*/

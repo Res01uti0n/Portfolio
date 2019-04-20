@@ -45,7 +45,7 @@
     url(../img/intro-fon-tab.jpg) no-repeat 100% 0;
     color: $bl;
     min-height: 573px;
-    padding: 197px 22px 0 22px;
+    padding: 195px 22px 0 24px;
     position: relative;
   }
 
@@ -91,7 +91,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
   .intro__block {
     background: url(../img/arrow-part-2.jpg) no-repeat 768px 225px,
     url(../img/arrow-part.jpg) no-repeat 783.5px 153px,
@@ -127,4 +127,4 @@
     height: 82px;
     width: 80px;
   }
-}
+}*/

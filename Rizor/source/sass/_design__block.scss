@@ -76,6 +76,10 @@
     padding: 6px 0 0 58px;
   }
 
+  .feature__characters {
+    padding-top: 8.5px;
+  }
+
   .character__item {
     padding-left: 58px;
     width: 200px;
@@ -92,12 +96,9 @@
     display: block;
   }
 
-  .video-play__btn .design--btn {
-    top: 250px;
-  }
 }
 
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
   .feature__block {
     justify-content: flex-start;
     margin-top: 93px;
@@ -202,6 +203,6 @@
     text-align: center;
     width: 15px;
   }
-}
+}*/
 
 
