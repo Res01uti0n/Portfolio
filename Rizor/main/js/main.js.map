@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["main.js"],"sourcesContent":["import hi from './functions/openMenu';\n\nconsole.log(hi);\n\n\n"],"file":"main.js"}
