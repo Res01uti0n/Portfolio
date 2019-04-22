@@ -20,6 +20,29 @@ gulp.task(`sass`, () =>{
     .pipe(browserSync.reload({stream: true}))
 });
 
+gulp.task(`scripts`, () => {
+  return gulp.src(`js/main.js`)
+    .pipe(plumber())
+    .pipe(sourcemaps.init())
+    .pipe(rollup({}, `iife`))
+    .pipe(sourcemaps.write(``))
+    .pipe(gulp.dest(`main/js`));
+});
+
+gulp.task(`copy-html`, ()=> {
+  return gulp.src(`*.{html,ico}`)
+    .pipe(gulp.dest(`main`))
+    .pipe(server.stream());
+});
+
+gulp.task(`copy`, [`copy-html`, `scripts`, `sass`], ()=> {
+  return gulp.src([
+    `fonts/**/*.{woff,woff2}`,
+    `img/*.*`
+  ], {base: '.'})
+    .pipe(gulp.dest(`main`));
+});
+
 gulp.task(`browser-sync`, ()=> {
   browserSync({
     server: {
@@ -27,6 +50,11 @@ gulp.task(`browser-sync`, ()=> {
     },
     notify: false
   });
+});
+
+gulp.task(`js-watch`, [`scripts`], (done) => {
+  server.reload();
+  done();
 });
 
 gulp.task(`css-libs`, [`sass`], ()=> {

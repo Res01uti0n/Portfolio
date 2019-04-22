@@ -56,7 +56,7 @@ body {
   }
 }
 
-/*@media (min-width: 1200px) {
+@media (min-width: 1200px) {
   .container {
     width: 1920px;
   }
@@ -67,7 +67,7 @@ body {
     url(../img/body-back.jpg) no-repeat 1440px 4500px,
     url(../img/intro-back.jpg) no-repeat 0 2225px;
   }
-}*/
+}
 
 $wh: #fff;
 $blue: #3a30f8;

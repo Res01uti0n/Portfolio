@@ -37,7 +37,7 @@
 @media (min-width: 768px) {
   .battery__block {
     display: flex;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     padding-top: 0;
   }
 
@@ -87,7 +87,7 @@
 
 }
 
-/*@media (min-width: 1200px) {
+@media (min-width: 1200px) {
   .blocks__wrapper {
     background: url(../img/battery-arr.jpg) no-repeat 828px 163px,
     url(../img/battary-arr-2.jpg) no-repeat 743px 163px,
@@ -104,6 +104,15 @@
     padding-bottom: 0;
     width: 520px;
   }
+
+  .battery__wrapper {
+    margin-top: -2px;
+  }
+
+  .battery__img {
+    margin: -120px 0 0 10px;
+  }
+
 
   .battery__table {
     left: 90px;
@@ -122,7 +131,7 @@
   }
 
   .value--battery {
-    padding-bottom: 0;
+    padding-bottom: 21px;
   }
 
   .battery--2 {
@@ -150,4 +159,4 @@
     display: none;
   }
 
-}*/
+}
