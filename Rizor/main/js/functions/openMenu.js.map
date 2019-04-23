@@ -1,1 +1,0 @@
-{"version":3,"names":[],"mappings":"","sources":["functions/openMenu.js"],"sourcesContent":["\nconst hi = console.log(`hello`);\n\nexport default console.log(`hello`);\n"],"file":"openMenu.js"}

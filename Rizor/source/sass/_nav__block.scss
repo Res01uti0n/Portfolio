@@ -59,6 +59,9 @@
     line-height: 80px;
     padding-left: 9px;
     position: relative;
+  }
+
+  .nav__item--active {
     &::before {
       background: $blue;
       content: '';

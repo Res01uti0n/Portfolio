@@ -262,7 +262,9 @@ body {
   left: 9px; }
 
 .color__img {
-  margin: 30px 0 0 10px; }
+  height: 261px;
+  margin: 30px 0 0 10px;
+  width: 300px; }
 
 /*Индикаторы*/
 .indicators__block {
@@ -595,14 +597,14 @@ body {
     line-height: 80px;
     padding-left: 9px;
     position: relative; }
-    .nav__item::before {
-      background: #3a30f8;
-      content: '';
-      height: 1px;
-      left: 0;
-      position: absolute;
-      top: 50px;
-      width: 20px; }
+  .nav__item--active::before {
+    background: #3a30f8;
+    content: '';
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 50px;
+    width: 20px; }
   .item--2 {
     margin-left: 10px; }
   .intro__block {
@@ -692,6 +694,9 @@ body {
     position: absolute;
     top: 208px;
     transform: rotate(90deg); }
+  .color__img {
+    height: 300px;
+    width: 344px; }
   .indicators__block {
     background: url(../img/poster-video-3-tab.jpg) no-repeat center 100%;
     padding: 82px 0 347px 53px;
@@ -1007,7 +1012,8 @@ body {
       text-align: center;
       width: 15px; }
   .pag__item a {
-    color: transparent; }
+    color: transparent;
+    font-size: 14px; }
   .pag--active {
     background: none;
     border: 2px solid #3a30f8;
@@ -1026,8 +1032,10 @@ body {
     line-height: 28px;
     width: 240px; }
   .color__img {
+    height: 300px;
     margin: 90px 0 0 10px;
     position: relative;
+    width: 374px;
     z-index: -1; }
   .color__list {
     right: 123px;

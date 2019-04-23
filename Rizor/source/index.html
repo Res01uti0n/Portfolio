@@ -15,27 +15,27 @@
       </header>
       <nav class="nav__block">
         <ul class="nav__list">
-          <li><a class="nav__item" href="#">Преимущества</a></li>
-          <li><a class="nav__item item--2" href="#">Характеристики</a></li>
-          <li><a class="nav__item" href="#">Для кого</a></li>
+          <li><a class="nav__item" href="#features">Преимущества</a></li>
+          <li><a class="nav__item item--2" href="#characters">Характеристики</a></li>
+          <li><a class="nav__item" href="#consumer">Для кого</a></li>
         </ul>
       </nav>
       <main>
-        <section class="intro__block">
+        <section class="intro__block" id="header">
           <h1 class="intro__title">RIzor Hovertrax <span class="title__number">4.0</span></h1>
           <p class="intro__moto">Маневренность, легкость, экологичность</p>
           <a class="watch__btn" href="#">Смотреть видео <img class="img--watch" src="img/watch.png" alt="Смотреть"></a>
           <div class="pagination">
             <ul class="pagination__list">
-              <li class="pag__item pag--active"><a href="#">Шапка</a></li>
-              <li class="pag__item"><a href="#">Характеристики</a></li>
-              <li class="pag__item"><a href="#">Преимущества</a></li>
-              <li class="pag__item"><a href="#">Подвал</a></li>
+              <li class="pag__item pag--active"><a href="#header">Шапка</a></li>
+              <li class="pag__item"><a href="#features">Преимущества</a></li>
+              <li class="pag__item"><a href="#characters">Характеристики</a></li>
+              <li class="pag__item"><a href="#footer">Подвал</a></li>
             </ul>
           </div>
         </section>
           <section class="features__block">
-            <h2 class="section__title">Преимущества</h2>
+            <h2 class="section__title" id="features">Преимущества</h2>
               <section class="feature__block design__block">
                 <div class="video__wrapper">
                   <video class="feature__video design__video" src="#"></video>
@@ -52,10 +52,10 @@
                 </div>
                 <div class="pagination">
                   <ul class="pagination__list">
-                    <li class="pag__item"><a href="#">Шапка</a></li>
-                    <li class="pag__item pag--active"><a href="#">Характеристики</a></li>
-                    <li class="pag__item"><a href="#">Преимущества</a></li>
-                    <li class="pag__item"><a href="#">Подвал</a></li>
+                    <li class="pag__item"><a href="#header">Шапка</a></li>
+                    <li class="pag__item pag--active"><a href="#features">Преимущества</a></li>
+                    <li class="pag__item"><a href="#characters">Характеристики</a></li>
+                    <li class="pag__item"><a href="#footer">Подвал</a></li>
                   </ul>
                 </div>
               </section>
@@ -76,9 +76,9 @@
                       <label class="color__label hidden" for="black">Черный</label></li>
                   </ul>
                 </div>
-                <picture>
+                <picture class="picture">
                   <source media="(min-width: 1200px)" srcset="img/photo1-desk.jpg">
-                  <source media="(min-width: 770px)" srcset="img/photo1-tab.jpg">
+                  <source class="source-2" media="(min-width: 770px)" srcset="img/photo1-tab.jpg">
                   <img class="color__img" src="img/photo1-mob.jpg" alt="Гироскутер">
                 </picture>
               </section>
@@ -157,7 +157,7 @@
           </section>
           <section class="characters__block">
             <div class="character__wrapper">
-              <h2 class="section__title characters__title">Характеристики</h2>
+              <h2 class="section__title characters__title" id="characters">Характеристики</h2>
               <p class="hovertrax__title">Rizor Hovertrax <span class="title__number char__num">4.0</span></p>
             </div>
             <div class="character__wrapper-2">
@@ -185,14 +185,14 @@
             </div>
             <div class="pagination pag--character">
               <ul class="pagination__list">
-                <li class="pag__item"><a href="#">Шапка</a></li>
-                <li class="pag__item"><a href="#">Характеристики</a></li>
-                <li class="pag__item pag--active"><a href="#">Преимущества</a></li>
-                <li class="pag__item"><a href="#">Подвал</a></li>
+                <li class="pag__item"><a href="#header">Шапка</a></li>
+                <li class="pag__item"><a href="#features">Преимущества</a></li>
+                <li class="pag__item pag--active"><a href="#characters">Характеристики</a></li>
+                <li class="pag__item"><a href="#footer">Подвал</a></li>
               </ul>
             </div>
           </section>
-          <section class="consumer__block">
+          <section class="consumer__block" id="consumer">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/consumers-desk.png">
               <source media="(min-width: 770px)" srcset="img/consumers-tab.png">
@@ -209,7 +209,7 @@
             </div>
           </section>
       </main>
-      <footer class="footer__block">
+      <footer class="footer__block" id="footer">
         <p class="footer__text">© All rights reserved, 2017</p>
       </footer>
     </div>
