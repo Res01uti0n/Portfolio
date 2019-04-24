@@ -1,0 +1,26 @@
+.header__block {
+  padding: 14px 57px;
+}
+
+%events-1 {
+  &:hover,
+  &:focus {
+    opacity: .6;
+    outline: none;
+  }
+  &:active {
+    opacity: .3;
+  }
+}
+
+.header__logo {
+  color: $bl;
+  font-size: 48px;
+  letter-spacing: .9px;
+  line-height: 48px;
+  text-decoration: none;
+  text-transform: uppercase;
+  @extend %events-1;
+}
+
+

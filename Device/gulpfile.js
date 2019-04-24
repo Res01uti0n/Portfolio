@@ -111,3 +111,28 @@ gulp.task(`assemble`, [`clean`], ()=> {
 });
 
 gulp.task(`build`, [`assemble`, `imagemin`]);
+
+gulp.task(`browser-sync`,()=> {
+  server.init({
+    server: `./source`,
+    notify: false,
+    open: true,
+    port: 3502,
+    ui: false
+  });
+});
+
+gulp.task(`sasswork`,()=>{
+  return gulp.src(`source/sass/**/*.scss`)
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(gulp.dest(`source/css`))
+    .pipe(server.reload({stream: true}))
+});
+
+gulp.task(`style`, [`browser-sync`],()=> {
+  gulp.watch(`source/sass/**/*.scss`, [`sasswork`]);
+  gulp.watch(`source/*.html`, server.reload);
+});
+
+gulp.task('work', ['style']);
