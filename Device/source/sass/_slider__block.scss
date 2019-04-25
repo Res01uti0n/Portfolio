@@ -1,0 +1,68 @@
+/*Слайдер*/
+
+.slider__block {
+  margin-top: -140px;
+  padding: 0 80px;
+}
+
+.slide {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide__img {
+  margin-left: 12px;
+}
+
+.slide__info {
+  padding-top: 40px;
+  width: 480px;
+}
+
+.slide__title {
+  font-size: 47px;
+  letter-spacing: .5px;
+  line-height: 56px;
+  margin-bottom: 0;
+  width: 400px;
+}
+
+.slide__text {
+  font-family: OpenSans, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: .12px;
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+.slide__table {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 140px;
+  border: 1px solid black;
+  width: 445px;
+}
+
+.slide__table td,
+.slide__table th {
+  text-align: left;
+}
+
+.cell__value {
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 48px;
+  width: 146px;
+}
+
+.cell__name {
+  font-family: OpenSans, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+
+
+

@@ -50,5 +50,11 @@ body {
 /*Цвета*/
 
 $bl: #000;
+$blHov: rgba(0, 0, 0, .6);
+$blAct: rgba(0, 0, 0, .3);
+$wh: #fff;
+$whAct: rgba(255, 255, 255, .3);
+$yell: #f7e296;
 
 @import "header__block";
+@import "slider__block";

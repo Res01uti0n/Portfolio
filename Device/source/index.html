@@ -10,48 +10,52 @@
     <div class="container">
       <header class="header__block">
         <a href="#" class="header__logo">Device</a>
-        <label for="search"></label>
-        <input id="search" type="text">
-        <button>Найти</button>
-        <ul>
-          <li><a href="#">Войти</a></li>
-          <li><a href="#">Сравнить</a></li>
-          <li><a href="#">Корзина</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">Каталог товаров</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <nav>
-          <ul>
-            <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="#">Моноподы для селфи</a></li>
-            <li><a href="#">Экшн-камеры</a></li>
+        <div class="header__wrapper">
+          <div class="search__box">
+            <label class="search__label" for="search"></label>
+            <input class="search__input" id="search" type="text" value="Поиск по сайту">
+            <button class="search__btn">Найти</button>
+          </div>
+          <ul class="user__list">
+            <li><a href="#" class="user__item item--enter">Войти</a></li>
+            <li><a href="#" class="user__item item--compare">Сравнить</a></li>
+            <li><a href="#" class="user__item item--cort">Корзина</a></li>
           </ul>
-          <ul>
-            <li><a href="#">Фитнес-браслеты</a></li>
-            <li><a href="#">Умные часы</a></li>
+        </div>
+        <ul class="nav__list">
+          <li><a href="#" class="nav__item item--catalog">Каталог товаров</a></li>
+          <li><a href="#" class="nav__item">Доставка</a></li>
+          <li><a href="#" class="nav__item">Гарантия</a></li>
+          <li><a href="#" class="nav__item item--last">Контакты</a></li>
+        </ul>
+        <nav class="nav__extra">
+          <ul class="extra__list">
+            <li><a href="#" class="extra__item">Виртуальная реальность</a></li>
+            <li><a href="#" class="extra__item">Моноподы для селфи</a></li>
+            <li><a href="#" class="extra__item">Экшн-камеры</a></li>
           </ul>
-          <ul>
-            <li><a href="#">Квадрокоптеры</a></li>
+          <ul class="extra__list list--2">
+            <li><a href="#" class="extra__item">Фитнес-браслеты</a></li>
+            <li><a href="#" class="extra__item">Умные часы</a></li>
+          </ul>
+          <ul class="extra__list">
+            <li><a href="#" class="extra__item">Квадрокоптеры</a></li>
           </ul>
         </nav>
       </header>
       <main>
-        <section>
-          <div>
-            <img src="img/slider-1.png" alt="Селфи палка" width="384" height="486">
-            <div>
-              <h2>Делай селфи, как Бен Стиллер!</h2>
-              <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-              <table>
-                <tr>
-                  <td>8,5 м</td><td>5 кг</td><td>Карбон</td>
+        <section class="slider__block">
+          <div class="slide slide-1">
+            <img class="slide__img" src="img/slider-1.png" alt="Селфи палка" width="384" height="486">
+            <div class="slide__info">
+              <h2 class="slide__title">Делай селфи, как Бен Стиллер!</h2>
+              <p class="slide__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <table class="slide__table">
+                <tr class="table__row">
+                  <td class="cell__value cell--1">8,5 м</td><td class="cell__value cell--2">5 кг</td><td class="cell__value">Карбон</td>
                 </tr>
-                <tr>
-                  <th>Длина палки</th><th>Вес палки</th><th>Материал</th>
+                <tr class="table__row">
+                  <th class="cell__name cell--1">Длина палки</th><th class="cell__name cell-2">Вес палки</th><th class="cell__name">Материал</th>
                 </tr>
               </table>
             </div>
