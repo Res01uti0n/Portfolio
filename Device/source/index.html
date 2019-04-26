@@ -45,7 +45,7 @@
       </header>
       <main>
         <section class="slider__block">
-          <div class="slide slide-1">
+          <div class="slide slide--1">
             <img class="slide__img" src="img/slider-1.png" alt="Селфи палка" width="384" height="486">
             <div class="slide__info">
               <h2 class="slide__title">Делай селфи, как Бен Стиллер!</h2>
@@ -55,78 +55,78 @@
                   <td class="cell__value cell--1">8,5 м</td><td class="cell__value cell--2">5 кг</td><td class="cell__value">Карбон</td>
                 </tr>
                 <tr class="table__row">
-                  <th class="cell__name cell--1">Длина палки</th><th class="cell__name cell-2">Вес палки</th><th class="cell__name">Материал</th>
+                  <th class="cell__name cell--1">Длина палки</th><th class="cell__name cell--2">Вес палки</th><th class="cell__name">Материал</th>
                 </tr>
               </table>
             </div>
           </div>
-          <div>
-            <img src="img/slider-2.png" alt="Фитнес-браслет" width="345" height="485">
-            <div>
-              <h2>Худеем правильно</h2>
-              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-              <table>
-                <tr>
-                  <td>48 часов</td>
+          <div class="slide slide--2 hidden">
+            <img class="slide__img--2" src="img/slider-2.png" alt="Фитнес-браслет" width="345" height="485">
+            <div class="slide__info">
+              <h2 class="slide__title">Худеем правильно!</h2>
+              <p class="slide__text text--2">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <table class="slide__table">
+                <tr class="table__row">
+                  <td class="cell__value cell--1">48 часов</td>
                 </tr>
-                <tr>
-                  <th>Без подзарядки</th>
+                <tr class="table__row">
+                  <th class="cell__name cell--1">Без подзарядки</th>
                 </tr>
               </table>
             </div>
           </div>
-          <div>
-            <img src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
-            <div>
-              <h2>Порхает как бабочка, жалит как пчела!</h2>
-              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+          <div class="slide slide--3 hidden">
+            <img class="slide__img--3" src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
+            <div class="slide__info">
+              <h2 class="slide__title title--2">Порхает как бабочка, жалит как пчела!</h2>
+              <p class="slide__text text--3">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
               </p>
-              <table>
-                <tr>
-                  <td>800 м</td><td>50 м</td>
+              <table class="slide__table">
+                <tr class="table__row">
+                  <td class="cell__value cell--1">800 м</td><td class="cell__value cell--2">50 м</td>
                 </tr>
-                <tr>
-                  <th>Дальность полета</th><th>Радиус поражения</th>
+                <tr class="table__row">
+                  <th class="cell__name cell--1">Дальность полета</th><th class="cell__name cell--2">Радиус поражения</th>
                 </tr>
               </table>
             </div>
           </div>
-          <div>
-            <a href="#">Подробнее</a>
-            <ul>
-              <li><button>1</button></li>
-              <li><button>2</button></li>
-              <li><button>3</button></li>
+          <div class="slider__options">
+            <a href="#" class="options__btn">Подробнее</a>
+            <ul class="options__list">
+              <li><a href="#" class="option__item option--active">1</a></li>
+              <li><a href="#" class="option__item">2</a></li>
+              <li><a href="#" class="option__item">3</a></li>
             </ul>
           </div>
         </section>
-        <section>
-          <ul>
-            <li><a href="#"><img src="img/popular-1.svg" alt="Вр-очки" width="97" height="55"><span>Виртуальная реальность</span></a></li>
-            <li><a href="#"><img src="img/popular-2.svg" alt="Монопод" width="86" height="117"><span>Моноподы для селфи</span></a></li>
-            <li><a href="#"><img src="img/popular-3.svg" alt="Камера" width="71" height="87"><span>Экшн-камеры</span></a></li>
-            <li><a href="#"><img src="img/popular-4.svg" alt="Браслет" width="107" height="65"><span>Фитнес-браслеты</span></a></li>
-            <li><a href="#"><img src="img/popular-5.png" alt="Часы" width="56" height="98"><span>Умные часы</span></a></li>
-            <li><a href="#"><img src="img/poppular-6.png" alt="Квадрокоптер" width="132" height="69"><span>Квадрокоптеры</span></a></li>
+        <section class="popular__block">
+          <ul class="popular__list">
+            <li><a href="#" class="popular__item item--vr">Виртуальная реальность</a></li>
+            <li><a href="#" class="popular__item item--monopod">Моноподы<br> для селфи</a></li>
+            <li><a href="#" class="popular__item item--camera">Экшн-камеры</a></li>
+            <li><a href="#" class="popular__item item--bracer">Фитнес-браслеты</a></li>
+            <li><a href="#" class="popular__item item--watch">Умные часы</a></li>
+            <li><a href="#" class="popular__item item--cwadro">Квадрокоптеры</a></li>
           </ul>
         </section>
-        <section>
-          <ul>
-            <li><button>Доставка</button></li>
-            <li><button>Гарантия</button></li>
-            <li><button>Кредит</button></li>
+        <section class="serveses__block">
+          <ul class="serves__list">
+            <li><button class="serves__btn">Доставка</button></li>
+            <li><button class="serves__btn">Гарантия</button></li>
+            <li><button class="serves__btn">Кредит</button></li>
           </ul>
-          <div>
-            <h4>Доставка</h4>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          <div class="serves">
+            <h4 class="serves__title">Доставка</h4>
+            <p class="serves__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div>
-          <div>
-            <h4>Гарантия</h4>
-            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+          <div class="serves">
+            <h4 class="serves__title">Гарантия</h4>
+            <p class="serves__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
           </div>
-          <div>
-            <h4>Кредит</h4>
-            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          <div class="serves">
+            <h4 class="serves__title">Кредит</h4>
+            <p class="serves__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
           </div>
         </section>
         <section>

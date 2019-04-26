@@ -1,0 +1,74 @@
+.popular__block {
+  margin-top: 105px;
+}
+
+.popular__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 0;
+}
+
+.popular__item {
+  color: $bl;
+  display: flex;
+  font-size: 18px;
+  flex-direction: column;
+  line-height: 24px;
+  padding-top: 195px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  width: 160px;
+  &::before {
+    background: $yell;
+    content: '';
+    height: 160px;
+    position: absolute;
+    top: 0;
+    width: 160px;
+  }
+  &:hover,
+  &:focus {
+    opacity: .3;
+    outline: none;
+  }
+}
+
+.item--vr {
+  &::before {
+    background: $yell url(../img/popular-1.svg) no-repeat center;
+  }
+}
+
+.item--monopod {
+  &::before {
+    background: $yell url(../img/popular-2.svg) no-repeat center bottom;
+  }
+}
+
+.item--camera {
+  &::before {
+    background: $yell url(../img/popular-3.svg) no-repeat 50px center;
+  }
+}
+
+.item--bracer {
+  &::before {
+    background: $yell url(../img/popular-4.svg) no-repeat 30px 50px;
+  }
+}
+
+.item--watch {
+  &::before {
+    background: $yell url(../img/popular-5.png) no-repeat 55px center;
+  }
+}
+
+.item--cwadro {
+  &::before {
+    background: $yell url(../img/poppular-6.png) no-repeat center 50px;
+  }
+}
+
+
