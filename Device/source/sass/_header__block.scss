@@ -178,11 +178,13 @@
 }
 
 .nav__extra {
-  display: none;
+  background: $yell;
+  display: flex;
   justify-content: space-between;
   margin-top: -11px;
+  min-height: 160px;
+  padding-right: 500px;
   position: relative;
-  width: 552px;
   z-index: 10;
 }
 
@@ -196,7 +198,11 @@
 }
 
 .list--2 {
-  margin-left: -10px;
+  margin-left: -15px;
+}
+
+.list--3 {
+  margin-right: -10px;
 }
 
 .extra__item {

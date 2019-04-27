@@ -1,0 +1,51 @@
+.brands__block {
+  margin-top: 100px;
+  min-height: 120px;
+}
+
+.brands__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 0;
+}
+
+.brands__list li {
+  flex-grow: 1;
+}
+
+.brand__item {
+  color: transparent;
+  display: flex;
+  min-height: 200px;
+}
+
+.item--dj {
+  background: url(../img/logo-1.jpg) no-repeat center center;
+  &:hover {
+    background: url(../img/logo-1-hov.jpg) no-repeat center center;
+  }
+}
+
+.item--gadgets {
+  background: url(../img/logo-2.jpg) no-repeat center center;
+  margin-left: 9px;
+  &:hover {
+    background: url(../img/logo-2-hov.jpg) no-repeat center center;
+  }
+}
+
+.item--pro {
+  background: url(../img/logo-3.jpg) no-repeat center center;
+  margin-right: 9px;
+  &:hover {
+    background: url(../img/logo-3-hov.jpg) no-repeat center center;
+  }
+}
+
+.item--vive {
+  background: url(../img/logo-4.jpg) no-repeat center center;
+  &:hover {
+    background: url(../img/logo-4-hov.jpg) no-repeat center center;
+  }
+}

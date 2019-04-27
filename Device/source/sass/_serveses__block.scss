@@ -1,20 +1,118 @@
 .serveses__block {
-  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 65px;
+  position: relative;
+  &::before {
+    background: $servesBack;
+    content: '';
+    height: 290px;
+    left: -140px;
+    position: absolute;
+    top: 115px;
+    width: 1440px;
+    z-index: -1;
+  }
 }
 
 .serves__list {
+  border-right: 7px solid $bl;
   list-style: none;
-  padding-left: 0;
+  padding: 80px 0 43px 0;
+  width: 277px;
 }
 
 .serves__btn {
-  background: $bl;
+  background: transparent;
   border: none;
-  color: $yell2;
+  color: $bl;
   font-size: 18px;
+  font-weight: 900;
   height: 40px;
+  letter-spacing: 3.5px;
   line-height: 24px;
+  position: relative;
   text-transform: uppercase;
-  width: 277px;
-  margin-bottom: 20px;
+  width: 160px;
+  margin-bottom: 25px;
+  &::before {
+    background: $orang;
+    content: '';
+    height: 8px;
+    left: 0;
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    z-index: -1;
+  }
+  &:hover,
+  &:focus {
+    background: $orang;
+    outline: none;
+  }
+}
+
+.serves--active {
+  color: $orang;
+  &::before {
+    background: $bl;
+    content: '';
+    height: 40px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 277px;
+    z-index: -1;
+  }
+  &:hover {
+    background: $bl;
+  }
+}
+
+.serves {
+  padding-top: 26px;
+  width: 760px;
+}
+
+.serves__title {
+  font-size: 47px;
+  letter-spacing: 1.5px;
+  line-height: 48px;
+}
+
+.serves__text {
+  color: $grey;
+  font-family: OpenSans, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: .3px;
+  line-height: 30px;
+  margin-top: -31px;
+  width: 430px;
+}
+
+.serves--delivery {
+  background: url(../img/delivery.svg) no-repeat 560px 100px;
+}
+
+.serves--warranty {
+  background: url(../img/warranty.svg) no-repeat 540px 75px;
+}
+
+.serves--credit {
+  background: url(../img/credit.svg) no-repeat 535px 75px;
+}
+
+.serves__title--2 {
+  letter-spacing: 1px;
+}
+
+.serves__text--2 {
+  letter-spacing: .2px;
+  width: 460px;
+}
+
+.serves__text--3 {
+  letter-spacing: .25px;
+  width: 435px;
 }
