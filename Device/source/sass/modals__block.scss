@@ -1,0 +1,160 @@
+.write-us__modal {
+  align-items: center;
+  background: $wh;
+  box-shadow: -10px 10px 20px $shadow;
+  display: none;
+  flex-direction: column;
+  left: 280px;
+  min-height: 553px;
+  position: absolute;
+  top: 1057px;
+  width: 960px;
+  z-index: 100;
+}
+
+.title--hidden {
+  color: transparent;
+  font-size: 1px;
+  position: absolute;
+}
+
+.modal-close__btn {
+  background: $orang;
+  border: none;
+  border-radius: 50%;
+  color: transparent;
+  height: 55px;
+  position: absolute;
+  opacity: .5;
+  right: 22px;
+  top: 22px;
+  width: 55px;
+  &::before {
+    background: $wh;
+    content: '';
+    height: 2px;
+    left: 14px;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 27px;
+    width: 28px;
+  }
+  &::after {
+    background: $wh;
+    content: '';
+    height: 2px;
+    left: 14px;
+    position: absolute;
+    transform: rotate(135deg);
+    top: 27px;
+    width: 28px;
+  }
+  &:hover,
+  &:focus {
+    opacity: 1;
+    outline: none;
+  }
+  &:active {
+    opacity: .3;
+  }
+}
+
+.form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 93px;
+}
+
+.form__box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 34px;
+  width: 760px;
+}
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+.form__input,
+.form__text {
+  background: $inputColor;
+  border: none;
+  color: $inputText;
+  font-size: 14px;
+  letter-spacing: .3px;
+  line-height: 18px;
+  height: 50px;
+  padding-left: 20px;
+  width: 340px;
+  &:hover {
+    background: $inputHover;
+  }
+  &:focus {
+    background: $wh;
+    border: 3px solid $yell;
+    color: $bl;
+    height: 44px;
+    padding-left: 17px;
+    outline: none;
+    width: 337px;
+  }
+}
+
+.label--text {
+  margin: 0 0 5px 2px;
+}
+
+.form__text {
+  padding-top: 16px;
+  height: 140px;
+  width: 740px;
+  &:focus {
+    padding-top: 13px;
+    height: 137px;
+    width: 737px;
+  }
+}
+
+.invalid__value {
+  background: $invalid;
+}
+
+.write-us__btn {
+  background: transparent;
+  border: none;
+  bottom: 78px;
+  font-weight: 900;
+  left: 90px;
+  position: absolute;
+  &::before {
+    width: 200px;
+  }
+}
+
+.map__modal {
+  background: black;
+  bottom: 384px;
+  box-shadow: -10px 10px 20px $shadow;
+  display: none;
+  height: 560px;
+  left: 280px;
+  position: absolute;
+  width: 960px;
+}
+
+.modal--show {
+  display: flex;
+}
+
+
+
+

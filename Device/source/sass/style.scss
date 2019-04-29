@@ -39,6 +39,7 @@ body {
   font-weight: 900;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .container {
@@ -60,6 +61,12 @@ $yell2: #f7e184;
 $grey: #464646;
 $servesBack: #e5e5e5;
 $grey2: #e6e6e6;
+$logoColor: #ffc600;
+$inputColor: #f2f2f2;
+$inputHover: #eaeaea;
+$inputText: #adadad;
+$invalid: #f6dada;
+$shadow: rgba(0, 0, 0, .2);
 
 @import "header__block";
 @import "slider__block";
@@ -67,3 +74,5 @@ $grey2: #e6e6e6;
 @import "serveses__block";
 @import "brands__block";
 @import "info__block";
+@import "footer__block";
+@import "modals__block";

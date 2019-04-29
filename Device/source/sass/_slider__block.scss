@@ -188,6 +188,9 @@
   height: 10px;
   margin-left: 21px;
   width: 10px;
+  &:focus {
+    outline: none;
+  }
 }
 
 .option--active {
