@@ -8,8 +8,8 @@
   </head>
   <body>
     <div class="container">
-      <header class="header__block">
-        <a href="#" class="header__logo">Device</a>
+      <header class="header__block header--catalog">
+        <a href="#" class="header__logo logo--catalog">Device</a>
         <div class="header__wrapper">
           <div class="search__box">
             <label class="search__label" for="search"></label>
@@ -17,7 +17,7 @@
             <button class="search__btn">Найти</button>
           </div>
           <ul class="user__list">
-            <li><a href="#" class="user__item item--enter">Войти</a></li>
+            <li><a href="#" class="user__item item--enter item__enter--active">Валентин Петухов <span class="item__out">Выйти</span></a></li>
             <li><a href="#" class="user__item item--compare">Сравнить</a></li>
             <li><a href="#" class="user__item item--cort">Корзина</a></li>
           </ul>
@@ -44,20 +44,20 @@
         </nav>
       </header>
       <main>
-        <section>
-          <h2>Моноподы для селфи</h2>
-          <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Каталог товаров</a></li>
-            <li><a href="#">Моноподы для селфи</a></li>
+        <section class="intro__block">
+          <h2 class="intro__title">Моноподы для селфи</h2>
+          <ul class="pagination__list">
+            <li><a href="#" class="pag__item main">Главная</a></li>
+            <li><a href="#" class="pag__item">Каталог товаров</a></li>
+            <li><a href="#" class="pag__item">Моноподы для селфи</a></li>
           </ul>
         </section>
-        <section>
-          <h3>Фильтр:</h3>
+        <section class="filter__block">
+          <h3 class="filter__title">Фильтр:</h3>
           <form action="#">
-            <fieldset>
-              <legend>Стоймость</legend>
-              <div>
+            <fieldset class="cost__field">
+              <legend class="field__title">Стоймость</legend>
+              <div class="cost__range">
                 <div>1</div>
                 <div>2</div>
               </div>

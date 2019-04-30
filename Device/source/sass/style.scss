@@ -67,6 +67,7 @@ $inputHover: #eaeaea;
 $inputText: #adadad;
 $invalid: #f6dada;
 $shadow: rgba(0, 0, 0, .2);
+$pagColor: rgba(0, 0, 0, .1);
 
 @import "index/header__block";
 @import "index/slider__block";
@@ -76,3 +77,5 @@ $shadow: rgba(0, 0, 0, .2);
 @import "index/info__block";
 @import "index/footer__block";
 @import "index/modals__block";
+@import "catalog/intro__block";
+@import "catalog/filter__block";

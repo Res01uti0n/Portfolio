@@ -1,0 +1,49 @@
+/*Фильтр*/
+
+.filter__block {
+  border: 1px solid black;
+  margin: 45px 0 0 25px;
+  width: 300px;
+}
+
+.filter__title {
+  font-size: 16px;
+  letter-spacing: 3.5px;
+  line-height: 24px;
+  margin: 22px 0 92.5px 35px;
+  text-transform: uppercase;
+}
+
+.filter__block fieldset {
+  border: none;
+  border-top: 2px solid black;
+  margin-left: 33px;
+  padding-left: 0;
+  position: relative;
+  width: 189px;
+}
+
+.field__title {
+  font-size: 18px;
+  position: absolute;
+  top: 12px;
+}
+
+.cost__range {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+
+  width: 210px;
+  height: 30px;
+
+  text-align: center;
+  color: #ffffff;
+  white-space: nowrap;
+
+  background: black;
+
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}

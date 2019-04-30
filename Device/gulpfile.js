@@ -114,7 +114,7 @@ gulp.task(`build`, [`assemble`, `imagemin`]);
 
 gulp.task(`browser-sync`,()=> {
   server.init({
-    server: `./source`,
+    server: `./source/`,
     notify: false,
     open: true,
     port: 3502,

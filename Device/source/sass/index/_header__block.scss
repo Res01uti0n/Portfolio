@@ -18,6 +18,20 @@
   }
 }
 
+.header--catalog {
+  min-height: 185px;
+  &:after {
+    background: $yell;
+    content: '';
+    height: 185px;
+    left: 0;
+    position: absolute;
+    top: 40px;
+    width: 1160px;
+    z-index: -1;
+  }
+}
+
 .header__wrapper {
   display: flex;
   margin-top: 10px;
@@ -42,6 +56,11 @@
   text-decoration: none;
   text-transform: uppercase;
   @extend %events-1;
+}
+
+.logo--catalog {
+  position: relative;
+  top: 5px;
 }
 
 .search__box {
@@ -107,6 +126,15 @@
 .item--enter {
   background: url(../img/index/user.svg) no-repeat 2px 3px;
   margin-right: 171px;
+}
+
+.item__enter--active {
+  margin-right: 21px;
+}
+
+.item__out {
+  margin-left: 20px;
+  opacity: .3;
 }
 
 .item--compare {
@@ -181,10 +209,14 @@
   background: $yell;
   display: none;
   justify-content: space-between;
+  left: 0;
   margin-top: -11px;
   min-height: 160px;
-  padding-right: 500px;
-  position: relative;
+  padding-left: 56px;
+  padding-right: 560px;
+  position: absolute;
+  top: 192px;
+  width: 544px;
   z-index: 10;
 }
 

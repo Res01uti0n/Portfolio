@@ -1,0 +1,51 @@
+/*Интро*/
+
+.intro__block {
+  padding: 10px 0 0 60px;
+}
+
+.intro__title {
+  font-size: 47px;
+  letter-spacing: .4px;
+  line-height: 48px;
+  margin-bottom: 25px;
+}
+
+.pagination__list {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.pag__item {
+  color: $blAct;
+  font-family: OpenSans, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $blHov;
+    outline: none;
+  }
+  &:active {
+    color: $pagColor;
+  }
+}
+
+.pag__item:not(.main) {
+  font-size: 14px;
+  margin-left: 38.5px;
+  position: relative;
+  &::before {
+    background: url(../img/catalog/nav-arrow.svg) no-repeat center center;
+    color: $bl;
+    content: '';
+    height: 9px;
+    left: -22.5px;
+    position: absolute;
+    top: 5.5px;
+    width: 5px;
+  }
+}
