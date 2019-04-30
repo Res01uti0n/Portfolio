@@ -1,3 +1,5 @@
+/*Популярные*/
+
 .popular__block {
   margin-top: 105px;
 }
@@ -37,37 +39,37 @@
 
 .item--vr {
   &::before {
-    background: $yell url(../img/popular-1.svg) no-repeat center;
+    background: $yell url(../img/index/popular-1.svg) no-repeat center;
   }
 }
 
 .item--monopod {
   &::before {
-    background: $yell url(../img/popular-2.svg) no-repeat center bottom;
+    background: $yell url(../img/index/popular-2.svg) no-repeat center bottom;
   }
 }
 
 .item--camera {
   &::before {
-    background: $yell url(../img/popular-3.svg) no-repeat 50px center;
+    background: $yell url(../img/index/popular-3.svg) no-repeat 50px center;
   }
 }
 
 .item--bracer {
   &::before {
-    background: $yell url(../img/popular-4.svg) no-repeat 30px 50px;
+    background: $yell url(../img/index/popular-4.svg) no-repeat 30px 50px;
   }
 }
 
 .item--watch {
   &::before {
-    background: $yell url(../img/popular-5.png) no-repeat 55px center;
+    background: $yell url(../img/index/popular-5.png) no-repeat 55px center;
   }
 }
 
 .item--cwadro {
   &::before {
-    background: $yell url(../img/poppular-6.png) no-repeat center 50px;
+    background: $yell url(../img/index/poppular-6.png) no-repeat center 50px;
   }
 }
 

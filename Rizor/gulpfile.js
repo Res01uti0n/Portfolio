@@ -88,7 +88,7 @@ gulp.task(`js-watch`, [`scripts`], (done) => {
   done();
 });
 
-gulp.task(`serve`, [`assemble`], () => {
+gulp.task(`serve`,[`assemble`],() => {
   server.init({
     server: `./main`,
     notify: false,

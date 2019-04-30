@@ -39,12 +39,12 @@ body {
   font-weight: 900;
   margin: 0;
   padding: 0;
-  position: relative;
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
+  position: relative;
   width: 1160px;
 }
 
@@ -68,11 +68,11 @@ $inputText: #adadad;
 $invalid: #f6dada;
 $shadow: rgba(0, 0, 0, .2);
 
-@import "header__block";
-@import "slider__block";
-@import "popular__block";
-@import "serveses__block";
-@import "brands__block";
-@import "info__block";
-@import "footer__block";
-@import "modals__block";
+@import "index/header__block";
+@import "index/slider__block";
+@import "index/popular__block";
+@import "index/serveses__block";
+@import "index/brands__block";
+@import "index/info__block";
+@import "index/footer__block";
+@import "index/modals__block";

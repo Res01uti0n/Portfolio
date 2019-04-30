@@ -1,10 +1,12 @@
+/*Модальные окна*/
+
 .write-us__modal {
   align-items: center;
   background: $wh;
   box-shadow: -10px 10px 20px $shadow;
   display: none;
   flex-direction: column;
-  left: 280px;
+  left: 100px;
   min-height: 553px;
   position: absolute;
   top: 1057px;
@@ -146,7 +148,7 @@
   box-shadow: -10px 10px 20px $shadow;
   display: none;
   height: 560px;
-  left: 280px;
+  left: 100px;
   position: absolute;
   width: 960px;
 }

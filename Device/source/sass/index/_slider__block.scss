@@ -26,7 +26,7 @@
 .slide--1 {
   position: relative;
   &::before{
-    background: url(../img/01.png);
+    background: url(../img/index/01.png);
     content: '';
     height: 125px;
     position: absolute;
@@ -41,7 +41,7 @@
 .slide--2 {
   position: relative;
   &::before{
-    background: url(../img/02.png);
+    background: url(../img/index/02.png);
     content: '';
     height: 125px;
     position: absolute;
@@ -56,7 +56,7 @@
 .slide--3 {
   position: relative;
   &::before{
-    background: url(../img/03.png);
+    background: url(../img/index/03.png);
     content: '';
     height: 125px;
     position: absolute;
