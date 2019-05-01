@@ -982,17 +982,34 @@ body {
     top: 5.5px;
     width: 5px; }
 
+.main-content__wrapper {
+  align-items: flex-start;
+  display: flex; }
+
+.goods__wrapper {
+  margin-top: 30px; }
+
 /*Фильтр*/
 .filter__block {
-  border: 1px solid black;
-  margin: 45px 0 0 25px;
+  background: #efefef;
+  margin: 30px 0 0 25px;
+  padding-top: .1px;
+  position: relative;
   width: 300px; }
+  .filter__block::before {
+    background: #efefef;
+    content: "";
+    height: 100%;
+    right: 0;
+    position: absolute;
+    width: 468px;
+    z-index: -1; }
 
 .filter__title {
   font-size: 16px;
   letter-spacing: 3.5px;
   line-height: 24px;
-  margin: 22px 0 92.5px 35px;
+  margin: 23px 0 93px 35px;
   text-transform: uppercase; }
 
 .filter__block fieldset {
@@ -1008,16 +1025,252 @@ body {
   position: absolute;
   top: 12px; }
 
+/*Поле стоимости*/
+.cost__field {
+  padding-bottom: 33.5px;
+  padding-top: 79px; }
+
 .cost__range {
+  background: transparent;
+  color: transparent;
   position: absolute;
-  bottom: 10px;
+  height: 40px;
   left: 50%;
-  width: 210px;
-  height: 30px;
   text-align: center;
-  color: #ffffff;
-  white-space: nowrap;
-  background: black;
+  top: 50px;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  transform: translateX(-50%); }
+  transform: translateX(-50%);
+  width: 240px;
+  white-space: nowrap;
+  z-index: 100; }
+
+.cost-level__value {
+  display: none; }
+
+.cost-level__line {
+  background: #dbdbdb;
+  font-size: 0;
+  height: 2px;
+  left: 25px;
+  right: 20px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.cost-level__pin {
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 0 #dadada;
+  cursor: move;
+  height: 21px;
+  left: 0;
+  margin: -12.5px 0 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 21px;
+  z-index: 1; }
+  .cost-level__pin::before {
+    background: #adadad;
+    border-radius: 50%;
+    content: '';
+    height: 4px;
+    left: 9px;
+    position: absolute;
+    top: 8.5px;
+    width: 4px; }
+
+.pin--2 {
+  left: 57%; }
+
+.cost-level__depth {
+  background-color: #91c92f;
+  height: 100%;
+  position: absolute;
+  width: 60%; }
+
+.output__value {
+  color: #bebebe;
+  display: flex;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px; }
+
+.output__max,
+.output__min {
+  width: 90px; }
+
+/*Поле цвета*/
+.color__field {
+  padding-bottom: 21px;
+  padding-top: 63px; }
+
+.color__item {
+  margin-bottom: 21.5px; }
+
+.color__field input[type='checkbox'] {
+  margin: 0 0 0 7px;
+  opacity: 0;
+  position: absolute;
+  z-index: -1; }
+
+.color__field input[type='checkbox'] + label {
+  cursor: pointer;
+  font-family: OpenSans, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0 0 15px 40px;
+  position: relative; }
+
+.color__field input[type='checkbox'] + label::before {
+  background: transparent;
+  border: 2px solid #000;
+  border-radius: 3px;
+  content: "";
+  height: 19px;
+  left: 0;
+  position: absolute;
+  top: -2px;
+  width: 19px; }
+
+.color__field input[type='checkbox']:hover + label::before,
+.color__field input[type='checkbox']:focus + label::before {
+  opacity: .6;
+  outline: none; }
+
+.color__field input[type='checkbox'] + label::after {
+  content: "";
+  height: 17px;
+  left: 3px;
+  opacity: 0;
+  position: absolute;
+  top: 1px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  width: 22px; }
+
+.color__field input[type='checkbox']:checked + label::after {
+  background: url(../img/catalog/checkbox-on.svg) no-repeat center;
+  opacity: 1; }
+
+.color__field input[type='checkbox']:hover + label::after {
+  opacity: .6; }
+
+/*Bluetooth поле*/
+.bluetooth__field {
+  padding-top: 63px; }
+
+.bluetooth__item {
+  margin-bottom: 21.5px; }
+
+.bluetooth__field input[type='radio'] {
+  margin: 0 0 0 7px;
+  opacity: 0;
+  position: absolute;
+  z-index: -1; }
+
+.bluetooth__field input[type='radio'] + label {
+  cursor: pointer;
+  font-family: OpenSans, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0 0 15px 40px;
+  position: relative; }
+
+.bluetooth__field input[type='radio'] + label::before {
+  background: transparent;
+  border: 4px solid #000;
+  border-radius: 50%;
+  content: "";
+  height: 17px;
+  left: 0;
+  position: absolute;
+  top: -3.5px;
+  width: 17px; }
+
+.bluetooth__field input[type='radio']:hover + label::before,
+.bluetooth__field input[type='radio']:focus + label::before {
+  opacity: .6;
+  outline: none; }
+
+.bluetooth__field input[type='radio'] + label::after {
+  background: #000;
+  border-radius: 50%;
+  content: "";
+  height: 9px;
+  left: 7.5px;
+  opacity: 0;
+  position: absolute;
+  top: 4px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  width: 9px; }
+
+.bluetooth__field input[type='radio']:checked + label::after {
+  opacity: 1; }
+
+.bluetooth__field input[type='radio']:hover + label::after {
+  opacity: .6; }
+
+.btn--filter {
+  background: transparent;
+  border: none;
+  font-weight: 900;
+  margin: 10px 0 0 35px;
+  position: relative;
+  width: 200px;
+  z-index: 1; }
+  .btn--filter::before {
+    width: 200px;
+    z-index: -1; }
+
+.item__disabled {
+  opacity: .25; }
+
+/*Сортировка*/
+.sorting__block {
+  align-items: center;
+  display: flex;
+  min-height: 70px;
+  width: 760px; }
+
+.sorting__title {
+  font-size: 16px;
+  letter-spacing: 3.5px;
+  line-height: 24px;
+  margin-left: 75px;
+  text-transform: uppercase; }
+
+.sort__list {
+  display: flex;
+  list-style: none;
+  margin: -1px 0 0  12px; }
+
+.sort__item {
+  color: #000;
+  font-family: OpenSans,sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  margin-right: 32.5px;
+  opacity: .3;
+  text-decoration: none; }
+  .sort__item:hover, .sort__item:focus {
+    opacity: .6;
+    outline: none; }
+  .sort__item:active {
+    opacity: 1; }
+
+.sort--active {
+  opacity: 1; }
+
+.sort-nav__list {
+  display: flex;
+  list-style: none; }

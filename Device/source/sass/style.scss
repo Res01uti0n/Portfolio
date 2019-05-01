@@ -68,6 +68,12 @@ $inputText: #adadad;
 $invalid: #f6dada;
 $shadow: rgba(0, 0, 0, .2);
 $pagColor: rgba(0, 0, 0, .1);
+$rangeColor: #dbdbdb;
+$pinShadow: #dadada;
+$costColor: #91c92f;
+$output: #bebebe;
+$filterBack: #efefef;
+$sortingItem: #a4a4a4;
 
 @import "index/header__block";
 @import "index/slider__block";
@@ -79,3 +85,4 @@ $pagColor: rgba(0, 0, 0, .1);
 @import "index/modals__block";
 @import "catalog/intro__block";
 @import "catalog/filter__block";
+@import "catalog/sorting__block";
