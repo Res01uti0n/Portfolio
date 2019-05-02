@@ -4,7 +4,17 @@
   align-items: center;
   display: flex;
   min-height: 70px;
-  width: 760px;
+  position: relative;
+  width: 835px;
+  &::before {
+    background: $bl;
+    content: '';
+    height: 70px;
+    opacity: .08;
+    right: -140px;
+    position: absolute;
+    width: 1440px;
+  }
 }
 
 .sorting__title {
@@ -40,11 +50,32 @@
   }
 }
 
-.sort--active {
-  opacity: 1;
-}
-
 .sort-nav__list {
   display: flex;
   list-style: none;
+  margin-left: auto;
+}
+
+.sort-nav__item {
+  opacity: .2;
+  &:hover,
+  &:focus {
+    opacity: .4;
+    outline: none;
+  }
+  &:active {
+    opacity: 1;
+  }
+}
+
+.sort__down {
+  margin-left: 20px;
+}
+
+.sort__down img {
+  transform: rotate(180deg);
+}
+
+.sort--active {
+  opacity: 1;
 }
