@@ -78,13 +78,13 @@ $sortingBack: #ebebeb;
 $whCard: rgba(255, 255, 255, .7);
 $greyHov: #d9d9d9;
 
-@import "index/header__block";
+@import "common/header__block";
 @import "index/slider__block";
 @import "index/popular__block";
 @import "index/serveses__block";
 @import "index/brands__block";
 @import "index/info__block";
-@import "index/footer__block";
+@import "common/footer__block";
 @import "index/modals__block";
 @import "catalog/intro__block";
 @import "catalog/filter__block";
