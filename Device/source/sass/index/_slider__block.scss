@@ -189,7 +189,7 @@
   margin-left: 21px;
   width: 10px;
   &:focus {
-    outline: none;
+    outline: 3px solid $sortingBack;
   }
 }
 

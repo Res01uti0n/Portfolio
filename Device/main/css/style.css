@@ -387,7 +387,7 @@ body {
     z-index: -1; }
   .options__btn:hover, .options__btn:focus {
     background: #f0c52e;
-    outline: 3px solid #ebebeb; }
+    outline: none; }
   .options__btn:active {
     color: rgba(0, 0, 0, 0.3); }
 
@@ -407,7 +407,7 @@ body {
   margin-left: 21px;
   width: 10px; }
   .option__item:focus {
-    outline: none; }
+    outline: 3px solid #ebebeb; }
 
 .option--active {
   position: relative; }
@@ -1041,8 +1041,6 @@ body {
   left: 50%;
   text-align: center;
   top: 50px;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 240px;
   white-space: nowrap;
@@ -1059,8 +1057,6 @@ body {
   right: 20px;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
 
 .cost-level__pin {
@@ -1073,8 +1069,6 @@ body {
   margin: -12.5px 0 0;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 21px;
   z-index: 1; }
@@ -1153,8 +1147,6 @@ body {
   opacity: 0;
   position: absolute;
   top: 1px;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
   transition: 0.2s;
   width: 22px; }
 
@@ -1211,8 +1203,6 @@ body {
   opacity: 0;
   position: absolute;
   top: 4.5px;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
   transition: 0.2s;
   width: 9px; }
 

@@ -39,7 +39,7 @@ gulp.task(`sass`, ()=> {
 });
 
 gulp.task(`scripts`, ()=> {
-  return gulp.src(`source/js/main.js`)
+  return gulp.src(`source/js/**/*.js`)
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(rollup({}, `iife`))
