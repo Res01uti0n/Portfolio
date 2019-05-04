@@ -32,8 +32,10 @@
   }
   &:hover,
   &:focus {
-    opacity: .3;
     outline: none;
+  }
+  &:active {
+    opacity: .3;
   }
 }
 
@@ -70,6 +72,12 @@
 .item--cwadro {
   &::before {
     background: $yell url(../img/index/poppular-6.png) no-repeat center 50px;
+  }
+}
+
+.item--hover {
+  &::before {
+    background-color: $orang;
   }
 }
 

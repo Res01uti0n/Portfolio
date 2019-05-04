@@ -407,7 +407,7 @@ body {
   margin-left: 21px;
   width: 10px; }
   .option__item:focus {
-    outline: 3px solid #ebebeb; }
+    outline: 3px solid #f0c52e; }
 
 .option--active {
   position: relative; }
@@ -471,8 +471,9 @@ body {
     top: 0;
     width: 160px; }
   .popular__item:hover, .popular__item:focus {
-    opacity: .3;
     outline: none; }
+  .popular__item:active {
+    opacity: .3; }
 
 .item--vr::before {
   background: #f7e296 url(../img/index/popular-1.svg) no-repeat center; }
@@ -491,6 +492,9 @@ body {
 
 .item--cwadro::before {
   background: #f7e296 url(../img/index/poppular-6.png) no-repeat center 50px; }
+
+.item--hover::before {
+  background-color: #f0c52e; }
 
 /*Услуги*/
 .serveses__block {
@@ -695,6 +699,7 @@ body {
     width: 4px; }
 
 .info__map {
+  cursor: pointer;
   margin-top: 10px; }
 
 .info--btn {
