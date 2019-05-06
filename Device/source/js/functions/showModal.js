@@ -31,6 +31,8 @@ const showWriteUs = (evt) => {
   evt.preventDefault();
 
   addClass(writeUsModal, MODAL_CLASS.modal);
+  const inputName = writeUsModal.querySelector(`#name`);
+  inputName.focus();
 
   const btnClose = writeUsModal.querySelector(`.modal-close__btn`);
   btnClose.addEventListener(`click`, hideWriteUs);

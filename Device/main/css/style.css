@@ -251,6 +251,7 @@ body {
 /*Слайдер*/
 .slider__block {
   margin-top: -140px;
+  max-height: 485px;
   padding: 0 80px;
   position: relative; }
 
@@ -1094,6 +1095,7 @@ body {
   background-color: #91c92f;
   height: 100%;
   position: absolute;
+  left: 0;
   width: 60%; }
 
 .output__value {
