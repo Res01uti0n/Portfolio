@@ -1,3 +1,4 @@
+/*Регулировка тени*/
 const shadow = document.querySelector(`.cost-level__depth`);
 
 const getRightSize = (size1, size2)=> {
@@ -34,4 +35,4 @@ const getShadowSize = (max) => {
 
 };
 
-export {getShadowSize};
+export {getShadowSize, shadow};

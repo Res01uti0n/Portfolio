@@ -1,11 +1,11 @@
-import {showBtn, hideBtn, showAndCloseNav, showWriteUs, showMapModal} from "./functions/showModal";
+import {showBtn, hideBtn, showAndCloseNav, showWriteUs, showMapModal, searchBtn} from "./functions/showModal";
 import {firstSliderHandler, secondSliderHandler} from "./functions/changeSlide";
 import {changeDecor} from "./functions/changeDecor";
-
-const searchInput = document.querySelector(`.search__input`);
+import {searchInput, setSearch} from "./functions/searchInput";
 
 searchInput.addEventListener(`focus`, showBtn);
-searchInput.addEventListener(`blur`,  hideBtn);
+searchInput.addEventListener(`blur`, hideBtn);
+searchBtn.addEventListener(`click`, setSearch);
 
 const btnCatalog = document.querySelector(`.item--catalog`);
 

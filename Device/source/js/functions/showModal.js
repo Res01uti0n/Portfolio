@@ -21,7 +21,9 @@ const showBtn = (evt)=> {
 };
 
 const hideBtn = (evt)=> {
-  removeClass(searchBtn, MODAL_CLASS.searchBtn);
+  setTimeout(()=> {
+    removeClass(searchBtn, MODAL_CLASS.searchBtn);
+  }, 3000);
 };
 
 /*Напиши нам*/
@@ -65,6 +67,6 @@ const showAndCloseNav = (evt)=> {
   navExtra.classList.toggle(MODAL_CLASS.navExtra);
 };
 
-export {showBtn, hideBtn, showAndCloseNav, showWriteUs, showMapModal};
+export {showBtn, hideBtn, showAndCloseNav, showWriteUs, showMapModal, searchBtn};
 
 

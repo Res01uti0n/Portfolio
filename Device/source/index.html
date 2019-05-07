@@ -11,11 +11,11 @@
       <header class="header__block">
         <a href="#" class="header__logo">Device</a>
         <div class="header__wrapper">
-          <div class="search__box">
+          <form class="search__box">
             <label class="search__label" for="search"></label>
-            <input class="search__input" id="search" type="text" value="Поиск по сайту">
-            <button class="search__btn">Найти</button>
-          </div>
+            <input class="search__input" id="search" type="text" minlength="3" value="Поиск по сайту" required>
+            <button class="search__btn" type="submit">Найти</button>
+          </form>
           <ul class="user__list">
             <li><a href="#" class="user__item item--enter">Войти</a></li>
             <li><a href="#" class="user__item item--compare">Сравнить</a></li>

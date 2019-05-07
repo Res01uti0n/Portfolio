@@ -11,11 +11,11 @@
       <header class="header__block header--catalog">
         <a href="index.html" class="header__logo logo--catalog">Device</a>
         <div class="header__wrapper">
-          <div class="search__box">
+          <form class="search__box">
             <label class="search__label" for="search"></label>
-            <input class="search__input" id="search" type="text" value="Поиск по сайту">
+            <input class="search__input" id="search" type="text" minlength="3" value="Поиск по сайту" required>
             <button class="search__btn">Найти</button>
-          </div>
+          </form>
           <ul class="user__list">
             <li><a href="#" class="user__item item--enter item__enter--active">Валентин Петухов <span class="item__out">Выйти</span></a></li>
             <li><a href="#" class="user__item item--compare">Сравнить</a></li>
@@ -60,9 +60,9 @@
                 <legend class="field__title">Стоимость</legend>
                 <div class="cost__range">
                   <label for="min-cost" class="cost-level__value"></label>
-                  <input id="min-cost" class="cost-level__value" type="number" name="cost-level" value="20">
+                  <input id="min-cost" class="cost-level__value min-cost" type="text" name="cost-level">
                   <label for="max-cost" class="cost-level__value"></label>
-                  <input id="max-cost" class="cost-level__value" type="number" name="cost-level" value="20">
+                  <input id="max-cost" class="cost-level__value max-cost" type="text" name="cost-level">
                   <div class="cost-level__line">
                     <div class="cost-level__pin" tabindex="0">Кнопка изменения цены</div>
                     <div class="cost-level__depth">Показатель изменения</div>
@@ -127,6 +127,19 @@
               </ul>
             </section>
             <section class="goods__block">
+              <template id="good">
+                <div class="good__card">
+                <img class="good__img" src="img/catalog/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
+                <div class="card__options">
+                  <button class="options__btn card__btn--basket">В корзину</button>
+                  <button class="btn--compare">Добавить к сравнению</button>
+                </div>
+                <div class="good__info">
+                  <h4 class="good__title">Любительская селфи-палка</h4>
+                  <span class="good__price">500 руб.</span>
+                </div>
+                </div>
+              </template>
               <div class="good__card">
                 <img class="good__img" src="img/catalog/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
                 <div class="card__options">

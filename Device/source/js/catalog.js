@@ -1,10 +1,11 @@
-import {showBtn, hideBtn, showAndCloseNav} from "./functions/showModal";
+import {showBtn, hideBtn, showAndCloseNav, searchBtn} from "./functions/showModal";
 import {changeRange} from "./functions/dragAndDropCost";
-
-const searchInput = document.querySelector(`.search__input`);
+import {searchInput, setSearch} from "./functions/searchInput";
+import {createGoods} from "./functions/createGoods";
 
 searchInput.addEventListener(`focus`, showBtn);
 searchInput.addEventListener(`blur`,  hideBtn);
+searchBtn.addEventListener(`click`, setSearch);
 
 const btnCatalog = document.querySelector(`.item--catalog`);
 
@@ -15,3 +16,5 @@ const costPin2 = document.querySelector(`.pin--2`);
 
 costPin.addEventListener(`mousedown`, changeRange);
 costPin2.addEventListener(`mousedown`, changeRange);
+
+/*createGoods();*/

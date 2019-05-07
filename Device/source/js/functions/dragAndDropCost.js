@@ -1,3 +1,4 @@
+/*Перемещение ползунка*/
 import {getShadowSize} from "./getShadowSize";
 import {getMinAndMaxPrice} from "./getMinMaxPrice";
 
@@ -14,9 +15,6 @@ const setPinPosition = (pin, pinXCoord) => {
 };
 
 const range = document.querySelector(`.cost-level__line`);
-const costPin = document.querySelector(`.cost-level__pin`);
-const costPin2 = document.querySelectorAll(`.pin--2`);
-const shadow = document.querySelector(`.cost-level__depth`);
 const MIN_X_RANGE = 0;
 const MAX_X_RANGE = 190;
 
@@ -58,4 +56,4 @@ const changeRange = (evt)=> {
   document.addEventListener(`mouseup`, onPinMouseUp);
 };
 
-export {changeRange, shadow};
+export {changeRange};
