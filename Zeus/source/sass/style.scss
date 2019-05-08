@@ -1,0 +1,58 @@
+/*Шрифты*/
+
+@font-face {
+  font-family: "Cinzel";
+  src: url("../fonts/CinzelDecorative/CinzelDecorative.woff") format("woff"),
+  url("../fonts/CinzelDecorative/CinzelDecorative.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;}
+
+@font-face {
+  font-family: "Cinzel";
+  src: url("../fonts/CinzelDecorative/CinzelDecorativeBlack.woff") format("woff"),
+  url("../fonts/CinzelDecorative/CinzelDecorativeBlack.woff") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;}
+
+@font-face {
+  font-family: "Amiri";
+  src: url("../fonts/Amiri/AmiriItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;}
+
+@font-face {
+  font-family: "Amiri";
+  src: url("../fonts/Amiri/AmiriRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;}
+
+/*Цвета*/
+
+$textColor: #b4ba98;
+$wh: #fff;
+$headerBack: rgba(26, 28, 15, 1);
+$elemColor: #cdb378;
+$bl: rgba(0, 0, 0, .1);
+
+/*Каркас*/
+
+body {
+  color: $textColor;
+  font-family: Amiri, sans-serif;
+  font-size: 24px;
+  line-height: 48px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 2000px;
+}
+
+@import "header__block";
