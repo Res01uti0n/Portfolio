@@ -31,7 +31,7 @@
 /*Цвета*/
 /*Каркас*/
 body {
-  background: #1a1c0f url(../img/body-back.jpg) 0 100%;
+  background: #1a1c0f;
   color: #b4ba98;
   font-family: Amiri, sans-serif;
   font-size: 24px;
@@ -63,11 +63,6 @@ body {
   margin-top: 120px;
   height: 162px;
   width: 153px; }
-  .header__logo:hover, .header__logo:focus {
-    opacity: .6;
-    outline: none; }
-  .header__logo:active {
-    opacity: .3; }
 
 .header__title {
   color: #fff;
@@ -130,127 +125,3 @@ body {
     top: 35px;
     transform: rotate(135deg);
     width: 13px; }
-
-.joy__block {
-  display: flex;
-  justify-content: space-between; }
-
-.joy__title {
-  color: #fff;
-  font-family: Cinzel, sans-serif;
-  font-size: 72px;
-  font-weight: 400;
-  line-height: 60px;
-  margin: 105px 0 0 220px; }
-
-.joy__text {
-  color: #cdb378;
-  margin: 17px 0 0 215px; }
-
-.joy__img {
-  margin-top: -35px; }
-
-.zeus__block {
-  background: #232615 url(../img/zeus-box.jpg) no-repeat 0 -145px;
-  margin-top: -245px;
-  min-height: 458px;
-  padding: 35px 0 0 210px;
-  position: relative;
-  width: 1515px;
-  z-index: 1; }
-
-.zeus__title {
-  color: #cdb378;
-  font-family: Cinzel, sans-serif;
-  font-size: 72px;
-  font-weight: 400;
-  line-height: 60px; }
-
-.zeus__text {
-  margin: -12px 0 0 5px;
-  width: 900px; }
-
-.btn {
-  align-items: center;
-  background: #272a18;
-  border: 2px solid #404429;
-  color: #fff;
-  display: flex;
-  font-size: 16px;
-  height: 53px;
-  justify-content: center;
-  line-height: 48px;
-  margin: 44.5px 0 0 6px;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 218px; }
-  .btn:hover, .btn:focus {
-    background: #404429;
-    outline: none; }
-  .btn:active {
-    opacity: .3; }
-
-.beer__box {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 1270px;
-  right: -25px;
-  position: absolute;
-  top: -295px;
-  width: 675px;
-  z-index: 10; }
-
-.beer__title {
-  color: #000;
-  font-family: Cinzel, sans-serif;
-  font-size: 60px;
-  line-height: 72px;
-  margin: 180px 0 0 108px; }
-
-.beer__img {
-  filter: brightness(60%); }
-
-.quality__block {
-  background: url(../img/Photo.jpg) no-repeat 0 0;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 890px; }
-
-.quality__title {
-  font-family: Cinzel, sans-serif;
-  font-size: 60px;
-  line-height: 72px;
-  margin: 135px 0 0 218px;
-  width: 525px; }
-
-.quality__text {
-  margin: 78px 0 0 216px;
-  width: 685px; }
-
-.text--2 {
-  margin-top: 50px; }
-
-.quality__img {
-  margin-top: -155px; }
-
-.footer__block {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 2210px; }
-
-.footer__title {
-  color: #cdb378;
-  font-family: Cinzel, sans-serif;
-  font-size: 72px;
-  font-weight: 400;
-  line-height: 60px;
-  margin-top: 185px; }
-
-.footer__text {
-  margin-top: 32px; }
-
-.btn--footer {
-  background: #1a190e;
-  margin: 17px 0 0 12px; }

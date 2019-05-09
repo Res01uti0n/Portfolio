@@ -36,11 +36,17 @@ $textColor: #b4ba98;
 $wh: #fff;
 $headerBack: rgba(26, 28, 15, 1);
 $elemColor: #cdb378;
-$bl: rgba(0, 0, 0, .1);
+$shadow: rgba(26, 28, 15, .60);
+$zeusBack: #232615;
+$btnColor: #272a18;
+$borderColor: #404429;
+$bl: #000;
+$btnFooter: #1a190e;
 
 /*Каркас*/
 
 body {
+  background: $headerBack url(../img/body-back.jpg) 0 100%;
   color: $textColor;
   font-family: Amiri, sans-serif;
   font-size: 24px;
@@ -56,3 +62,7 @@ body {
 }
 
 @import "header__block";
+@import "joy__block";
+@import "zeus__block";
+@import "quality__block";
+@import "footer__block";

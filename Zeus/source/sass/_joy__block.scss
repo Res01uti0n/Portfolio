@@ -1,0 +1,22 @@
+.joy__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.joy__title {
+  color: $wh;
+  font-family: Cinzel, sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 60px;
+  margin: 105px 0 0 220px;
+}
+
+.joy__text {
+  color: $elemColor;
+  margin: 17px 0 0 215px;
+}
+
+.joy__img {
+  margin-top: -35px;
+}

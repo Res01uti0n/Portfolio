@@ -1,0 +1,70 @@
+.zeus__block {
+  background: $zeusBack url(../img/zeus-box.jpg) no-repeat 0 -145px;
+  margin-top: -245px;
+  min-height: 458px;
+  padding: 35px 0 0 210px;
+  position: relative;
+  width: 1515px;
+  z-index: 1;
+}
+
+.zeus__title {
+  color: $elemColor;
+  font-family: Cinzel, sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.zeus__text {
+  margin: -12px 0 0 5px;
+  width: 900px;
+}
+
+.btn {
+  align-items: center;
+  background: $btnColor;
+  border: 2px solid $borderColor;
+  color: $wh;
+  display: flex;
+  font-size: 16px;
+  height: 53px;
+  justify-content: center;
+  line-height: 48px;
+  margin: 44.5px 0 0 6px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 218px;
+  &:hover,
+  &:focus {
+    background: $borderColor;
+    outline: none;
+  }
+  &:active {
+    opacity: .3;
+  }
+}
+
+.beer__box {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 1270px;
+  right: -25px;
+  position: absolute;
+  top: -295px;
+  width: 675px;
+  z-index: 10;
+}
+
+.beer__title {
+  color: $bl;
+  font-family: Cinzel, sans-serif;
+  font-size: 60px;
+  line-height: 72px;
+  margin: 180px 0 0 108px;
+}
+
+.beer__img {
+  filter: brightness(60%);
+}

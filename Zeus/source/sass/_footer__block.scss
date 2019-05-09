@@ -1,0 +1,24 @@
+.footer__block {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2210px;
+}
+
+.footer__title {
+  color: $elemColor;
+  font-family: Cinzel, sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 60px;
+  margin-top: 185px;
+}
+
+.footer__text {
+  margin-top: 32px;
+}
+
+.btn--footer {
+  background: $btnFooter;
+  margin: 17px 0 0 12px;
+}

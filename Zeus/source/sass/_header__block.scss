@@ -1,9 +1,10 @@
 .header__block {
-  background: $headerBack url(../img/Photo-Overlay.png) no-repeat;
+  background: $headerBack url(../img/header-back.png) no-repeat;
+
 }
 
 .header__box {
-  background: $bl;
+  background: $shadow;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -20,6 +21,14 @@
   margin-top: 120px;
   height: 162px;
   width: 153px;
+  &:hover,
+  &:focus {
+    opacity: .6;
+    outline: none;
+  }
+  &:active {
+    opacity: .3;
+  }
 }
 
 .header__title {
