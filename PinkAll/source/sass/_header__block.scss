@@ -1,0 +1,47 @@
+.header__block {
+  align-items: center;
+  background: $headerBack;
+  display: flex;
+  justify-content: space-between;
+  min-height: 66px;
+  padding: 0 20px;
+}
+
+.header__logo {
+  background: url(../img/logo.svg) no-repeat 1px 0;
+  color: transparent;
+  font-size: 1px;
+  margin-top: -1px;
+  height: 22px;
+  width: 74px;
+  &:hover,
+  &:focus {
+    background: url(../img/logo-hov.svg) no-repeat 1px 0;
+    outline: none;
+  }
+  &:active {
+    opacity: .3;
+  }
+}
+
+.nav__btn {
+  background: url(../img/nav.svg) no-repeat 0 0;
+  border: none;
+  color: transparent;
+  font-size: 1px;
+  height: 24px;
+  width: 50px;
+  &:hover,
+  &:focus {
+    background: url(../img/nav-hov.svg) no-repeat 0 0;
+    outline: none;
+  }
+  &:active {
+    opacity: .3;
+  }
+}
+
+.nav__box {
+  display: none;
+}
+
