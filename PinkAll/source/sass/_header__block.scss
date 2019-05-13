@@ -1,4 +1,10 @@
+/*Шапка*/
 .header__block {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__box {
   align-items: center;
   background: $headerBack;
   display: flex;
@@ -12,7 +18,7 @@
   color: transparent;
   font-size: 1px;
   margin-top: -1px;
-  height: 22px;
+  height: 23px;
   width: 74px;
   &:hover,
   &:focus {
@@ -44,4 +50,91 @@
 .nav__box {
   display: none;
 }
+
+.nav__box--show {
+  display: flex;
+}
+
+.header--open {
+  background: $colorText;
+  border-bottom: 1px solid $bl;
+  min-height: 69px;
+}
+
+.btn--close {
+  background: none;
+  height: 26px;
+  position: relative;
+  width: 23px;
+  &::before {
+    background: $wh;
+    border-radius: 2px;
+    content: '';
+    height: 3px;
+    left: -2px;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 10px;
+    width: 30px;
+  }
+  &::after {
+    background: $wh;
+    border-radius: 2px;
+    content: '';
+    height: 3px;
+    left: -2px;
+    position: absolute;
+    transform: rotate(135deg);
+    top: 10px;
+    width: 30px;
+  }
+  &:hover,
+  &:focus {
+    background: none;
+  }
+}
+
+.btn--close:hover::before,
+.btn--close:hover::after {
+  background: $pink;
+}
+
+.nav__list {
+  align-items: center;
+  background: $colorText;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-top: 0;
+  padding-left: 0;
+  width: 100%;
+}
+
+.nav__item {
+  align-items: center;
+  border-bottom: 1px solid $bl;
+  border-top: 1px solid $navBorder;
+  color: $wh;
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 32px;
+  justify-content: center;
+  min-height: 62px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 320px;
+  &:hover,
+  &:focus {
+    color: $pink;
+    outline: none;
+  }
+  &:active {
+    opacity: .3;
+  }
+}
+
+
+
+
 

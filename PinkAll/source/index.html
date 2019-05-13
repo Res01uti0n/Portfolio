@@ -10,10 +10,12 @@
   <body>
   <div class="container">
     <header class="header__block">
-      <a href="#" class="header__logo">Лого</a>
-      <button class="nav__btn">Навигация</button>
+      <div class="header__box">
+        <a href="#" class="header__logo">Лого</a>
+        <button class="nav__btn">Навигация</button>
+      </div>
       <nav class="nav__box">
-        <ul class="nav__List">
+        <ul class="nav__list">
           <li><a href="#" class="nav__item">Главная</a></li>
           <li><a href="#" class="nav__item">Фотографии</a></li>
           <li><a href="#" class="nav__item">Конкурс</a></li>
@@ -22,32 +24,36 @@
       </nav>
     </header>
     <main>
-      <section>
-        <a href="#">Скачать приложение</a>
-        <ul>
-          <li><img src="img/apple.svg" alt="Apple" height="56" width="46"></li>
-          <li><img src="img/android.svg" alt="Android" height="47" width="42"></li>
-          <li><img src="img/microsoft.svg" alt="Microsoft" width="43" height="42"></li>
-        </ul>
-        <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </section>
-      <section>
-        <span>Устали от серости мегаполиса?</span>
-        <h2>Нам есть, что вам предложить!</h2>
-        <div>
-          <h3>Поднимает настроение</h3>
-          <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        </div>
-        <div>
-          <h3>Меняет мир вокруг</h3>
-          <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </div>
-        <div>
-          <h3>Заводит новых друзей</h3>
-          <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+      <section class="intro__block">
+        <div class="intro__info">
+          <a class="intro__btn" href="#">Скачать приложение</a>
+          <ul class="platform__list">
+            <li><img src="img/apple.svg" alt="Apple" height="56" width="46"></li>
+            <li><img src="img/android.svg" alt="Android" height="47" width="42"></li>
+            <li><img src="img/microsoft.svg" alt="Microsoft" width="43" height="42"></li>
+          </ul>
+          <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
-      <section>
+      <section class="features__block">
+        <b class="features__quest">Устали от серости мегаполиса?</b>
+        <h2 class="features__title">Нам есть, что вам предложить!</h2>
+        <div class="features__box">
+          <div class="feature">
+            <h3 class="feature__title">Поднимает настроение</h3>
+            <p class="feature__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </div>
+          <div class="feature">
+            <h3 class="feature__title">Меняет мир вокруг</h3>
+            <p class="feature__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </div>
+          <div class="feature">
+            <h3 class="feature__title">Заводит новых друзей</h3>
+            <p class="feature__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
+        </div>
+      </section>
+      <section class="time__block">
         <img src="#" alt="Таймер">
         <div>
           <h3>Эффект на 24 часа!</h3>
@@ -55,36 +61,36 @@
           <a href="#">Узнать больше об исследовании</a>
         </div>
       </section>
-      <section>
-        <div>
-          <h4>Николай Петров</h4>
-          <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      <section class="reviews__block">
+        <div class="review">
+          <h4 class="review__author">Николай Петров</h4>
+          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </div>
-        <ul>
-          <li><button>1</button></li>
-          <li><button>2</button></li>
-          <li><button>3</button></li>
+        <ul class="slider__list">
+          <li><a href="#" class="slide__btn slide--active">1</a></li>
+          <li><a href="#" class="slide__btn">2</a></li>
+          <li><a href="#" class="slide__btn">3</a></li>
         </ul>
       </section>
-      <section>
-        <table>
+      <section class="packets__block">
+        <table class="packets__table">
           <tr>
-            <th>База <span>1,99 USD</span></th><th>Стандарт <span>3,99 USD</span></th><th>Анлим <span>9,99 USD</span></th>
+            <th class="table__title">База <span>1,99 USD</span></th><th class="table__title">Стандарт <span>3,99 USD</span></th><th class="table__title">Анлим <span>9,99 USD</span></th>
           </tr>
           <tr>
-            <td>Розовый фильтр</td><td>Розовый фильтр</td><td>Розовый фильтр</td><td>Розовый фильтр</td>
+            <td class="table__cell">Розовый фильтр</td><td class="table__cell">Розовый фильтр</td><td class="table__cell">Розовый фильтр</td><td class="table__cell">Розовый фильтр</td>
           </tr>
           <tr>
-            <td>Смайлики</td><td>Смайлики</td><td>Смайлики</td><td>Смайлики</td>
+            <td class="table__cell">Смайлики</td><td class="table__cell">Смайлики</td><td class="table__cell">Смайлики</td><td>Смайлики</td>
           </tr>
           <tr>
-            <td>Комменатрии</td><td>Комменатрии</td><td>Комменатрии</td><td>Комменатрии</td>
+            <td class="table__cell">Комменатрии</td><td class="table__cell">Комменатрии</td><td class="table__cell">Комменатрии</td><td class="table__cell">Комменатрии</td>
           </tr>
         </table>
-        <ul>
-          <li><button>1</button></li>
-          <li><button>2</button></li>
-          <li><button>3</button></li>
+        <ul class="slider__list">
+          <li><a href="#" class="slide__btn slide--active">1</a></li>
+          <li><a href="#" class="slide__btn">2</a></li>
+          <li><a href="#" class="slide__btn">3</a></li>
         </ul>
       </section>
       <section>

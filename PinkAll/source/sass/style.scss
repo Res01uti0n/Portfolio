@@ -44,6 +44,13 @@
 
 $colorText: #283645;
 $headerBack: rgba(0, 0, 0, .3);
+$wh: #fff;
+$pink: #d22856;
+$bl: #000;
+$navBorder: #485461;
+$introBack: #1d2631;
+$pinkAct: rgba(210, 40, 86, .3);
+$slideBtn: #bec2c7;
 
 /*Каркас*/
 
@@ -57,10 +64,15 @@ body {
 }
 
 .container {
+  background: url(../img/back-mobile.jpg) no-repeat 0 0;
   margin-left: auto;
   margin-right: auto;
   width: 320px;
 }
 
 @import "header__block";
+@import "intro__block";
+@import "features__block";
+@import "time__block";
+@import "reviews__block";
 

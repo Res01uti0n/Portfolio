@@ -39,11 +39,17 @@ body {
   padding: 0; }
 
 .container {
+  background: url(../img/back-mobile.jpg) no-repeat 0 0;
   margin-left: auto;
   margin-right: auto;
   width: 320px; }
 
+/*Шапка*/
 .header__block {
+  display: flex;
+  flex-direction: column; }
+
+.header__box {
   align-items: center;
   background: rgba(0, 0, 0, 0.3);
   display: flex;
@@ -56,7 +62,7 @@ body {
   color: transparent;
   font-size: 1px;
   margin-top: -1px;
-  height: 22px;
+  height: 23px;
   width: 74px; }
   .header__logo:hover, .header__logo:focus {
     background: url(../img/logo-hov.svg) no-repeat 1px 0;
@@ -79,3 +85,218 @@ body {
 
 .nav__box {
   display: none; }
+
+.nav__box--show {
+  display: flex; }
+
+.header--open {
+  background: #283645;
+  border-bottom: 1px solid #000;
+  min-height: 69px; }
+
+.btn--close {
+  background: none;
+  height: 26px;
+  position: relative;
+  width: 23px; }
+  .btn--close::before {
+    background: #fff;
+    border-radius: 2px;
+    content: '';
+    height: 3px;
+    left: -2px;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 10px;
+    width: 30px; }
+  .btn--close::after {
+    background: #fff;
+    border-radius: 2px;
+    content: '';
+    height: 3px;
+    left: -2px;
+    position: absolute;
+    transform: rotate(135deg);
+    top: 10px;
+    width: 30px; }
+  .btn--close:hover, .btn--close:focus {
+    background: none; }
+
+.btn--close:hover::before,
+.btn--close:hover::after {
+  background: #d22856; }
+
+.nav__list {
+  align-items: center;
+  background: #283645;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-top: 0;
+  padding-left: 0;
+  width: 100%; }
+
+.nav__item {
+  align-items: center;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #485461;
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 32px;
+  justify-content: center;
+  min-height: 62px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 320px; }
+  .nav__item:hover, .nav__item:focus {
+    color: #d22856;
+    outline: none; }
+  .nav__item:active {
+    opacity: .3; }
+
+/*Интро*/
+.intro__block {
+  background: url(../img/iphone.png) no-repeat 0 108px, url(../img/screen.jpg) no-repeat center 141px;
+  padding-top: 395px; }
+
+.intro__info {
+  align-items: center;
+  background: #1d2631;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 16px; }
+
+.intro__btn {
+  align-items: center;
+  border: 3px solid #fff;
+  border-radius: 30px;
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+  height: 49px;
+  line-height: 18px;
+  justify-content: center;
+  margin-top: 27px;
+  text-decoration: none;
+  width: 275px; }
+  .intro__btn:hover, .intro__btn:focus {
+    background: #fff;
+    color: #d22856;
+    outline: none; }
+  .intro__btn:active {
+    color: rgba(210, 40, 86, 0.3); }
+
+.platform__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-top: 32px;
+  padding-left: 0;
+  width: 207px; }
+
+.platform__list li {
+  align-items: flex-end;
+  display: flex; }
+
+.intro__text {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-top: 8px;
+  text-align: center;
+  width: 233px; }
+
+/*Преимущества*/
+.features__block {
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
+
+.features__quest,
+.features__title {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-top: 43px;
+  position: relative;
+  text-align: center;
+  z-index: 1; }
+
+.features__title {
+  margin: 30px 0 0 0; }
+
+.features__box {
+  background: url(../img/iphone-screen.png) no-repeat center 108.5%, url(../img/feature-back.jpg) no-repeat 0 0;
+  margin: -10px 0 0 0;
+  padding: 103px 0 307px 0;
+  width: 100%; }
+
+.feature {
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
+
+.feature__title {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 23px 0 0 0; }
+
+.feature__text {
+  line-height: 24px;
+  margin: 8px 0 12px 0;
+  text-align: center;
+  width: 260px; }
+
+.time__block {
+  display: none; }
+
+.reviews__block {
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
+
+.review {
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
+
+.review__author {
+  font-size: 18px;
+  line-height: 31.5px;
+  margin: 43px 0 0 0; }
+
+.review__text {
+  margin-top: 13px;
+  text-align: center;
+  width: 280px; }
+
+.slider__list {
+  display: flex;
+  list-style: none;
+  padding-left: 0; }
+
+.slide__btn {
+  background: #283645;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  color: transparent;
+  display: flex;
+  font-size: 1px;
+  height: 6px;
+  margin: 5px 6px;
+  opacity: .3;
+  width: 6px; }
+  .slide__btn:hover, .slide__btn:focus {
+    opacity: .6;
+    outline: none; }
+  .slide__btn:active {
+    opacity: .1; }
+
+.slide--active {
+  background: #fff;
+  border-color: #283645;
+  opacity: 1; }

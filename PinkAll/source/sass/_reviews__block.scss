@@ -1,0 +1,56 @@
+.reviews__block {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.review {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.review__author {
+  font-size: 18px;
+  line-height: 31.5px;
+  margin: 43px 0 0 0;
+}
+
+.review__text {
+  margin-top: 13px;
+  text-align: center;
+  width: 280px;
+}
+
+.slider__list {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.slide__btn {
+  background: $colorText;
+  border: 3px solid $wh;
+  border-radius: 50%;
+  color: transparent;
+  display: flex;
+  font-size: 1px;
+  height: 6px;
+  margin: 5px 6px;
+  opacity: .3;
+  width: 6px;
+  &:hover,
+  &:focus {
+    opacity: .6;
+    outline: none;
+  }
+  &:active {
+    opacity: .1;
+  }
+}
+
+.slide--active {
+  background: $wh;
+  border-color: $colorText;
+  opacity: 1;
+}
