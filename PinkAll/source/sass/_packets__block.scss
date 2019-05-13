@@ -1,0 +1,124 @@
+.packets__block {
+  align-items: center;
+  background: url(../img/feature-back.jpg) no-repeat 0 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: -21px;
+  padding: 136px 0 30px 0;
+  overflow: hidden;
+}
+
+.packets__table {
+  border-collapse: collapse;
+}
+
+.table__title {
+  background: $colorText;
+  border-left: 1px solid $tableBorder;
+  border-right: 1px solid $tableBorder;
+  color: $wh;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  min-height: 78px;
+  padding-top: 18px;
+  text-transform: uppercase;
+  width: 276px;
+}
+
+.title__price {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.table__cell {
+  background: $wh;
+  border-bottom: 2px solid $tableBorder;
+  border-left: 2px solid $tableBorder;
+  border-right: 2px solid $tableBorder;
+  height: 59px;
+  padding-left: 22px;
+  text-transform: uppercase;
+}
+
+.hit--packet {
+  position: relative;
+  &::before {
+    background: url(../img/hit.png) no-repeat 0 0;
+    content: '';
+    height: 70px;
+    position: absolute;
+    top: 0;
+    width: 100px;
+  }
+  &::after {
+    content: 'Хит';
+    color: $wh;
+    font-size: 14px;
+    font-weight: 600;
+    height: 70px;
+    left: -11px;
+    position: absolute;
+    top: 6px;
+    transform: rotate(-45deg);
+    width: 100px;
+  }
+}
+
+.cell--yes {
+  position: relative;
+  &::before {
+    background: $yesColor;
+    content: '';
+    height: 3px;
+    position: absolute;
+    right: 35px;
+    top: 35px;
+    transform: rotate(45deg);
+    width: 15px;
+  }
+  &::after {
+    background: $yesColor;
+    border-radius: 6px;
+    content: '';
+    height: 3px;
+    position: absolute;
+    right: 15px;
+    top: 30px;
+    transform: rotate(135deg);
+    width: 26px;
+  }
+}
+
+.cell--not {
+  position: relative;
+  &::before {
+    background: $noColor;
+    content: '';
+    height: 3px;
+    position: absolute;
+    right: 17px;
+    top: 26px;
+    transform: rotate(45deg);
+    width: 35px;
+  }
+  &::after {
+    background: $noColor;
+    border-radius: 6px;
+    content: '';
+    height: 3px;
+    position: absolute;
+    right: 17px;
+    top: 26px;
+    transform: rotate(135deg);
+    width: 35px;
+  }
+}
+
+.list--packets {
+  margin-top: 33px;
+}
+
+.hidden {
+  display: none;
+}

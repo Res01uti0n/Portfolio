@@ -51,6 +51,9 @@ $navBorder: #485461;
 $introBack: #1d2631;
 $pinkAct: rgba(210, 40, 86, .3);
 $slideBtn: #bec2c7;
+$tableBorder: #e5e5e5;
+$yesColor: #3dc644;
+$noColor: #f25b26;
 
 /*Каркас*/
 
@@ -75,4 +78,5 @@ body {
 @import "features__block";
 @import "time__block";
 @import "reviews__block";
+@import "packets__block";
 
