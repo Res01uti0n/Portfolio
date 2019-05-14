@@ -2,3 +2,67 @@
 .time__block {
   display: none;
 }
+
+@media (min-width: 660px) {
+  .time__block {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+    &::before {
+      color: $pink;
+      content: '24';
+      font-size: 96px;
+      font-weight: bold;
+      left: 85px;
+      position: absolute;
+      top: 195px;
+    }
+    &::after {
+      border: 13px solid $pink;
+      border-radius: 50%;
+      content: '';
+      height: 175px;
+      position: absolute;
+      top: 115px;
+      left: 40px;
+      width: 175px;
+      z-index: 10;
+    }
+  }
+
+  .timer__img {
+    margin-top: 60px;
+  }
+
+  .time__info {
+    width: 310px;
+  }
+
+  .time__title {
+    font-size: 30px;
+    line-height: 36px;
+    padding-top: 67px;
+    margin-bottom: 0;
+    width: 168px;
+  }
+
+  .time__text {
+    line-height: 24px;
+    margin: 10px 0 8px 0;
+    width: 297px;
+  }
+
+  .time__more {
+    color: $pink;
+    &:hover,
+    &:focus {
+      color: $bl;
+      outline: none;
+    }
+    &:active {
+      opacity: .3;
+      text-decoration: none;
+    }
+  }
+}

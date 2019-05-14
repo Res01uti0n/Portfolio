@@ -52,6 +52,12 @@
 }
 
 @media (min-width: 660px) {
+  .features__block {
+    background: url(../img/smile.jpg) no-repeat 33px 304px,
+    url(../img/iphone-screen-tab.jpg) no-repeat 20px 138%,
+    url(../img/feature-back-tab.jpg) no-repeat 0 215px;
+  }
+
   .features__quest,
   .features__title {
     font-size: 40px;
@@ -67,7 +73,7 @@
   .features__box {
     background: none;
     margin: -5px 0 0 310px;
-    padding: 103px 0 307px 0;
+    padding: 103px 0 30px 0;
     width: 310px;
   }
 
