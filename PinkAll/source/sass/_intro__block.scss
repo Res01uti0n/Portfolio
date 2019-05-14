@@ -54,11 +54,53 @@
 
 .intro__text {
   color: $wh;
-  font-size: 14px;
   font-weight: 300;
   line-height: 24px;
   margin-top: 8px;
   text-align: center;
   width: 233px;
+}
+
+.intro__moto {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .intro__block {
+    background: url(../img/iphone-tab.png) no-repeat 0 73px,
+    url(../img/screen-tab.jpg) no-repeat 370px 128px;
+    padding: 52px 0 75px 0;
+  }
+
+  .intro__info {
+    background: none;
+    margin-left: 20px;
+    width: 300px;
+  }
+
+  .intro__moto {
+    color: $wh;
+    display: block;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 48px;
+    text-align: center;
+    width: 190px;
+  }
+
+  .intro__btn {
+    margin-top: -7px;
+    width: 290px;
+  }
+
+  .platform__list {
+    margin-top: 43px;
+  }
+
+  .intro__text {
+    font-size: 18px;
+    margin-top: 25px;
+    width: 100%;
+  }
 }
 
