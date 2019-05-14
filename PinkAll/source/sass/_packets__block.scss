@@ -1,15 +1,24 @@
+/*Пакеты услуг*/
 .packets__block {
   align-items: center;
   background: url(../img/feature-back.jpg) no-repeat 0 0;
   display: flex;
   flex-direction: column;
   margin-top: -21px;
-  padding: 136px 0 30px 0;
+  padding: 419px 0 30px 0;
+  position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
 .packets__table {
   border-collapse: collapse;
+  position: absolute;
+  top: 135px;
+}
+
+.packets__table tr{
+  display: flex;
 }
 
 .table__title {
@@ -20,10 +29,10 @@
   display: flex;
   flex-direction: column;
   font-size: 18px;
-  min-height: 78px;
+  min-height: 80px;
   padding-top: 18px;
   text-transform: uppercase;
-  width: 276px;
+  width: 274px;
 }
 
 .title__price {
@@ -32,13 +41,16 @@
 }
 
 .table__cell {
+  align-items: center;
   background: $wh;
   border-bottom: 2px solid $tableBorder;
-  border-left: 2px solid $tableBorder;
-  border-right: 2px solid $tableBorder;
-  height: 59px;
+  border-left: 1px solid $tableBorder;
+  border-right: 1px solid $tableBorder;
+  display: flex;
+  height: 57px;
   padding-left: 22px;
   text-transform: uppercase;
+  width: 254px;
 }
 
 .hit--packet {
@@ -47,6 +59,7 @@
     background: url(../img/hit.png) no-repeat 0 0;
     content: '';
     height: 70px;
+    left: -2px;
     position: absolute;
     top: 0;
     width: 100px;
@@ -57,7 +70,7 @@
     font-size: 14px;
     font-weight: 600;
     height: 70px;
-    left: -11px;
+    left: -12px;
     position: absolute;
     top: 6px;
     transform: rotate(-45deg);
@@ -72,7 +85,7 @@
     content: '';
     height: 3px;
     position: absolute;
-    right: 35px;
+    right: 34px;
     top: 35px;
     transform: rotate(45deg);
     width: 15px;
@@ -83,7 +96,7 @@
     content: '';
     height: 3px;
     position: absolute;
-    right: 15px;
+    right: 14px;
     top: 30px;
     transform: rotate(135deg);
     width: 26px;
@@ -97,7 +110,7 @@
     content: '';
     height: 3px;
     position: absolute;
-    right: 17px;
+    right: 13px;
     top: 26px;
     transform: rotate(45deg);
     width: 35px;
@@ -108,7 +121,7 @@
     content: '';
     height: 3px;
     position: absolute;
-    right: 17px;
+    right: 13px;
     top: 26px;
     transform: rotate(135deg);
     width: 35px;

@@ -251,6 +251,7 @@ body {
   text-align: center;
   width: 260px; }
 
+/*Время действия*/
 .time__block {
   display: none; }
 
@@ -258,7 +259,9 @@ body {
 .reviews__block {
   align-items: center;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  position: relative;
+  z-index: 2; }
 
 .review {
   align-items: center;
@@ -302,17 +305,25 @@ body {
   border-color: #283645;
   opacity: 1; }
 
+/*Пакеты услуг*/
 .packets__block {
   align-items: center;
   background: url(../img/feature-back.jpg) no-repeat 0 0;
   display: flex;
   flex-direction: column;
   margin-top: -21px;
-  padding: 136px 0 30px 0;
-  overflow: hidden; }
+  padding: 419px 0 30px 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 1; }
 
 .packets__table {
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  position: absolute;
+  top: 135px; }
+
+.packets__table tr {
+  display: flex; }
 
 .table__title {
   background: #283645;
@@ -322,23 +333,26 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 18px;
-  min-height: 78px;
+  min-height: 80px;
   padding-top: 18px;
   text-transform: uppercase;
-  width: 276px; }
+  width: 274px; }
 
 .title__price {
   font-size: 24px;
   font-weight: 300; }
 
 .table__cell {
+  align-items: center;
   background: #fff;
   border-bottom: 2px solid #e5e5e5;
-  border-left: 2px solid #e5e5e5;
-  border-right: 2px solid #e5e5e5;
-  height: 59px;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  display: flex;
+  height: 57px;
   padding-left: 22px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  width: 254px; }
 
 .hit--packet {
   position: relative; }
@@ -346,6 +360,7 @@ body {
     background: url(../img/hit.png) no-repeat 0 0;
     content: '';
     height: 70px;
+    left: -2px;
     position: absolute;
     top: 0;
     width: 100px; }
@@ -355,7 +370,7 @@ body {
     font-size: 14px;
     font-weight: 600;
     height: 70px;
-    left: -11px;
+    left: -12px;
     position: absolute;
     top: 6px;
     transform: rotate(-45deg);
@@ -368,7 +383,7 @@ body {
     content: '';
     height: 3px;
     position: absolute;
-    right: 35px;
+    right: 34px;
     top: 35px;
     transform: rotate(45deg);
     width: 15px; }
@@ -378,7 +393,7 @@ body {
     content: '';
     height: 3px;
     position: absolute;
-    right: 15px;
+    right: 14px;
     top: 30px;
     transform: rotate(135deg);
     width: 26px; }
@@ -390,7 +405,7 @@ body {
     content: '';
     height: 3px;
     position: absolute;
-    right: 17px;
+    right: 13px;
     top: 26px;
     transform: rotate(45deg);
     width: 35px; }
@@ -400,7 +415,7 @@ body {
     content: '';
     height: 3px;
     position: absolute;
-    right: 17px;
+    right: 13px;
     top: 26px;
     transform: rotate(135deg);
     width: 35px; }
@@ -409,4 +424,61 @@ body {
   margin-top: 33px; }
 
 .hidden {
+  display: none; }
+
+/*Контакты*/
+.contacts__block {
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
+
+.contacts__title {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-top: 40px;
+  text-align: center; }
+
+.contact__way {
+  font-size: 18px;
+  text-align: center;
+  margin: 13px 0 0 0; }
+
+.contact__info {
+  color: #d22856;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  margin: -1px 0 0 0;
+  text-align: center;
+  text-decoration: none;
+  width: 240px; }
+
+.contact__email {
+  position: relative;
+  z-index: 1; }
+  .contact__email:hover, .contact__email:focus {
+    color: #000;
+    outline: none;
+    text-decoration: underline; }
+  .contact__email:active {
+    opacity: .3;
+    text-decoration: none; }
+
+.contact__box {
+  margin: 0 0 5px 0; }
+
+.contact__map {
+  background: black;
+  height: 200px;
+  margin-top: 30px;
+  position: relative;
+  width: 100%; }
+
+.map__triang {
+  position: absolute;
+  top: -238px; }
+
+/*Подвал*/
+.footer__block {
   display: none; }

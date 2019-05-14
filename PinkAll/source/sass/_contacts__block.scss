@@ -1,0 +1,63 @@
+/*Контакты*/
+.contacts__block {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__title {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contact__way {
+  font-size: 18px;
+  text-align: center;
+  margin: 13px 0 0 0;
+}
+
+.contact__info {
+  color: $pink;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  margin: -1px 0 0 0;
+  text-align: center;
+  text-decoration: none;
+  width: 240px;
+}
+
+.contact__email {
+  position: relative;
+  z-index: 1;
+  &:hover,
+  &:focus {
+    color: $bl;
+    outline: none;
+    text-decoration: underline;
+  }
+  &:active {
+    opacity: .3;
+    text-decoration: none;
+  }
+}
+
+.contact__box {
+  margin: 0 0 5px 0;
+}
+
+.contact__map {
+  background: black;
+  height: 200px;
+  margin-top: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.map__triang {
+  position: absolute;
+  top: -238px;
+}
