@@ -13,6 +13,7 @@
 
 .packets__table {
   border-collapse: collapse;
+  left: -535px;
   position: absolute;
   top: 135px;
 }
@@ -134,4 +135,81 @@
 
 .hidden {
   display: none;
+}
+
+@media (min-width: 660px) {
+  .packets__block {
+    background: url(../img/feature-back-tab.jpg) no-repeat 0 0;
+    padding: 110px 0 65px 0;
+  }
+
+  .packets__table {
+    position: static;
+  }
+
+  .table__title {
+    border-radius: 3px;
+    font-size: 16px;
+    min-height: 66px;
+    padding-top: 14px;
+    width: 152px;
+  }
+
+  .title__price {
+    font-size: 18px;
+    margin-top: -2px;
+  }
+
+  .table__cell {
+    display: flex;
+    height: 43px;
+    padding-left: 17px;
+    text-transform: none;
+    width: 136px;
+  }
+
+  .empty--cell {
+    visibility: hidden;
+  }
+
+  .hit--packet {
+    &::before {
+      background: url(../img/hit-small.png) no-repeat 0 0;
+      left: 0;
+    }
+    &::after {
+      left: -17px;
+      top: -1px;
+    }
+  }
+
+  .cell--yes {
+    color: transparent;
+    font-size: 1px;
+    &::before {
+      right: 78px;
+      top: 24px;
+    }
+    &::after {
+      right: 59px;
+      top: 21px;
+    }
+  }
+
+  .cell--not {
+    color: transparent;
+    font-size: 1px;
+    &::before {
+      right: 59px;
+      top: 20px;
+    }
+    &::after {
+      right: 59px;
+      top: 20px;
+    }
+  }
+
+  .list--packets {
+    display: none;
+  }
 }

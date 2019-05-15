@@ -66,6 +66,7 @@
         <div class="review">
           <h4 class="review__author">Николай Петров</h4>
           <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <p class="author__info">25 лет, водитель трамвая</p>
         </div>
         <ul class="slider__list">
           <li><a href="#" class="slide__btn slide--active">1</a></li>
@@ -76,16 +77,16 @@
       <section class="packets__block">
         <table class="packets__table">
           <tr>
-            <th></th><th class="table__title">База <span>1,99 USD</span></th><th class="table__title hit--packet">Стандарт <span class="title__price">3,99 USD</span></th><th class="table__title">Анлим <span>9,99 USD</span></th>
+            <th class="table__title empty--cell"></th><th class="table__title">База <span class="title__price">1,99 USD</span></th><th class="table__title hit--packet">Стандарт <span class="title__price">3,99 USD</span></th><th class="table__title">Анлим <span class="title__price">9,99 USD</span></th>
           </tr>
           <tr>
-            <td class="table__cell hidden">Розовый фильтр</td><td class="table__cell cell--yes">Розовый фильтр</td><td class="table__cell cell--yes">Розовый фильтр</td><td class="table__cell cell--yes">Розовый фильтр</td>
+            <td class="table__cell">Розовый фильтр</td><td class="table__cell cell--yes">Розовый фильтр</td><td class="table__cell cell--yes">Розовый фильтр</td><td class="table__cell cell--yes">Розовый фильтр</td>
           </tr>
           <tr>
-            <td class="table__cell hidden">Смайлики</td><td class="table__cell cell--not">Смайлики</td><td class="table__cell cell--yes">Смайлики</td><td class="table__cell cell--yes">Смайлики</td>
+            <td class="table__cell">Смайлики</td><td class="table__cell cell--not">Смайлики</td><td class="table__cell cell--yes">Смайлики</td><td class="table__cell cell--yes">Смайлики</td>
           </tr>
           <tr>
-            <td class="table__cell hidden">Комменатрии</td><td class="table__cell cell--not">Комменатрии</td><td class="table__cell cell--not">Комменатрии</td><td class="table__cell cell--yes">Комменатрии</td>
+            <td class="table__cell">Комменатрии</td><td class="table__cell cell--not">Комменатрии</td><td class="table__cell cell--not">Комменатрии</td><td class="table__cell cell--yes">Комменатрии</td>
           </tr>
         </table>
         <ul class="slider__list list--packets">
@@ -96,33 +97,35 @@
       </section>
       <section class="contacts__block">
         <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
-        <div class="contact__box">
-          <h4 class="contact__way">Звоните:</h4>
-          <p class="contact__info">+7 (812) 555-66-66</p>
-        </div>
-        <div class="contact__box">
-          <h4 class="contact__way">Пишите:</h4>
-          <a class="contact__info contact__email" href="#">mail@htmlacademy.ru</a>
+        <div class="contact__wrapper">
+          <div class="contact__box">
+            <h4 class="contact__way">Звоните:</h4>
+            <p class="contact__info">+7 (812) 555-66-66</p>
+          </div>
+          <div class="contact__box">
+            <h4 class="contact__way">Пишите:</h4>
+            <a class="contact__info contact__email" href="#">mail@htmlacademy.ru</a>
+          </div>
         </div>
         <div class="contact__box">
           <h4 class="contact__way">Приезжайте в гости:</h4>
           <address class="contact__info">ул. Большая Конюшенная, 19/8</address>
         </div>
         <div class="contact__map">
-          <img class="map__triang" src="img/triang.svg" alt="Треугольник">
+
         </div>
       </section>
     </main>
     <footer class="footer__block">
-      <a href="#"><img src="#" alt="Лого"></a>
-      <ul>
-        <li><a href="#"><img src="#" alt="#"></a></li>
-        <li><a href="#"><img src="#" alt="#"></a></li>
-        <li><a href="#"><img src="#" alt="#"></a></li>
+      <a href="#" class="footer__logo">Лого</a>
+      <ul class="list__media">
+        <li><a href="#" class="media__item"><img src="img/twitter.svg" alt="Твиттер" width="17" height="14"></a></li>
+        <li><a href="#" class="media__item"><img src="img/facebook.svg" alt="Фейсбук" width="8" height="18"></a></li>
+        <li><a href="#" class="media__item"><img src="img/youtube.svg" alt="Ютуб" width="14" height="14"></a></li>
       </ul>
-      <div>
+      <div class="creator__box">
         <span>Разработано</span>
-        <img src="#" alt="#">
+        <a class="html-academy" href="#">HtmlAcademy</a>
       </div>
     </footer>
   </div>

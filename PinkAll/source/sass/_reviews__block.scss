@@ -57,3 +57,34 @@
   border-color: $colorText;
   opacity: 1;
 }
+
+.author__info {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .review__author {
+    order: 1;
+  }
+
+  .author__info {
+    display: block;
+    order: 2;
+    margin-top: 2px;
+  }
+
+  .review__text {
+    font-size: 18px;
+    margin-top: 97px;
+    width: 620px;
+  }
+
+  .review__author {
+    font-size: 20px;
+    margin: 17px 0 0 0;
+  }
+
+  .slider__list {
+    margin-top: 15px;
+  }
+}

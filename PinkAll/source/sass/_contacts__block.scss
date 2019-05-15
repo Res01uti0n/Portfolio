@@ -50,14 +50,32 @@
 }
 
 .contact__map {
-  background: black;
+  background: black url(../img/triang.png) no-repeat 0 -88px;
   height: 200px;
   margin-top: 30px;
-  position: relative;
   width: 100%;
 }
 
-.map__triang {
-  position: absolute;
-  top: -238px;
+
+
+@media (min-width: 660px) {
+  .contacts__title {
+    font-size: 40px;
+    line-height: 48px;
+    margin: 47px 0 0 0;
+    width: 370px;
+  }
+
+  .contact__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 23px 0;
+    width: 562px;
+  }
+
+  .contact__map {
+    background: black url(../img/triang-tab.png) no-repeat 0 -57px;
+    height: 370px;
+    margin-top: 27px;
+  }
 }
