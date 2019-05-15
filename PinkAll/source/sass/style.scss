@@ -81,6 +81,14 @@ body {
   }
 }
 
+@media (min-width: 1200px) {
+  .container {
+    background: url(../img/back-desk.jpg) no-repeat 0 0;
+    position: relative;
+    width: 1200px;
+  }
+}
+
 @import "header__block";
 @import "intro__block";
 @import "features__block";

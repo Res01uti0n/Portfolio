@@ -49,6 +49,12 @@ body {
     background: url(../img/back-tab.jpg) no-repeat 0 0;
     width: 660px; } }
 
+@media (min-width: 1200px) {
+  .container {
+    background: url(../img/back-desk.jpg) no-repeat 0 0;
+    position: relative;
+    width: 1200px; } }
+
 /*Шапка*/
 .header__block {
   display: flex;
@@ -73,6 +79,7 @@ body {
     background: url(../img/logo-hov.svg) no-repeat 1px 0;
     outline: none; }
   .header__logo:active {
+    background: url(../img/logo.svg) no-repeat 1px 0;
     opacity: .3; }
 
 .nav__btn {
@@ -171,11 +178,44 @@ body {
     width: 150px; }
     .header__logo:hover, .header__logo:focus {
       background: url(../img/logo-tab-hov.svg) no-repeat 1px 0; }
+    .header__logo:active {
+      background: url(../img/logo-tab.svg) no-repeat 1px 0; }
   .nav__item {
     width: 660px; }
   .btn--close {
     right: 1px;
     top: 3px; } }
+
+@media (min-width: 1200px) {
+  .header__box {
+    min-height: 110px;
+    padding: 0 130px; }
+  .header__logo {
+    background: url(../img/logo-desk.svg) no-repeat 1px 0;
+    position: relative;
+    z-index: 10; }
+    .header__logo:active {
+      background: url(../img/logo-desk.svg) no-repeat 1px 0; }
+  .nav__btn {
+    display: none; }
+  .nav__box {
+    display: flex;
+    position: absolute; }
+  .nav__list {
+    background: transparent;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 447px;
+    width: 622px; }
+  .nav__item {
+    border: none;
+    font-weight: 400;
+    line-height: 18px;
+    min-height: 110px;
+    text-transform: none;
+    width: auto; }
+    .nav__item:active {
+      color: #fff; } }
 
 /*Интро*/
 .intro__block {
@@ -258,6 +298,25 @@ body {
     font-size: 18px;
     margin-top: 25px;
     width: 100%; } }
+
+@media (min-width: 1200px) {
+  .intro__block {
+    background: url(../img/iphone-desk.png) no-repeat 145px bottom, url(../img/screen-desk.jpg) no-repeat 715px 160px;
+    padding: 59px 0 85px 0; }
+  .intro__moto {
+    font-size: 50px;
+    line-height: 60px;
+    width: 235px; }
+  .intro__info {
+    margin-left: 120px;
+    width: 320px; }
+  .intro__btn {
+    margin-top: 0;
+    font-size: 21px; }
+  .platform__list {
+    margin-top: 66px; }
+  .intro__text {
+    margin-top: 45px; } }
 
 /*Преимущества*/
 .features__block {

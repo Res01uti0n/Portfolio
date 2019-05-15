@@ -104,3 +104,35 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .intro__block {
+    background: url(../img/iphone-desk.png) no-repeat 145px bottom,
+    url(../img/screen-desk.jpg) no-repeat 715px 160px;
+    padding: 59px 0 85px 0;
+  }
+
+  .intro__moto {
+    font-size: 50px;
+    line-height: 60px;
+    width: 235px;
+  }
+
+  .intro__info {
+    margin-left: 120px;
+    width: 320px;
+  }
+
+  .intro__btn {
+    margin-top: 0;
+    font-size: 21px;
+  }
+
+  .platform__list {
+    margin-top: 66px;
+  }
+
+  .intro__text {
+    margin-top: 45px;
+  }
+}
+
