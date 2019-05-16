@@ -69,7 +69,6 @@ body {
 }
 
 .container {
-  background: url(../img/index/back-mobile.jpg) no-repeat 0 0;
   margin-left: auto;
   margin-right: auto;
   width: 320px;
@@ -83,14 +82,12 @@ body {
 
 @media (min-width: 660px) {
   .container {
-    background: url(../img/index/back-tab.jpg) no-repeat 0 0;
     width: 660px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    background: url(../img/index/back-desk.jpg) no-repeat 0 0;
     position: relative;
     width: 1200px;
   }

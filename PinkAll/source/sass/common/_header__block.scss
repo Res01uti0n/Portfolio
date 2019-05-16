@@ -2,6 +2,8 @@
 .header__block {
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 2;
 }
 
 .header__box {
@@ -166,7 +168,6 @@
 
 @media (min-width: 1200px) {
   .header__box {
-    min-height: 110px;
     padding: 0 130px;
   }
 

@@ -39,7 +39,6 @@ body {
   padding: 0; }
 
 .container {
-  background: url(../img/index/back-mobile.jpg) no-repeat 0 0;
   margin-left: auto;
   margin-right: auto;
   width: 320px; }
@@ -51,19 +50,19 @@ body {
 
 @media (min-width: 660px) {
   .container {
-    background: url(../img/index/back-tab.jpg) no-repeat 0 0;
     width: 660px; } }
 
 @media (min-width: 1200px) {
   .container {
-    background: url(../img/index/back-desk.jpg) no-repeat 0 0;
     position: relative;
     width: 1200px; } }
 
 /*Шапка*/
 .header__block {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  position: relative;
+  z-index: 2; }
 
 .header__box {
   align-items: center;
@@ -193,7 +192,6 @@ body {
 
 @media (min-width: 1200px) {
   .header__box {
-    min-height: 110px;
     padding: 0 130px; }
   .header__logo {
     background: url(../img/common/logo-desk.svg) no-repeat 1px 0;
@@ -224,8 +222,11 @@ body {
 
 /*Интро*/
 .intro__block {
-  background: url(../img/index/iphone.png) no-repeat 0 108px, url(../img/index/screen.jpg) no-repeat center 141px;
-  padding-top: 395px; }
+  background: url(../img/index/iphone.png) no-repeat 0 174px, url(../img/index/screen.jpg) no-repeat center 208px, url(../img/index/back-mobile.jpg) no-repeat 0 0;
+  margin-top: -66px;
+  padding-top: 461px;
+  position: relative;
+  z-index: 1; }
 
 .intro__info {
   align-items: center;
@@ -280,8 +281,9 @@ body {
 
 @media (min-width: 660px) {
   .intro__block {
-    background: url(../img/index/iphone-tab.png) no-repeat 0 73px, url(../img/index/screen-tab.jpg) no-repeat 370px 128px;
-    padding: 52px 0 75px 0; }
+    background: url(../img/index/iphone-tab.png) no-repeat 0 bottom, url(../img/index/screen-tab.jpg) no-repeat 370px 238px, url(../img/index/back-tab.jpg) no-repeat 0 0;
+    margin-top: -110px;
+    padding: 162px 0 75px 0; }
   .intro__info {
     background: none;
     margin-left: 20px;
@@ -306,8 +308,8 @@ body {
 
 @media (min-width: 1200px) {
   .intro__block {
-    background: url(../img/index/iphone-desk.png) no-repeat 145px bottom, url(../img/index/screen-desk.jpg) no-repeat 715px 160px;
-    padding: 59px 0 85px 0; }
+    background: url(../img/index/iphone-desk.png) no-repeat 145px bottom, url(../img/index/screen-desk.jpg) no-repeat 715px 270px, url(../img/index/back-desk.jpg) no-repeat 0 0;
+    padding: 169px 0 85px 0; }
   .intro__moto {
     font-size: 50px;
     line-height: 60px;

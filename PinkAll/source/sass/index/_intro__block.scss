@@ -1,8 +1,13 @@
 /*Интро*/
 .intro__block {
-  background: url(../img/index/iphone.png) no-repeat 0 108px,
-  url(../img/index/screen.jpg) no-repeat center 141px;
-  padding-top: 395px;
+  background: url(../img/index/iphone.png) no-repeat 0 174px,
+  url(../img/index/screen.jpg) no-repeat center 208px,
+  url(../img/index/back-mobile.jpg) no-repeat 0 0;
+  margin-top: -66px;
+  padding-top: 461px;
+  position: relative;
+  z-index: 1;
+
 }
 
 .intro__info {
@@ -67,9 +72,11 @@
 
 @media (min-width: 660px) {
   .intro__block {
-    background: url(../img/index/iphone-tab.png) no-repeat 0 73px,
-    url(../img/index/screen-tab.jpg) no-repeat 370px 128px;
-    padding: 52px 0 75px 0;
+    background: url(../img/index/iphone-tab.png) no-repeat 0 bottom,
+    url(../img/index/screen-tab.jpg) no-repeat 370px 238px,
+    url(../img/index/back-tab.jpg) no-repeat 0 0;;
+    margin-top: -110px;
+    padding: 162px 0 75px 0;
   }
 
   .intro__info {
@@ -107,8 +114,9 @@
 @media (min-width: 1200px) {
   .intro__block {
     background: url(../img/index/iphone-desk.png) no-repeat 145px bottom,
-    url(../img/index/screen-desk.jpg) no-repeat 715px 160px;
-    padding: 59px 0 85px 0;
+    url(../img/index/screen-desk.jpg) no-repeat 715px 270px,
+    url(../img/index/back-desk.jpg) no-repeat 0 0;
+    padding: 169px 0 85px 0;
   }
 
   .intro__moto {
