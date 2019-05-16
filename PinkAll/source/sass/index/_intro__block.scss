@@ -1,7 +1,7 @@
 /*Интро*/
 .intro__block {
-  background: url(../img/iphone.png) no-repeat 0 108px,
-  url(../img/screen.jpg) no-repeat center 141px;
+  background: url(../img/index/iphone.png) no-repeat 0 108px,
+  url(../img/index/screen.jpg) no-repeat center 141px;
   padding-top: 395px;
 }
 
@@ -67,8 +67,8 @@
 
 @media (min-width: 660px) {
   .intro__block {
-    background: url(../img/iphone-tab.png) no-repeat 0 73px,
-    url(../img/screen-tab.jpg) no-repeat 370px 128px;
+    background: url(../img/index/iphone-tab.png) no-repeat 0 73px,
+    url(../img/index/screen-tab.jpg) no-repeat 370px 128px;
     padding: 52px 0 75px 0;
   }
 
@@ -106,8 +106,8 @@
 
 @media (min-width: 1200px) {
   .intro__block {
-    background: url(../img/iphone-desk.png) no-repeat 145px bottom,
-    url(../img/screen-desk.jpg) no-repeat 715px 160px;
+    background: url(../img/index/iphone-desk.png) no-repeat 145px bottom,
+    url(../img/index/screen-desk.jpg) no-repeat 715px 160px;
     padding: 59px 0 85px 0;
   }
 

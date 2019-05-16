@@ -69,33 +69,39 @@ body {
 }
 
 .container {
-  background: url(../img/back-mobile.jpg) no-repeat 0 0;
+  background: url(../img/index/back-mobile.jpg) no-repeat 0 0;
   margin-left: auto;
   margin-right: auto;
   width: 320px;
 }
 
+.title__hidden {
+  color: transparent;
+  font-size: 1px;
+  position: absolute;
+}
+
 @media (min-width: 660px) {
   .container {
-    background: url(../img/back-tab.jpg) no-repeat 0 0;
+    background: url(../img/index/back-tab.jpg) no-repeat 0 0;
     width: 660px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    background: url(../img/back-desk.jpg) no-repeat 0 0;
+    background: url(../img/index/back-desk.jpg) no-repeat 0 0;
     position: relative;
     width: 1200px;
   }
 }
 
-@import "header__block";
-@import "intro__block";
-@import "features__block";
-@import "time__block";
-@import "reviews__block";
-@import "packets__block";
-@import "contacts__block";
-@import "footer__block";
+@import "common/header__block";
+@import "index/intro__block";
+@import "index/features__block";
+@import "index/time__block";
+@import "index/reviews__block";
+@import "index/packets__block";
+@import "index/contacts__block";
+@import "common/footer__block";
 

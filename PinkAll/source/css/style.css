@@ -39,19 +39,24 @@ body {
   padding: 0; }
 
 .container {
-  background: url(../img/back-mobile.jpg) no-repeat 0 0;
+  background: url(../img/index/back-mobile.jpg) no-repeat 0 0;
   margin-left: auto;
   margin-right: auto;
   width: 320px; }
 
+.title__hidden {
+  color: transparent;
+  font-size: 1px;
+  position: absolute; }
+
 @media (min-width: 660px) {
   .container {
-    background: url(../img/back-tab.jpg) no-repeat 0 0;
+    background: url(../img/index/back-tab.jpg) no-repeat 0 0;
     width: 660px; } }
 
 @media (min-width: 1200px) {
   .container {
-    background: url(../img/back-desk.jpg) no-repeat 0 0;
+    background: url(../img/index/back-desk.jpg) no-repeat 0 0;
     position: relative;
     width: 1200px; } }
 
@@ -69,28 +74,28 @@ body {
   padding: 0 20px; }
 
 .header__logo {
-  background: url(../img/logo.svg) no-repeat 1px 0;
+  background: url(../img/common/logo.svg) no-repeat 1px 0;
   color: transparent;
   font-size: 1px;
   margin-top: -1px;
   height: 23px;
   width: 74px; }
   .header__logo:hover, .header__logo:focus {
-    background: url(../img/logo-hov.svg) no-repeat 1px 0;
+    background: url(../img/common/logo-hov.svg) no-repeat 1px 0;
     outline: none; }
   .header__logo:active {
-    background: url(../img/logo.svg) no-repeat 1px 0;
+    background: url(../img/common/logo.svg) no-repeat 1px 0;
     opacity: .3; }
 
 .nav__btn {
-  background: url(../img/nav.svg) no-repeat 0 0;
+  background: url(../img/common/nav.svg) no-repeat 0 0;
   border: none;
   color: transparent;
   font-size: 1px;
   height: 24px;
   width: 50px; }
   .nav__btn:hover, .nav__btn:focus {
-    background: url(../img/nav-hov.svg) no-repeat 0 0;
+    background: url(../img/common/nav-hov.svg) no-repeat 0 0;
     outline: none; }
   .nav__btn:active {
     opacity: .3; }
@@ -172,14 +177,14 @@ body {
   .header__box {
     min-height: 110px; }
   .header__logo {
-    background: url(../img/logo-tab.svg) no-repeat 1px 0;
+    background: url(../img/common/logo-tab.svg) no-repeat 1px 0;
     margin-top: -15px;
     height: 40px;
     width: 150px; }
     .header__logo:hover, .header__logo:focus {
-      background: url(../img/logo-tab-hov.svg) no-repeat 1px 0; }
+      background: url(../img/common/logo-tab-hov.svg) no-repeat 1px 0; }
     .header__logo:active {
-      background: url(../img/logo-tab.svg) no-repeat 1px 0; }
+      background: url(../img/common/logo-tab.svg) no-repeat 1px 0; }
   .nav__item {
     width: 660px; }
   .btn--close {
@@ -191,11 +196,11 @@ body {
     min-height: 110px;
     padding: 0 130px; }
   .header__logo {
-    background: url(../img/logo-desk.svg) no-repeat 1px 0;
+    background: url(../img/common/logo-desk.svg) no-repeat 1px 0;
     position: relative;
     z-index: 10; }
     .header__logo:active {
-      background: url(../img/logo-desk.svg) no-repeat 1px 0; }
+      background: url(../img/common/logo-desk.svg) no-repeat 1px 0; }
   .nav__btn {
     display: none; }
   .nav__box {
@@ -219,7 +224,7 @@ body {
 
 /*Интро*/
 .intro__block {
-  background: url(../img/iphone.png) no-repeat 0 108px, url(../img/screen.jpg) no-repeat center 141px;
+  background: url(../img/index/iphone.png) no-repeat 0 108px, url(../img/index/screen.jpg) no-repeat center 141px;
   padding-top: 395px; }
 
 .intro__info {
@@ -275,7 +280,7 @@ body {
 
 @media (min-width: 660px) {
   .intro__block {
-    background: url(../img/iphone-tab.png) no-repeat 0 73px, url(../img/screen-tab.jpg) no-repeat 370px 128px;
+    background: url(../img/index/iphone-tab.png) no-repeat 0 73px, url(../img/index/screen-tab.jpg) no-repeat 370px 128px;
     padding: 52px 0 75px 0; }
   .intro__info {
     background: none;
@@ -301,7 +306,7 @@ body {
 
 @media (min-width: 1200px) {
   .intro__block {
-    background: url(../img/iphone-desk.png) no-repeat 145px bottom, url(../img/screen-desk.jpg) no-repeat 715px 160px;
+    background: url(../img/index/iphone-desk.png) no-repeat 145px bottom, url(../img/index/screen-desk.jpg) no-repeat 715px 160px;
     padding: 59px 0 85px 0; }
   .intro__moto {
     font-size: 50px;
@@ -338,7 +343,7 @@ body {
   margin: 30px 0 0 0; }
 
 .features__box {
-  background: url(../img/iphone-screen.png) no-repeat center 108.5%, url(../img/feature-back.jpg) no-repeat 0 0;
+  background: url(../img/index/iphone-screen.png) no-repeat center 108.5%, url(../img/index/feature-back.jpg) no-repeat 0 0;
   margin: -10px 0 0 0;
   padding: 103px 0 307px 0;
   width: 100%; }
@@ -367,7 +372,7 @@ body {
 
 @media (min-width: 660px) {
   .features__block {
-    background: url(../img/smile.jpg) no-repeat 33px 304px, url(../img/iphone-screen-tab.jpg) no-repeat 20px 138%, url(../img/feature-back-tab.jpg) no-repeat 0 215px; }
+    background: url(../img/index/smile.jpg) no-repeat 33px 304px, url(../img/index/iphone-screen-tab.jpg) no-repeat 20px 138%, url(../img/index/feature-back-tab.jpg) no-repeat 0 215px; }
   .features__quest,
   .features__title {
     font-size: 40px;
@@ -395,7 +400,7 @@ body {
 
 @media (min-width: 1200px) {
   .features__block {
-    background: url(../img/screen-smile.jpg) no-repeat 835px 365px, url(../img/screen-pink.jpg) no-repeat 515px 365px, url(../img/screen-grey.jpg) no-repeat 192px 365px, url(../img/iphone-feature-desk.png) no-repeat center 325px, url(../img/iphone-feature-desk.png) no-repeat 185px 325px, url(../img/iphone-feature-desk.png) no-repeat 825px 325px, url(../img/feature-back-desk.jpg) no-repeat 0 320px; }
+    background: url(../img/index/screen-smile.jpg) no-repeat 835px 365px, url(../img/index/screen-pink.jpg) no-repeat 515px 365px, url(../img/index/screen-grey.jpg) no-repeat 192px 365px, url(../img/index/iphone-feature-desk.png) no-repeat center 325px, url(../img/index/iphone-feature-desk.png) no-repeat 185px 325px, url(../img/index/iphone-feature-desk.png) no-repeat 825px 325px, url(../img/index/feature-back-desk.jpg) no-repeat 0 320px; }
   .features__quest,
   .features__title {
     font-size: 50px;
@@ -418,7 +423,7 @@ body {
     width: 270px;
     z-index: 20; }
     .feature::before {
-      background: url(../img/shadow.png) no-repeat center -3px;
+      background: url(../img/index/shadow.png) no-repeat center -3px;
       content: '';
       height: 5px;
       position: absolute;
@@ -604,7 +609,7 @@ body {
 
 @media (min-width: 1200px) {
   .review {
-    background: url(../img/quote.svg) no-repeat center 65px;
+    background: url(../img/index/quote.svg) no-repeat center 65px;
     background-size: 80px 78px; }
   .review__text {
     line-height: 31px;
@@ -658,7 +663,7 @@ body {
 /*Пакеты услуг*/
 .packets__block {
   align-items: center;
-  background: url(../img/feature-back.jpg) no-repeat 0 0;
+  background: url(../img/index/feature-back.jpg) no-repeat 0 0;
   display: flex;
   flex-direction: column;
   margin-top: -21px;
@@ -701,14 +706,14 @@ body {
   border-right: 1px solid #e5e5e5;
   display: flex;
   height: 57px;
-  padding-left: 22px;
+  padding-left: 21px;
   text-transform: uppercase;
-  width: 254px; }
+  width: 255px; }
 
 .hit--packet {
   position: relative; }
   .hit--packet::before {
-    background: url(../img/hit.png) no-repeat 0 0;
+    background: url(../img/index/hit.png) no-repeat 0 0;
     content: '';
     height: 70px;
     left: -2px;
@@ -734,8 +739,8 @@ body {
     content: '';
     height: 3px;
     position: absolute;
-    right: 34px;
-    top: 35px;
+    right: 37px;
+    top: 34px;
     transform: rotate(45deg);
     width: 15px; }
   .cell--yes::after {
@@ -744,8 +749,8 @@ body {
     content: '';
     height: 3px;
     position: absolute;
-    right: 14px;
-    top: 30px;
+    right: 17px;
+    top: 29px;
     transform: rotate(135deg);
     width: 26px; }
 
@@ -756,7 +761,7 @@ body {
     content: '';
     height: 3px;
     position: absolute;
-    right: 13px;
+    right: 18px;
     top: 26px;
     transform: rotate(45deg);
     width: 35px; }
@@ -766,7 +771,7 @@ body {
     content: '';
     height: 3px;
     position: absolute;
-    right: 13px;
+    right: 18px;
     top: 26px;
     transform: rotate(135deg);
     width: 35px; }
@@ -779,7 +784,7 @@ body {
 
 @media (min-width: 660px) {
   .packets__block {
-    background: url(../img/feature-back-tab.jpg) no-repeat 0 0;
+    background: url(../img/index/feature-back-tab.jpg) no-repeat 0 0;
     padding: 110px 0 65px 0; }
   .packets__table {
     position: static; }
@@ -801,7 +806,7 @@ body {
   .empty--cell {
     visibility: hidden; }
   .hit--packet::before {
-    background: url(../img/hit-small.png) no-repeat 0 0;
+    background: url(../img/index/hit-small.png) no-repeat 0 0;
     left: 0; }
   .hit--packet::after {
     left: -17px;
@@ -829,7 +834,7 @@ body {
 
 @media (min-width: 1200px) {
   .packets__block {
-    background: url(../img/feature-back-desk.jpg) no-repeat 0 30px;
+    background: url(../img/index/feature-back-desk.jpg) no-repeat 0 30px;
     padding: 192px 0 95px 0; }
   .title__price {
     font-size: 24px;
@@ -840,7 +845,7 @@ body {
     padding-top: 15px;
     width: 231px; }
   .hit--packet::before {
-    background: url(../img/hit.png) no-repeat 0 0; }
+    background: url(../img/index/hit.png) no-repeat 0 0; }
   .hit--packet::after {
     left: -12px;
     top: 5px; }
@@ -902,13 +907,24 @@ body {
     text-decoration: none; }
 
 .contact__box {
-  margin: 0 0 5px 0; }
+  margin: 0 0 8px 0; }
 
 .contact__map {
-  background: black url(../img/triang.png) no-repeat 0 -88px;
+  background: url(../img/index/triang.png) no-repeat 0 -88px;
   height: 200px;
   margin-top: 30px;
   width: 100%; }
+
+.map {
+  height: 200px;
+  position: relative;
+  width: 100%;
+  z-index: -1; }
+
+.box--2 {
+  left: 1px;
+  position: relative;
+  top: 5px; }
 
 @media (min-width: 660px) {
   .contacts__title {
@@ -919,12 +935,16 @@ body {
   .contact__wrapper {
     display: flex;
     justify-content: space-between;
-    margin: 30px 0 23px 0;
+    margin: 30px 0 20px 0;
     width: 562px; }
   .contact__map {
-    background: black url(../img/triang-tab.png) no-repeat 0 -57px;
+    background: url(../img/index/triang-tab.png) no-repeat 0 -57px;
     height: 370px;
-    margin-top: 27px; } }
+    margin-top: 23px; }
+  .map {
+    height: 371px; }
+  .box--2 {
+    position: static; } }
 
 @media (min-width: 1200px) {
   .contacts__title {
@@ -940,11 +960,13 @@ body {
   .contact__email {
     top: 23px; }
   .box--3 {
-    margin: -120px 0 0 -2px; }
+    margin: -121px 0 0 -2px; }
   .contact__map {
-    background: black url(../img/triang-desk.png) no-repeat 0 -25px;
+    background: url(../img/index/triang-desk.png) no-repeat 0 -25px;
     height: 500px;
-    margin-top: 23px; } }
+    margin-top: 23px; }
+  .map {
+    height: 500px; } }
 
 /*Подвал*/
 .footer__block {
@@ -958,7 +980,7 @@ body {
     min-height: 127px;
     padding: 0 20px; }
   .footer__logo {
-    background: url(../img/footer-logo.svg) no-repeat 0 0;
+    background: url(../img/common/footer-logo.svg) no-repeat 0 0;
     color: transparent;
     display: block;
     font-size: 1px;
@@ -966,10 +988,10 @@ body {
     margin-top: -10px;
     width: 150px; }
     .footer__logo:hover, .footer__logo:focus {
-      background: url(../img/logo-tab-hov.svg) no-repeat 1px 0;
+      background: url(../img/common/logo-tab-hov.svg) no-repeat 1px 0;
       outline: none; }
     .footer__logo:active {
-      background: url(../img/footer-logo.svg) no-repeat 0 0;
+      background: url(../img/common/footer-logo.svg) no-repeat 0 0;
       opacity: .3; }
   .list__media {
     display: flex;
@@ -994,30 +1016,32 @@ body {
   .creator__box {
     display: flex;
     justify-content: space-between;
-    margin-top: 8px;
+    margin-top: 9px;
     width: 130px; }
   .html-academy {
-    background: url(../img/htmlacademy.png) no-repeat 100% center;
+    background: url(../img/common/htmlacademy.png) no-repeat 100% center;
     color: transparent;
     font-size: 1px;
     height: 35px;
     width: 28px; }
     .html-academy:hover, .html-academy:focus {
-      background: url(../img/html-hov.png) no-repeat 100% center;
+      background: url(../img/common/html-hov.png) no-repeat 100% center;
       outline: none; }
     .html-academy:active {
-      opacity: .3; } }
+      opacity: .3; }
+  .twitter__img {
+    margin-top: 3px; } }
 
 @media (min-width: 1200px) {
   .footer__block {
     min-height: 188px;
     padding: 0 130px; }
   .list__media {
-    margin: 10px 0 0 5px; }
+    margin: 7px 0 0 5px; }
   .footer__logo {
-    background: url(../img/footer-logo-desk.svg) no-repeat 0 0; }
+    background: url(../img/common/footer-logo-desk.svg) no-repeat 0 0; }
     .footer__logo:active {
-      background: url(../img/footer-logo-desk.svg) no-repeat 0 0; }
+      background: url(../img/common/footer-logo-desk.svg) no-repeat 0 0; }
   .creator__box {
     font-size: 18px;
     margin-top: 12px;

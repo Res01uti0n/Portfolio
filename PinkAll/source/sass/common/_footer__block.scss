@@ -13,7 +13,7 @@
   }
 
   .footer__logo {
-    background: url(../img/footer-logo.svg) no-repeat 0 0;
+    background: url(../img/common/footer-logo.svg) no-repeat 0 0;
     color: transparent;
     display: block;
     font-size: 1px;
@@ -22,11 +22,11 @@
     width: 150px;
     &:hover,
     &:focus {
-      background: url(../img/logo-tab-hov.svg) no-repeat 1px 0;
+      background: url(../img/common/logo-tab-hov.svg) no-repeat 1px 0;
       outline: none;
     }
     &:active {
-      background: url(../img/footer-logo.svg) no-repeat 0 0;
+      background: url(../img/common/footer-logo.svg) no-repeat 0 0;
       opacity: .3;
     }
   }
@@ -63,24 +63,28 @@
   .creator__box {
     display: flex;
     justify-content: space-between;
-    margin-top: 8px;
+    margin-top: 9px;
     width: 130px;
   }
 
   .html-academy {
-    background: url(../img/htmlacademy.png) no-repeat 100% center;
+    background: url(../img/common/htmlacademy.png) no-repeat 100% center;
     color: transparent;
     font-size: 1px;
     height: 35px;
     width: 28px;
     &:hover,
     &:focus {
-      background: url(../img/html-hov.png) no-repeat 100% center;
+      background: url(../img/common/html-hov.png) no-repeat 100% center;
       outline: none;
     }
     &:active {
       opacity: .3;
     }
+  }
+
+  .twitter__img {
+    margin-top: 3px;
   }
 }
 
@@ -91,13 +95,13 @@
   }
 
   .list__media {
-    margin: 10px 0 0 5px;
+    margin: 7px 0 0 5px;
   }
 
   .footer__logo {
-    background: url(../img/footer-logo-desk.svg) no-repeat 0 0;
+    background: url(../img/common/footer-logo-desk.svg) no-repeat 0 0;
     &:active {
-      background: url(../img/footer-logo-desk.svg) no-repeat 0 0;
+      background: url(../img/common/footer-logo-desk.svg) no-repeat 0 0;
     }
   }
 

@@ -46,14 +46,27 @@
 }
 
 .contact__box {
-  margin: 0 0 5px 0;
+  margin: 0 0 8px 0;
 }
 
 .contact__map {
-  background: black url(../img/triang.png) no-repeat 0 -88px;
+  background: url(../img/index/triang.png) no-repeat 0 -88px;
   height: 200px;
   margin-top: 30px;
   width: 100%;
+}
+
+.map {
+  height: 200px;
+  position: relative;
+  width: 100%;
+  z-index: -1;
+}
+
+.box--2 {
+  left: 1px;
+  position: relative;
+  top: 5px;
 }
 
 @media (min-width: 660px) {
@@ -67,14 +80,22 @@
   .contact__wrapper {
     display: flex;
     justify-content: space-between;
-    margin: 30px 0 23px 0;
+    margin: 30px 0 20px 0;
     width: 562px;
   }
 
   .contact__map {
-    background: black url(../img/triang-tab.png) no-repeat 0 -57px;
+    background: url(../img/index/triang-tab.png) no-repeat 0 -57px;
     height: 370px;
-    margin-top: 27px;
+    margin-top: 23px;
+  }
+
+  .map {
+    height: 371px;
+  }
+
+  .box--2 {
+    position: static;
   }
 }
 
@@ -100,12 +121,16 @@
   }
 
   .box--3 {
-    margin: -120px 0 0 -2px;
+    margin: -121px 0 0 -2px;
   }
 
   .contact__map {
-    background: black url(../img/triang-desk.png) no-repeat 0 -25px;
+    background: url(../img/index/triang-desk.png) no-repeat 0 -25px;
     height: 500px;
     margin-top: 23px;
+  }
+
+  .map {
+    height: 500px;
   }
 }

@@ -21,8 +21,8 @@
 }
 
 .features__box {
-  background: url(../img/iphone-screen.png) no-repeat center 108.5%,
-  url(../img/feature-back.jpg) no-repeat 0 0;
+  background: url(../img/index/iphone-screen.png) no-repeat center 108.5%,
+  url(../img/index/feature-back.jpg) no-repeat 0 0;
   margin: -10px 0 0 0;
   padding: 103px 0 307px 0;
   width: 100%;
@@ -57,9 +57,9 @@
 
 @media (min-width: 660px) {
   .features__block {
-    background: url(../img/smile.jpg) no-repeat 33px 304px,
-    url(../img/iphone-screen-tab.jpg) no-repeat 20px 138%,
-    url(../img/feature-back-tab.jpg) no-repeat 0 215px;
+    background: url(../img/index/smile.jpg) no-repeat 33px 304px,
+    url(../img/index/iphone-screen-tab.jpg) no-repeat 20px 138%,
+    url(../img/index/feature-back-tab.jpg) no-repeat 0 215px;
   }
 
   .features__quest,
@@ -101,13 +101,13 @@
 
 @media (min-width: 1200px) {
   .features__block {
-    background: url(../img/screen-smile.jpg) no-repeat 835px 365px,
-    url(../img/screen-pink.jpg) no-repeat 515px 365px,
-    url(../img/screen-grey.jpg) no-repeat 192px 365px,
-    url(../img/iphone-feature-desk.png) no-repeat center 325px,
-    url(../img/iphone-feature-desk.png) no-repeat 185px 325px,
-    url(../img/iphone-feature-desk.png) no-repeat 825px 325px,
-    url(../img/feature-back-desk.jpg) no-repeat 0 320px;
+    background: url(../img/index/screen-smile.jpg) no-repeat 835px 365px,
+    url(../img/index/screen-pink.jpg) no-repeat 515px 365px,
+    url(../img/index/screen-grey.jpg) no-repeat 192px 365px,
+    url(../img/index/iphone-feature-desk.png) no-repeat center 325px,
+    url(../img/index/iphone-feature-desk.png) no-repeat 185px 325px,
+    url(../img/index/iphone-feature-desk.png) no-repeat 825px 325px,
+    url(../img/index/feature-back-desk.jpg) no-repeat 0 320px;
   }
 
   .features__quest,
@@ -138,7 +138,7 @@
     width: 270px;
     z-index: 20;
     &::before {
-      background: url(../img/shadow.png) no-repeat center -3px;
+      background: url(../img/index/shadow.png) no-repeat center -3px;
       content: '';
       height: 5px;
       position: absolute;
