@@ -51,6 +51,10 @@
   display: none;
 }
 
+.desk__gap {
+  display: none;
+}
+
 @media (min-width: 660px) {
   .features__block {
     background: url(../img/smile.jpg) no-repeat 33px 304px,
@@ -92,6 +96,75 @@
 
   .tab__gap {
     display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features__block {
+    background: url(../img/screen-smile.jpg) no-repeat 835px 365px,
+    url(../img/screen-pink.jpg) no-repeat 515px 365px,
+    url(../img/screen-grey.jpg) no-repeat 192px 365px,
+    url(../img/iphone-feature-desk.png) no-repeat center 325px,
+    url(../img/iphone-feature-desk.png) no-repeat 185px 325px,
+    url(../img/iphone-feature-desk.png) no-repeat 825px 325px,
+    url(../img/feature-back-desk.jpg) no-repeat 0 320px;
+  }
+
+  .features__quest,
+  .features__title {
+    font-size: 50px;
+    line-height: 59px;
+    margin-top: 69px;
+  }
+
+  .features__title {
+    margin: 1px;
+    width: 420px;
+  }
+
+  .features__box {
+    display: flex;
+    justify-content: space-between;
+    margin: 378px 0 0 0;
+    padding: 0;
+    width: 910px;
+  }
+
+  .feature {
+    align-items: center;
+    background: $featureBack;
+    padding-top: 32px;
+    position: relative;
+    width: 270px;
+    z-index: 20;
+    &::before {
+      background: url(../img/shadow.png) no-repeat center -3px;
+      content: '';
+      height: 5px;
+      position: absolute;
+      top: -5px;
+      width: 270px;
+      z-index: 10;
+    }
+  }
+
+  .feature__title {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 225px;
+  }
+
+  .feature__text {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 26px 0 13px 0;
+    text-align: center;
+    width: 249px;
+  }
+
+  .tab__gap {
+    display: none;
   }
 }
 

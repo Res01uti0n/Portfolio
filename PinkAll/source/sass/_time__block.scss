@@ -3,6 +3,10 @@
   display: none;
 }
 
+.desk__gap {
+  display: none;
+}
+
 @media (min-width: 660px) {
   .time__block {
     display: flex;
@@ -33,6 +37,8 @@
 
   .timer__img {
     margin-top: 60px;
+    height: 277px;
+    width: 238px;
   }
 
   .time__info {
@@ -64,5 +70,55 @@
       opacity: .3;
       text-decoration: none;
     }
+  }
+}
+
+@media (min-width: 1200px) {
+  .time__block {
+    background: $featureBack;
+    padding: 0 20px 67px 0;
+    &::before {
+      font-size: 120px;
+      left: 210px;
+      top: 230px;
+    }
+    &::after {
+      border: 17px solid $pink;
+      height: 218px;
+      top: 125px;
+      left: 153px;
+      width: 218px;
+    }
+  }
+
+  .timer__img {
+    margin: 55px 0 0 128px;
+    height: 345px;
+    width: 300px;
+  }
+
+  .time__info {
+    margin-top: 116px;
+    width: 685px;
+  }
+
+  .time__title {
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .time__text {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 21px 0 32px 0;
+    width: 552px;
+  }
+
+  .desk__gap {
+    display: block;
+  }
+
+  .time__more {
+    font-size: 18px;
   }
 }

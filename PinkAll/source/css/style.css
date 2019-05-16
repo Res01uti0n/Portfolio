@@ -362,6 +362,9 @@ body {
 .tab__gap {
   display: none; }
 
+.desk__gap {
+  display: none; }
+
 @media (min-width: 660px) {
   .features__block {
     background: url(../img/smile.jpg) no-repeat 33px 304px, url(../img/iphone-screen-tab.jpg) no-repeat 20px 138%, url(../img/feature-back-tab.jpg) no-repeat 0 215px; }
@@ -390,8 +393,57 @@ body {
   .tab__gap {
     display: block; } }
 
+@media (min-width: 1200px) {
+  .features__block {
+    background: url(../img/screen-smile.jpg) no-repeat 835px 365px, url(../img/screen-pink.jpg) no-repeat 515px 365px, url(../img/screen-grey.jpg) no-repeat 192px 365px, url(../img/iphone-feature-desk.png) no-repeat center 325px, url(../img/iphone-feature-desk.png) no-repeat 185px 325px, url(../img/iphone-feature-desk.png) no-repeat 825px 325px, url(../img/feature-back-desk.jpg) no-repeat 0 320px; }
+  .features__quest,
+  .features__title {
+    font-size: 50px;
+    line-height: 59px;
+    margin-top: 69px; }
+  .features__title {
+    margin: 1px;
+    width: 420px; }
+  .features__box {
+    display: flex;
+    justify-content: space-between;
+    margin: 378px 0 0 0;
+    padding: 0;
+    width: 910px; }
+  .feature {
+    align-items: center;
+    background: #f2f2f2;
+    padding-top: 32px;
+    position: relative;
+    width: 270px;
+    z-index: 20; }
+    .feature::before {
+      background: url(../img/shadow.png) no-repeat center -3px;
+      content: '';
+      height: 5px;
+      position: absolute;
+      top: -5px;
+      width: 270px;
+      z-index: 10; }
+  .feature__title {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 225px; }
+  .feature__text {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 26px 0 13px 0;
+    text-align: center;
+    width: 249px; }
+  .tab__gap {
+    display: none; } }
+
 /*Время действия*/
 .time__block {
+  display: none; }
+
+.desk__gap {
   display: none; }
 
 @media (min-width: 660px) {
@@ -419,7 +471,9 @@ body {
       width: 175px;
       z-index: 10; }
   .timer__img {
-    margin-top: 60px; }
+    margin-top: 60px;
+    height: 277px;
+    width: 238px; }
   .time__info {
     width: 310px; }
   .time__title {
@@ -440,6 +494,40 @@ body {
     .time__more:active {
       opacity: .3;
       text-decoration: none; } }
+
+@media (min-width: 1200px) {
+  .time__block {
+    background: #f2f2f2;
+    padding: 0 20px 67px 0; }
+    .time__block::before {
+      font-size: 120px;
+      left: 210px;
+      top: 230px; }
+    .time__block::after {
+      border: 17px solid #d22856;
+      height: 218px;
+      top: 125px;
+      left: 153px;
+      width: 218px; }
+  .timer__img {
+    margin: 55px 0 0 128px;
+    height: 345px;
+    width: 300px; }
+  .time__info {
+    margin-top: 116px;
+    width: 685px; }
+  .time__title {
+    padding-top: 0;
+    width: 100%; }
+  .time__text {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 21px 0 32px 0;
+    width: 552px; }
+  .desk__gap {
+    display: block; }
+  .time__more {
+    font-size: 18px; } }
 
 /*Отзывы*/
 .reviews__block {
@@ -494,6 +582,9 @@ body {
 .author__info {
   display: none; }
 
+.slide-btn__desk {
+  display: none; }
+
 @media (min-width: 660px) {
   .review__author {
     order: 1; }
@@ -510,6 +601,59 @@ body {
     margin: 17px 0 0 0; }
   .slider__list {
     margin-top: 15px; } }
+
+@media (min-width: 1200px) {
+  .review {
+    background: url(../img/quote.svg) no-repeat center 65px;
+    background-size: 80px 78px; }
+  .review__text {
+    line-height: 31px;
+    margin-top: 185px;
+    width: 690px; }
+  .review__author {
+    font-size: 24px; }
+  .author__info {
+    font-size: 18px; }
+  .slider__list {
+    display: none; }
+  .slide-btn__desk {
+    background: transparent;
+    border: none;
+    color: transparent;
+    display: block;
+    font-size: 1px;
+    height: 45px;
+    left: 130px;
+    opacity: .3;
+    position: absolute;
+    top: 212px;
+    width: 23px; }
+    .slide-btn__desk::before {
+      background: #283645;
+      content: '';
+      height: 2px;
+      left: -4px;
+      position: absolute;
+      top: 32px;
+      transform: rotate(45deg);
+      width: 30px; }
+    .slide-btn__desk::after {
+      background: #283645;
+      content: '';
+      height: 2px;
+      left: -4px;
+      position: absolute;
+      top: 12px;
+      transform: rotate(135deg);
+      width: 30px; }
+    .slide-btn__desk:hover, .slide-btn__desk:focus {
+      opacity: .6;
+      outline: none; }
+    .slide-btn__desk:active {
+      opacity: .1; }
+  .previous--slide {
+    left: 1045px;
+    transform: rotate(180deg); } }
 
 /*Пакеты услуг*/
 .packets__block {
