@@ -77,3 +77,35 @@
     margin-top: 27px;
   }
 }
+
+@media (min-width: 1200px) {
+  .contacts__title {
+    font-size: 50px;
+    line-height: 59px;
+    margin: 65px 0 0 0;
+    width: 470px;
+  }
+
+  .contact__info {
+    margin: 20px 0 0 0;
+  }
+
+  .contact__wrapper {
+    margin: 41px 0 23px 0;
+    width: 880px;
+  }
+
+  .contact__email {
+    top: 23px;
+  }
+
+  .box--3 {
+    margin: -120px 0 0 -2px;
+  }
+
+  .contact__map {
+    background: black url(../img/triang-desk.png) no-repeat 0 -25px;
+    height: 500px;
+    margin-top: 23px;
+  }
+}

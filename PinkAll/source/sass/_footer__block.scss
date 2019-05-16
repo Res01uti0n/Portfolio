@@ -23,8 +23,10 @@
     &:hover,
     &:focus {
       background: url(../img/logo-tab-hov.svg) no-repeat 1px 0;
+      outline: none;
     }
     &:active {
+      background: url(../img/footer-logo.svg) no-repeat 0 0;
       opacity: .3;
     }
   }
@@ -79,5 +81,29 @@
     &:active {
       opacity: .3;
     }
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer__block {
+    min-height: 188px;
+    padding: 0 130px;
+  }
+
+  .list__media {
+    margin: 10px 0 0 5px;
+  }
+
+  .footer__logo {
+    background: url(../img/footer-logo-desk.svg) no-repeat 0 0;
+    &:active {
+      background: url(../img/footer-logo-desk.svg) no-repeat 0 0;
+    }
+  }
+
+  .creator__box {
+    font-size: 18px;
+    margin-top: 12px;
+    width: 154px;
   }
 }

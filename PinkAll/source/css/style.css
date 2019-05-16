@@ -827,6 +827,41 @@ body {
   .list--packets {
     display: none; } }
 
+@media (min-width: 1200px) {
+  .packets__block {
+    background: url(../img/feature-back-desk.jpg) no-repeat 0 30px;
+    padding: 192px 0 95px 0; }
+  .title__price {
+    font-size: 24px;
+    margin-top: 2px; }
+  .table__title {
+    font-size: 18px;
+    min-height: 82px;
+    padding-top: 15px;
+    width: 231px; }
+  .hit--packet::before {
+    background: url(../img/hit.png) no-repeat 0 0; }
+  .hit--packet::after {
+    left: -12px;
+    top: 5px; }
+  .table__cell {
+    font-size: 18px;
+    height: 57px;
+    padding-left: 20px;
+    width: 212px; }
+  .cell--yes::before {
+    right: 118px;
+    top: 34px; }
+  .cell--yes::after {
+    right: 99px;
+    top: 30px; }
+  .cell--not::before {
+    right: 100px;
+    top: 27px; }
+  .cell--not::after {
+    right: 100px;
+    top: 27px; } }
+
 /*Контакты*/
 .contacts__block {
   align-items: center;
@@ -891,6 +926,26 @@ body {
     height: 370px;
     margin-top: 27px; } }
 
+@media (min-width: 1200px) {
+  .contacts__title {
+    font-size: 50px;
+    line-height: 59px;
+    margin: 65px 0 0 0;
+    width: 470px; }
+  .contact__info {
+    margin: 20px 0 0 0; }
+  .contact__wrapper {
+    margin: 41px 0 23px 0;
+    width: 880px; }
+  .contact__email {
+    top: 23px; }
+  .box--3 {
+    margin: -120px 0 0 -2px; }
+  .contact__map {
+    background: black url(../img/triang-desk.png) no-repeat 0 -25px;
+    height: 500px;
+    margin-top: 23px; } }
+
 /*Подвал*/
 .footer__block {
   display: none; }
@@ -911,8 +966,10 @@ body {
     margin-top: -10px;
     width: 150px; }
     .footer__logo:hover, .footer__logo:focus {
-      background: url(../img/logo-tab-hov.svg) no-repeat 1px 0; }
+      background: url(../img/logo-tab-hov.svg) no-repeat 1px 0;
+      outline: none; }
     .footer__logo:active {
+      background: url(../img/footer-logo.svg) no-repeat 0 0;
       opacity: .3; }
   .list__media {
     display: flex;
@@ -950,3 +1007,18 @@ body {
       outline: none; }
     .html-academy:active {
       opacity: .3; } }
+
+@media (min-width: 1200px) {
+  .footer__block {
+    min-height: 188px;
+    padding: 0 130px; }
+  .list__media {
+    margin: 10px 0 0 5px; }
+  .footer__logo {
+    background: url(../img/footer-logo-desk.svg) no-repeat 0 0; }
+    .footer__logo:active {
+      background: url(../img/footer-logo-desk.svg) no-repeat 0 0; }
+  .creator__box {
+    font-size: 18px;
+    margin-top: 12px;
+    width: 154px; } }

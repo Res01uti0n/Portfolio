@@ -215,5 +215,59 @@
 }
 
 @media (min-width: 1200px) {
+  .packets__block {
+    background: url(../img/feature-back-desk.jpg) no-repeat 0 30px;
+    padding: 192px 0 95px 0;
+  }
 
+  .title__price {
+    font-size: 24px;
+    margin-top: 2px;
+  }
+
+  .table__title {
+    font-size: 18px;
+    min-height: 82px;
+    padding-top: 15px;
+    width: 231px;
+  }
+
+  .hit--packet {
+    &::before {
+      background: url(../img/hit.png) no-repeat 0 0;
+    }
+    &::after {
+      left: -12px;
+      top: 5px;
+    }
+  }
+
+  .table__cell {
+    font-size: 18px;
+    height: 57px;
+    padding-left: 20px;
+    width: 212px;
+  }
+
+  .cell--yes {
+    &::before {
+      right: 118px;
+      top: 34px;
+    }
+    &::after {
+      right: 99px;
+      top: 30px;
+    }
+  }
+
+  .cell--not {
+    &::before {
+      right: 100px;
+      top: 27px;
+    }
+    &::after {
+      right: 100px;
+      top: 27px;
+    }
+  }
 }
