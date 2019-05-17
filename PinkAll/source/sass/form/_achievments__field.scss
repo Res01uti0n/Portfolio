@@ -78,3 +78,9 @@
 .achievments__field input[type='checkbox']:active + label::before {
   border-color: $pink;
 }
+
+@media (min-width: 660px) {
+  .achievments__field {
+    order: 4;
+  }
+}

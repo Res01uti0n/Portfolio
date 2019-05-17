@@ -49,13 +49,11 @@ body {
   font-size: 1px;
   position: absolute; }
 
-/*@media (min-width: 660px) {
+@media (min-width: 660px) {
   .container {
-    width: 660px;
-  }
-}
+    width: 660px; } }
 
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
   .container {
     position: relative;
     width: 1200px;
@@ -176,36 +174,25 @@ body {
   .nav__item:active {
     opacity: .3; }
 
-/*@media (min-width: 660px) {
+@media (min-width: 660px) {
   .header__box {
-    min-height: 110px;
-  }
-
+    min-height: 110px; }
   .header__logo {
     background: url(../img/common/logo-tab.svg) no-repeat 1px 0;
     margin-top: -15px;
     height: 40px;
-    width: 150px;
-    &:hover,
-    &:focus {
-      background: url(../img/common/logo-tab-hov.svg) no-repeat 1px 0;
-    }
-    &:active {
-      background: url(../img/common/logo-tab.svg) no-repeat 1px 0;
-    }
-  }
-
+    width: 150px; }
+    .header__logo:hover, .header__logo:focus {
+      background: url(../img/common/logo-tab-hov.svg) no-repeat 1px 0; }
+    .header__logo:active {
+      background: url(../img/common/logo-tab.svg) no-repeat 1px 0; }
   .nav__item {
-    width: 660px;
-  }
-
+    width: 660px; }
   .btn--close {
     right: 1px;
-    top: 3px;
-  }
-}
+    top: 3px; } }
 
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
   .header__box {
     padding: 0 130px;
   }
@@ -321,48 +308,42 @@ body {
   text-align: center;
   width: 230px; }
 
-/*@media (min-width: 660px) {
+@media (min-width: 660px) {
   .intro__block {
-    background: url(../img/common/iphone-tab.png) no-repeat 0 bottom,
-    url(../img/common/screen-tab.jpg) no-repeat 370px 238px,
-    url(../img/common/back-tab.jpg) no-repeat center 0;
+    background: url(../img/common/iphone-tab.png) no-repeat 0 bottom, url(../img/common/screen-tab.jpg) no-repeat 370px 238px, url(../img/common/back-tab.jpg) no-repeat center 0;
     margin-top: -110px;
-    padding: 162px 0 75px 0;
-  }
-
+    padding: 162px 0 75px 0; }
   .intro__info {
     background: none;
     margin-left: 20px;
-    width: 300px;
-  }
-
+    width: 300px; }
   .intro__moto {
-    color: $wh;
+    color: #fff;
     display: block;
     font-size: 40px;
     font-weight: 300;
     line-height: 48px;
     text-align: center;
-    width: 190px;
-  }
-
+    width: 190px; }
   .intro__btn {
     margin-top: -7px;
-    width: 290px;
-  }
-
+    width: 290px; }
   .platform__list {
-    margin-top: 43px;
-  }
-
+    margin-top: 43px; }
   .intro__text {
     font-size: 18px;
     margin-top: 25px;
-    width: 100%;
-  }
-}
+    width: 100%; }
+  .intro--catalog {
+    background: url(../img/common/back-tab.jpg) no-repeat center 0;
+    padding: 115px 0 45px 0; }
+  .title--form {
+    font-size: 50px;
+    line-height: 60px;
+    margin-top: 66px;
+    width: 475px; } }
 
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
   .intro__block {
     background: url(../img/common/iphone-desk.png) no-repeat 145px bottom,
     url(../img/common/screen-desk.jpg) no-repeat 715px 270px,
@@ -1105,29 +1086,21 @@ body {
 .twitter__img {
   margin-top: 3px; }
 
-/*@media (min-width: 660px) {
+@media (min-width: 660px) {
   .footer__block {
     align-items: center;
     display: flex;
     justify-content: space-between;
     min-height: 127px;
-    padding: 0 20px;
-  }
-
+    padding: 0 20px; }
   .footer__logo {
-    margin-top: -10px;
-  }
-
+    margin-top: -10px; }
   .list__media {
-    margin: 2px 0 0 -20px;
-  }
-
+    margin: 2px 0 0 -20px; }
   .creator__box {
-    margin-top: 9px;
-  }
-}
+    margin-top: 9px; } }
 
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
   .footer__block {
     min-height: 188px;
     padding: 0 130px;
@@ -1197,6 +1170,27 @@ body {
   .form__input:focus {
     border-color: #d22856;
     outline: none; }
+
+@media (min-width: 660px) {
+  .desk__text {
+    display: block; }
+  .form__text {
+    font-size: 18px;
+    margin-top: 94px;
+    width: 500px; }
+  .personal__field {
+    padding-top: 52px;
+    order: 1;
+    width: 620px; }
+  .form__item {
+    align-items: baseline;
+    flex-direction: row;
+    margin-bottom: 52px; }
+  .form__label {
+    margin: 0 20px 6px 0; }
+  .form__input {
+    flex-grow: 1;
+    padding-left: 19px; } }
 
 /*Поле достижений*/
 .achievments__field {
@@ -1268,9 +1262,17 @@ body {
 .achievments__field input[type='checkbox']:active + label::before {
   border-color: #d22856; }
 
+@media (min-width: 660px) {
+  .achievments__field {
+    order: 4; } }
+
 /*Поле контактов*/
 .contact__field {
   margin-top: 27px; }
+
+@media (min-width: 660px) {
+  .contact__field {
+    order: 3; } }
 
 /*Поле платформы*/
 .os__field {
@@ -1333,6 +1335,22 @@ body {
 .os__field .field__item:last-of-type {
   margin-bottom: 38px; }
 
+@media (min-width: 660px) {
+  .form__block .os__field {
+    background: none;
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+    padding: 12px 0 18px 0;
+    order: 2;
+    width: 614px; }
+  .form__legend {
+    position: static;
+    width: 368px; }
+  .os__field .field__item {
+    margin-left: 58px; }
+  .os__field input[type='radio'] + label {
+    padding: 0 0 15px 59px; } }
+
 /*Поле сообщения*/
 .message__box {
   border: 2px solid #e5e5e5;
@@ -1382,6 +1400,14 @@ body {
 
 .sign {
   color: #d22856; }
+
+@media (min-width: 660px) {
+  .message__field {
+    order: 5; }
+  .form__btn {
+    order: 6; }
+  .important__string {
+    order: 7; } }
 
 /*Модальные окна*/
 .modal {

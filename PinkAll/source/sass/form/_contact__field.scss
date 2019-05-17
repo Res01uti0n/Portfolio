@@ -2,3 +2,9 @@
 .contact__field {
   margin-top: 27px;
 }
+
+@media (min-width: 660px) {
+  .contact__field {
+    order: 3;
+  }
+}
