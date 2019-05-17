@@ -3,6 +3,7 @@
   background: $featureBack;
   margin-top: -1px;
   padding-top: 61px;
+  width: 300px;
 }
 
 .form__legend {
@@ -34,7 +35,7 @@
 .achievments__field input[type='checkbox'] + label {
   cursor: pointer;
   font-size: 18px;
-  padding: 0 0 15px 68px;
+  padding: 0 0 15px 69px;
   position: relative;
 }
 
@@ -52,14 +53,14 @@
 
 .achievments__field input[type='checkbox']:hover + label::before,
 .achievments__field input[type='checkbox']:focus + label::before {
-  border-color: $bl;
+  border-color: $colorText;
   outline: none;
 }
 
 .achievments__field input[type='checkbox'] + label::after {
   content: "";
   height: 17px;
-  left: 8px;
+  left: 10px;
   opacity: 0;
   position: absolute;
   top: 4px;

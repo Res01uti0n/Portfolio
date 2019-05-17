@@ -1,4 +1,63 @@
+/*Поле сообщения*/
 .message__box {
-  height: 196px;
-  width: 276px;
+  border: 2px solid $tableBorder;
+  font-size: 18px;
+  height: 166px;
+  line-height: 30px;
+  margin: 48px 0 0 0;
+  padding: 15px 18px;
+  width: 241px;
+  &:hover {
+    border-color: $bl;
+  }
+  &:focus {
+    border-color: $pink;
+    outline: none;
+  }
+}
+
+.message--legend {
+  top: 37px;
+}
+
+.form__btn {
+  background: $formBtnBack;
+  border: none;
+  border-radius: 3px;
+  color: $wh;
+  font-size: 18px;
+  font-weight: bold;
+  height: 63px;
+  line-height: 30px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  width: 280px;
+  &:hover,
+  &:focus {
+    background: $btnAct;
+    outline: none;
+  }
+  &:active {
+    color: $whAct;
+  }
+}
+
+.btn--disabled {
+  background: $tableBorder;
+  &:hover,
+  &:focus {
+    background: $tableBorder;
+  }
+  &:active {
+    color: $tableBorder;
+  }
+}
+
+.important__string {
+  margin-top: 35px;
+  text-transform: uppercase;
+}
+
+.sign {
+  color: $pink;
 }

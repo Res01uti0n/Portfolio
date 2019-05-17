@@ -56,6 +56,10 @@ $yesColor: #3dc644;
 $noColor: #f25b26;
 $socialBorder: #e9ebec;
 $featureBack: #f2f2f2;
+$formBtnBack: #2aab6d;
+$shadow: rgba(0, 0, 0, .2);
+$btnAct: #1c9b5e;
+$whAct: rgba(255, 255, 255, .3);
 
 /*Каркас*/
 
@@ -71,6 +75,7 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
+  position: relative;
   width: 320px;
 }
 
@@ -106,4 +111,5 @@ body {
 @import "form/contact__field";
 @import "form/os__field";
 @import "form/message__field";
+@import "form/modals__blocks";
 

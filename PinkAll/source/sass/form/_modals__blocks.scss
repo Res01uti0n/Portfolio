@@ -1,0 +1,53 @@
+/*Модальные окна*/
+.modal {
+  align-items: center;
+  background: $wh;
+  box-shadow: 0 7px 15px $shadow;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+}
+
+.success__modal {
+  bottom: 735px;
+  height: 380px;
+}
+
+.modal__title {
+  font-size: 18px;
+  margin: 37px 0 0 -1px;
+}
+
+.modal__text {
+  line-height: 24px;
+  margin-top: 22px;
+  text-align: center;
+  width: 265px;
+}
+
+.btn__box {
+  align-items: center;
+  background: $featureBack;
+  display: flex;
+  justify-content: center;
+  height: 163px;
+  margin-top: 18px;
+  width: 100%;
+}
+
+.btn__close {
+  margin-top: -5px;
+}
+
+.error__modal {
+  bottom: 1300px;
+  height: 290px;
+}
+
+.error__text {
+  margin: 23px 0 43px 0;
+  width: 280px;
+}
+
+
