@@ -80,7 +80,7 @@ body {
   position: absolute;
 }
 
-@media (min-width: 660px) {
+/*@media (min-width: 660px) {
   .container {
     width: 660px;
   }
@@ -91,14 +91,19 @@ body {
     position: relative;
     width: 1200px;
   }
-}
+}*/
 
 @import "common/header__block";
-@import "index/intro__block";
+@import "common/intro__block";
 @import "index/features__block";
 @import "index/time__block";
 @import "index/reviews__block";
 @import "index/packets__block";
 @import "index/contacts__block";
 @import "common/footer__block";
+@import "form/personal__field";
+@import "form/achievments__field";
+@import "form/contact__field";
+@import "form/os__field";
+@import "form/message__field";
 

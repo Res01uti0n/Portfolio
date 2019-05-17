@@ -1,123 +1,123 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
-<head>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <meta charset="utf-8">
-  <title>PinkAll</title>
-</head>
-<body>
-<div class="container">
-  <header class="header__block">
-    <div class="header__box">
-      <a href="#" class="header__logo">Лого</a>
-      <button class="nav__btn">Навигация</button>
-    </div>
-    <nav class="nav__box">
-      <ul class="nav__list">
-        <li><a href="#" class="nav__item">Главная</a></li>
-        <li><a href="#" class="nav__item">Фотографии</a></li>
-        <li><a href="#" class="nav__item">Конкурс</a></li>
-        <li><a href="#" class="nav__item">HTML Academy</a></li>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <title>PinkAll</title>
+  </head>
+  <body>
+  <div class="container">
+    <header class="header__block">
+      <div class="header__box">
+        <a href="#" class="header__logo">Лого</a>
+        <button class="nav__btn">Навигация</button>
+      </div>
+      <nav class="nav__box">
+        <ul class="nav__list">
+          <li><a href="#" class="nav__item">Главная</a></li>
+          <li><a href="#" class="nav__item">Фотографии</a></li>
+          <li><a href="#" class="nav__item">Конкурс</a></li>
+          <li><a href="#" class="nav__item">HTML Academy</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="intro__block intro--catalog">
+        <h1 class="title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </section>
+      <section class="form__block">
+        <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="desk__text">Пожалуйста, заполните форму ниже:</span></p>
+        <form action="#">
+          <fieldset class="personal__field">
+            <div class="form__item">
+              <label class="form__label" for="surname">Фамилия:</label>
+              <input class="form__input" id="surname" type="text" minlength="2" maxlength="20" name="surname" value="Укажите фамилию *" required>
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="name">Имя:</label>
+              <input class="form__input" id="name" type="text" minlength="2" maxlength="20" name="name" value="Введите ваше имя *" required>
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="thirdname">Отчество:</label>
+              <input class="form__input" id="thirdname" type="text" minlength="2" maxlength="20" name="thirdname" value="Ну и отчество тоже">
+            </div>
+          </fieldset>
+          <fieldset class="achievments__field">
+            <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+            <div class="field__item">
+              <input id="shark" type="checkbox" name="shark" checked>
+              <label for="shark">Сделал селфи с акулой</label>
+            </div>
+            <div class="field__item">
+              <input id="beach" type="checkbox" name="beach" checked>
+              <label for="beach">Обгорел на пляже</label>
+            </div>
+            <div class="field__item">
+              <input id="Chak" type="checkbox" name="Chak">
+              <label for="Chak">Видел Чака Норриса</label>
+            </div>
+            <div class="field__item">
+              <input id="shopping" type="checkbox" name="shopping">
+              <label for="shopping">Накупил сувениров</label>
+            </div>
+            <div class="field__item">
+              <input id="tower" type="checkbox" name="tower" checked>
+              <label for="tower">Удержал башню</label>
+            </div>
+            <div class="field__item">
+              <input id="hotel" type="checkbox" name="hotel">
+              <label for="hotel">Разгромил отель</label>
+            </div>
+          </fieldset>
+          <fieldset class="contact__field">
+            <div class="form__item">
+              <label class="form__label" for="phone">Номер телефона</label>
+              <input class="form__input" id="phone" type="text" minlength="11" maxlength="11" name="phone" value="Номер, пожалуйста">
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="email">Адрес почты</label>
+              <input class="form__input" id="email" type="email" minlength="5" value="Введите почту *" required>
+            </div>
+          </fieldset>
+          <fieldset class="os__field">
+            <legend class="form__legend">С каким приложением путешествовали?</legend>
+            <div class="field__item">
+              <input id="ios" type="radio" name="os" checked>
+              <label for="ios">Pink для iOS</label>
+            </div>
+            <div class="field__item">
+              <input id="android" type="radio" name="os">
+              <label for="android">Pink на Android</label>
+            </div>
+            <div class="field__item">
+              <input id="windows" type="radio" name="os">
+              <label for="windows">Windows Phone</label>
+            </div>
+          </fieldset>
+          <fieldset class="message__field">
+            <legend class="form__legend ">Опишите свои эмоции</legend>
+            <label class="title__hidden" for="text">Сообщение</label>
+            <textarea class="message__box" id="text" name="text"  minlength="2" maxlength="300">Можно прям в красках, не стесняясь в выражениях</textarea>
+          </fieldset>
+          <button>Отправить форму</button>
+          <p>* — обязательные поля</p>
+         </form>
+      </section>
+    </main>
+    <footer class="footer__block">
+      <a href="#" class="footer__logo">Лого</a>
+      <ul class="list__media">
+        <li><a href="#" class="media__item"><img class="twitter__img" src="img/common/twitter.svg" alt="Твиттер" width="17" height="14"></a></li>
+        <li><a href="#" class="media__item"><img src="img/common/facebook.svg" alt="Фейсбук" width="8" height="18"></a></li>
+        <li><a href="#" class="media__item"><img src="img/common/youtube.svg" alt="Ютуб" width="14" height="14"></a></li>
       </ul>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
-    </section>
-    <section>
-      <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-      <form action="#">
-        <fieldset>
-          <div>
-            <label for="surname">Фамилия:</label>
-            <input id="surname" type="text" minlength="2" maxlength="20" name="surname" value="Укажите фамилию *" required>
-          </div>
-          <div>
-            <label for="name">Имя:</label>
-            <input id="name" type="text" minlength="2" maxlength="20" name="name" value="Введите ваше имя *" required>
-          </div>
-          <div>
-            <label for="thirdname">Отчество</label>
-            <input id="thirdname" type="text" minlength="2" maxlength="20" name="thirdname" value="Ну и отчество тоже">
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>Ваши безбашенные достижения в путешествии</legend>
-          <div>
-            <input id="shark" type="checkbox" name="shark" checked>
-            <label for="shark">Сделал селфи с акулой</label>
-          </div>
-          <div>
-            <input id="beach" type="checkbox" name="beach" checked>
-            <label for="beach">Обгорел на пляже</label>
-          </div>
-          <div>
-            <input id="Chak" type="checkbox" name="Chak">
-            <label for="Chak">Видел Чака Норриса</label>
-          </div>
-          <div>
-            <input id="shopping" type="checkbox" name="shopping">
-            <label for="shopping">Накупил сувениров</label>
-          </div>
-          <div>
-            <input id="tower" type="checkbox" name="tower" checked>
-            <label for="tower">Удержал башню</label>
-          </div>
-          <div>
-            <input id="hotel" type="checkbox" name="hotel">
-            <label for="hotel">Разгромил отель</label>
-          </div>
-        </fieldset>
-        <fieldset>
-          <div>
-            <label for="phone">Номер телефона</label>
-            <input id="phone" type="number" minlength="11" maxlength="11" name="phone">
-          </div>
-          <div>
-            <label for="email">Адрес почты</label>
-            <input id="email" type="email" minlength="5">
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>С каким приложением путешествовали?</legend>
-          <div>
-            <input id="ios" type="radio" name="os" checked>
-            <label for="ios">Pink для iOS</label>
-          </div>
-          <div>
-            <input id="android" type="radio" name="os">
-            <label for="android">Pink на Android</label>
-          </div>
-          <div>
-            <input id="windows" type="radio" name="os">
-            <label for="windows">Windows Phone</label>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>Опишите свои эмоции</legend>
-          <label for="text">Сообщение</label>
-          <textarea id="text" name="text"  cols="30" rows="10" minlength="2" maxlength="300">Можно прям в красках, не стесняясь в выражениях</textarea>
-        </fieldset>
-        <button>Отправить форму</button>
-        <p>* — обязательные поля</p>
-      </form>
-    </section>
-  </main>
-  <footer class="footer__block">
-    <a href="#" class="footer__logo">Лого</a>
-    <ul class="list__media">
-      <li><a href="#" class="media__item"><img class="twitter__img" src="img/common/twitter.svg" alt="Твиттер" width="17" height="14"></a></li>
-      <li><a href="#" class="media__item"><img src="img/common/facebook.svg" alt="Фейсбук" width="8" height="18"></a></li>
-      <li><a href="#" class="media__item"><img src="img/common/youtube.svg" alt="Ютуб" width="14" height="14"></a></li>
-    </ul>
-    <div class="creator__box">
-      <span>Разработано</span>
-      <a class="html-academy" href="#">HtmlAcademy</a>
-    </div>
-  </footer>
-</div>
-</body>
+      <div class="creator__box">
+        <span>Разработано</span>
+        <a class="html-academy" href="#">HtmlAcademy</a>
+      </div>
+    </footer>
+  </div>
+  </body>
 </html>

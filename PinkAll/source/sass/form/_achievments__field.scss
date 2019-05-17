@@ -1,0 +1,79 @@
+/*Поле достижений*/
+.achievments__field {
+  background: $featureBack;
+  margin-top: -1px;
+  padding-top: 61px;
+}
+
+.form__legend {
+  color: $pink;
+  font-size: 14px;
+  line-height: 18px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: 54px;
+  width: 220px;
+}
+
+.field__item {
+  margin: 37px 0 51px 9px;
+}
+
+.field__item:last-of-type {
+  margin-bottom: 36px;
+}
+
+.achievments__field input[type='checkbox'] {
+  margin: 0 0 0 7px;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.achievments__field input[type='checkbox'] + label {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0 0 15px 68px;
+  position: relative;
+}
+
+.achievments__field input[type='checkbox'] + label::before {
+  background: $wh;
+  border: 2px solid $tableBorder;
+  border-radius: 3px;
+  content: "";
+  height: 35px;
+  left: 0;
+  position: absolute;
+  top: -7px;
+  width: 35px;
+}
+
+.achievments__field input[type='checkbox']:hover + label::before,
+.achievments__field input[type='checkbox']:focus + label::before {
+  border-color: $bl;
+  outline: none;
+}
+
+.achievments__field input[type='checkbox'] + label::after {
+  content: "";
+  height: 17px;
+  left: 8px;
+  opacity: 0;
+  position: absolute;
+  top: 4px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  width: 22px;
+}
+
+.achievments__field input[type='checkbox']:checked + label::after {
+  background: url(../img/form/tick.svg) no-repeat center;
+  opacity: 1;
+}
+
+.achievments__field input[type='checkbox']:active + label::before {
+  border-color: $pink;
+}

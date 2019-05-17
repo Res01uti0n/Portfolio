@@ -48,15 +48,18 @@ body {
   font-size: 1px;
   position: absolute; }
 
-@media (min-width: 660px) {
+/*@media (min-width: 660px) {
   .container {
-    width: 660px; } }
+    width: 660px;
+  }
+}
 
 @media (min-width: 1200px) {
   .container {
     position: relative;
-    width: 1200px; } }
-
+    width: 1200px;
+  }
+}*/
 /*Шапка*/
 .header__block {
   display: flex;
@@ -172,57 +175,81 @@ body {
   .nav__item:active {
     opacity: .3; }
 
-@media (min-width: 660px) {
+/*@media (min-width: 660px) {
   .header__box {
-    min-height: 110px; }
+    min-height: 110px;
+  }
+
   .header__logo {
     background: url(../img/common/logo-tab.svg) no-repeat 1px 0;
     margin-top: -15px;
     height: 40px;
-    width: 150px; }
-    .header__logo:hover, .header__logo:focus {
-      background: url(../img/common/logo-tab-hov.svg) no-repeat 1px 0; }
-    .header__logo:active {
-      background: url(../img/common/logo-tab.svg) no-repeat 1px 0; }
+    width: 150px;
+    &:hover,
+    &:focus {
+      background: url(../img/common/logo-tab-hov.svg) no-repeat 1px 0;
+    }
+    &:active {
+      background: url(../img/common/logo-tab.svg) no-repeat 1px 0;
+    }
+  }
+
   .nav__item {
-    width: 660px; }
+    width: 660px;
+  }
+
   .btn--close {
     right: 1px;
-    top: 3px; } }
+    top: 3px;
+  }
+}
 
 @media (min-width: 1200px) {
   .header__box {
-    padding: 0 130px; }
+    padding: 0 130px;
+  }
+
   .header__logo {
     background: url(../img/common/logo-desk.svg) no-repeat 1px 0;
     position: relative;
-    z-index: 10; }
-    .header__logo:active {
-      background: url(../img/common/logo-desk.svg) no-repeat 1px 0; }
+    z-index: 10;
+    &:active {
+      background: url(../img/common/logo-desk.svg) no-repeat 1px 0;
+    }
+  }
+
   .nav__btn {
-    display: none; }
+    display: none;
+  }
+
   .nav__box {
     display: flex;
-    position: absolute; }
+    position: absolute;
+  }
+
   .nav__list {
     background: transparent;
     flex-direction: row;
     justify-content: space-between;
     padding-left: 447px;
-    width: 622px; }
+    width: 622px;
+  }
+
   .nav__item {
     border: none;
     font-weight: 400;
     line-height: 18px;
     min-height: 110px;
     text-transform: none;
-    width: auto; }
-    .nav__item:active {
-      color: #fff; } }
-
+    width: auto;
+    &:active {
+      color: $wh;
+    }
+  }
+}*/
 /*Интро*/
 .intro__block {
-  background: url(../img/index/iphone.png) no-repeat 0 174px, url(../img/index/screen.jpg) no-repeat center 208px, url(../img/index/back-mobile.jpg) no-repeat 0 0;
+  background: url(../img/common/iphone.png) no-repeat 0 174px, url(../img/common/screen.jpg) no-repeat center 208px, url(../img/common/back-mobile.jpg) no-repeat center 0;
   margin-top: -66px;
   padding-top: 461px;
   position: relative;
@@ -279,52 +306,93 @@ body {
 .intro__moto {
   display: none; }
 
-@media (min-width: 660px) {
+.intro--catalog {
+  background: url(../img/common/back-mobile.jpg) no-repeat center 0;
+  display: flex;
+  justify-content: center;
+  padding: 115px 0 35px 0; }
+
+.title--form {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: -20px;
+  text-align: center;
+  width: 230px; }
+
+/*@media (min-width: 660px) {
   .intro__block {
-    background: url(../img/index/iphone-tab.png) no-repeat 0 bottom, url(../img/index/screen-tab.jpg) no-repeat 370px 238px, url(../img/index/back-tab.jpg) no-repeat 0 0;
+    background: url(../img/common/iphone-tab.png) no-repeat 0 bottom,
+    url(../img/common/screen-tab.jpg) no-repeat 370px 238px,
+    url(../img/common/back-tab.jpg) no-repeat center 0;
     margin-top: -110px;
-    padding: 162px 0 75px 0; }
+    padding: 162px 0 75px 0;
+  }
+
   .intro__info {
     background: none;
     margin-left: 20px;
-    width: 300px; }
+    width: 300px;
+  }
+
   .intro__moto {
-    color: #fff;
+    color: $wh;
     display: block;
     font-size: 40px;
     font-weight: 300;
     line-height: 48px;
     text-align: center;
-    width: 190px; }
+    width: 190px;
+  }
+
   .intro__btn {
     margin-top: -7px;
-    width: 290px; }
+    width: 290px;
+  }
+
   .platform__list {
-    margin-top: 43px; }
+    margin-top: 43px;
+  }
+
   .intro__text {
     font-size: 18px;
     margin-top: 25px;
-    width: 100%; } }
+    width: 100%;
+  }
+}
 
 @media (min-width: 1200px) {
   .intro__block {
-    background: url(../img/index/iphone-desk.png) no-repeat 145px bottom, url(../img/index/screen-desk.jpg) no-repeat 715px 270px, url(../img/index/back-desk.jpg) no-repeat 0 0;
-    padding: 169px 0 85px 0; }
+    background: url(../img/common/iphone-desk.png) no-repeat 145px bottom,
+    url(../img/common/screen-desk.jpg) no-repeat 715px 270px,
+    url(../img/common/back-desk.jpg) no-repeat center 0;
+    padding: 169px 0 85px 0;
+  }
+
   .intro__moto {
     font-size: 50px;
     line-height: 60px;
-    width: 235px; }
+    width: 235px;
+  }
+
   .intro__info {
     margin-left: 120px;
-    width: 320px; }
+    width: 320px;
+  }
+
   .intro__btn {
     margin-top: 0;
-    font-size: 21px; }
-  .platform__list {
-    margin-top: 66px; }
-  .intro__text {
-    margin-top: 45px; } }
+    font-size: 21px;
+  }
 
+  .platform__list {
+    margin-top: 66px;
+  }
+
+  .intro__text {
+    margin-top: 45px;
+  }
+}*/
 /*Преимущества*/
 .features__block {
   align-items: center;
@@ -974,13 +1042,15 @@ body {
 .footer__block {
   display: none; }
 
-@media (min-width: 660px) {
+/*@media (min-width: 660px) {
   .footer__block {
     align-items: center;
     display: flex;
     justify-content: space-between;
     min-height: 127px;
-    padding: 0 20px; }
+    padding: 0 20px;
+  }
+
   .footer__logo {
     background: url(../img/common/footer-logo.svg) no-repeat 0 0;
     color: transparent;
@@ -988,63 +1058,278 @@ body {
     font-size: 1px;
     height: 40px;
     margin-top: -10px;
-    width: 150px; }
-    .footer__logo:hover, .footer__logo:focus {
+    width: 150px;
+    &:hover,
+    &:focus {
       background: url(../img/common/logo-tab-hov.svg) no-repeat 1px 0;
-      outline: none; }
-    .footer__logo:active {
+      outline: none;
+    }
+    &:active {
       background: url(../img/common/footer-logo.svg) no-repeat 0 0;
-      opacity: .3; }
+      opacity: .3;
+    }
+  }
+
   .list__media {
     display: flex;
     list-style: none;
     margin: 2px 0 0 -20px;
-    padding-left: 0; }
+    padding-left: 0;
+  }
+
   .list__media li {
-    margin: 0 6px; }
+    margin: 0 6px;
+  }
+
   .media__item {
     align-items: center;
-    border: 3px solid #e9ebec;
+    border: 3px solid $socialBorder;
     border-radius: 50%;
     display: flex;
     height: 45px;
     justify-content: center;
-    width: 45px; }
-    .media__item:hover, .media__item:focus {
-      border-color: #283645;
-      outline: none; }
-    .media__item:active {
-      opacity: .3; }
+    width: 45px;
+    &:hover,
+    &:focus {
+      border-color: $colorText;
+      outline: none;
+    }
+    &:active {
+      opacity: .3;
+    }
+  }
+
   .creator__box {
     display: flex;
     justify-content: space-between;
     margin-top: 9px;
-    width: 130px; }
+    width: 130px;
+  }
+
   .html-academy {
     background: url(../img/common/htmlacademy.png) no-repeat 100% center;
     color: transparent;
     font-size: 1px;
     height: 35px;
-    width: 28px; }
-    .html-academy:hover, .html-academy:focus {
+    width: 28px;
+    &:hover,
+    &:focus {
       background: url(../img/common/html-hov.png) no-repeat 100% center;
-      outline: none; }
-    .html-academy:active {
-      opacity: .3; }
+      outline: none;
+    }
+    &:active {
+      opacity: .3;
+    }
+  }
+
   .twitter__img {
-    margin-top: 3px; } }
+    margin-top: 3px;
+  }
+}
 
 @media (min-width: 1200px) {
   .footer__block {
     min-height: 188px;
-    padding: 0 130px; }
+    padding: 0 130px;
+  }
+
   .list__media {
-    margin: 7px 0 0 5px; }
+    margin: 7px 0 0 5px;
+  }
+
   .footer__logo {
-    background: url(../img/common/footer-logo-desk.svg) no-repeat 0 0; }
-    .footer__logo:active {
-      background: url(../img/common/footer-logo-desk.svg) no-repeat 0 0; }
+    background: url(../img/common/footer-logo-desk.svg) no-repeat 0 0;
+    &:active {
+      background: url(../img/common/footer-logo-desk.svg) no-repeat 0 0;
+    }
+  }
+
   .creator__box {
     font-size: 18px;
     margin-top: 12px;
-    width: 154px; } }
+    width: 154px;
+  }
+}*/
+/*Поле личных данных*/
+.form__block {
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
+
+.form__text {
+  margin-top: 46px;
+  text-align: center;
+  width: 280px; }
+
+.desk__text {
+  display: none; }
+
+.form__block fieldset {
+  border: none; }
+
+.personal__field {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 21px; }
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 17px; }
+
+.form__label {
+  color: #d22856;
+  font-size: 14px;
+  margin: 0 0 6px 30px;
+  text-transform: uppercase; }
+
+.form__input {
+  border: 2px solid #e5e5e5;
+  border-radius: 3px;
+  font-size: 18px;
+  height: 57px;
+  margin-left: 7px;
+  padding-left: 21px;
+  width: 257px; }
+  .form__input:hover {
+    border-color: #000; }
+  .form__input:focus {
+    border-color: #d22856;
+    outline: none; }
+
+/*Поле достижений*/
+.achievments__field {
+  background: #f2f2f2;
+  margin-top: -1px;
+  padding-top: 61px; }
+
+.form__legend {
+  color: #d22856;
+  font-size: 14px;
+  line-height: 18px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: 54px;
+  width: 220px; }
+
+.field__item {
+  margin: 37px 0 51px 9px; }
+
+.field__item:last-of-type {
+  margin-bottom: 36px; }
+
+.achievments__field input[type='checkbox'] {
+  margin: 0 0 0 7px;
+  opacity: 0;
+  position: absolute;
+  z-index: -1; }
+
+.achievments__field input[type='checkbox'] + label {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0 0 15px 68px;
+  position: relative; }
+
+.achievments__field input[type='checkbox'] + label::before {
+  background: #fff;
+  border: 2px solid #e5e5e5;
+  border-radius: 3px;
+  content: "";
+  height: 35px;
+  left: 0;
+  position: absolute;
+  top: -7px;
+  width: 35px; }
+
+.achievments__field input[type='checkbox']:hover + label::before,
+.achievments__field input[type='checkbox']:focus + label::before {
+  border-color: #000;
+  outline: none; }
+
+.achievments__field input[type='checkbox'] + label::after {
+  content: "";
+  height: 17px;
+  left: 8px;
+  opacity: 0;
+  position: absolute;
+  top: 4px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  width: 22px; }
+
+.achievments__field input[type='checkbox']:checked + label::after {
+  background: url(../img/form/tick.svg) no-repeat center;
+  opacity: 1; }
+
+.achievments__field input[type='checkbox']:active + label::before {
+  border-color: #d22856; }
+
+/*Поле контактов*/
+.contact__field {
+  margin-top: 27px; }
+
+.os__field {
+  background: #f2f2f2;
+  padding-top: 57px; }
+
+.os__field input[type='radio'] {
+  margin: 0 0 0 7px;
+  opacity: 0;
+  position: absolute;
+  z-index: -1; }
+
+.os__field input[type='radio'] + label {
+  cursor: pointer;
+  font-family: OpenSans, sans-serif;
+  font-size: 18px;
+  padding: 0 0 15px 68px;
+  position: relative; }
+
+.os__field input[type='radio'] + label::before {
+  background: #fff;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  content: "";
+  height: 35px;
+  left: 0;
+  position: absolute;
+  top: -8px;
+  width: 35px; }
+
+.os__field input[type='radio']:hover + label::before,
+.os__field input[type='radio']:focus + label::before {
+  opacity: .6;
+  outline: none; }
+
+.os__field input[type='radio'] + label::after {
+  background: #d22856;
+  border-radius: 50%;
+  content: "";
+  height: 15px;
+  left: 11px;
+  opacity: 0;
+  position: absolute;
+  top: 4.5px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  width: 15px; }
+
+.os__field input[type='radio']:checked + label::after {
+  opacity: 1; }
+
+.os__field input[type='radio']:hover + label::after {
+  opacity: .6; }
+
+.os__field .field__item {
+  margin-bottom: 43px; }
+
+.os__field .field__item:last-of-type {
+  margin-bottom: 38px; }
+
+.message__box {
+  height: 196px;
+  width: 276px; }

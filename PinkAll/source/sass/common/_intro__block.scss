@@ -1,13 +1,12 @@
 /*Интро*/
 .intro__block {
-  background: url(../img/index/iphone.png) no-repeat 0 174px,
-  url(../img/index/screen.jpg) no-repeat center 208px,
-  url(../img/index/back-mobile.jpg) no-repeat 0 0;
+  background: url(../img/common/iphone.png) no-repeat 0 174px,
+  url(../img/common/screen.jpg) no-repeat center 208px,
+  url(../img/common/back-mobile.jpg) no-repeat center 0;
   margin-top: -66px;
   padding-top: 461px;
   position: relative;
   z-index: 1;
-
 }
 
 .intro__info {
@@ -70,11 +69,27 @@
   display: none;
 }
 
-@media (min-width: 660px) {
+.intro--catalog {
+  background: url(../img/common/back-mobile.jpg) no-repeat center 0;
+  display: flex;
+  justify-content: center;
+  padding: 115px 0 35px 0;
+}
+
+.title--form {
+  color: $wh;
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: -20px;
+  text-align: center;
+  width: 230px;
+}
+
+/*@media (min-width: 660px) {
   .intro__block {
-    background: url(../img/index/iphone-tab.png) no-repeat 0 bottom,
-    url(../img/index/screen-tab.jpg) no-repeat 370px 238px,
-    url(../img/index/back-tab.jpg) no-repeat 0 0;;
+    background: url(../img/common/iphone-tab.png) no-repeat 0 bottom,
+    url(../img/common/screen-tab.jpg) no-repeat 370px 238px,
+    url(../img/common/back-tab.jpg) no-repeat center 0;
     margin-top: -110px;
     padding: 162px 0 75px 0;
   }
@@ -113,9 +128,9 @@
 
 @media (min-width: 1200px) {
   .intro__block {
-    background: url(../img/index/iphone-desk.png) no-repeat 145px bottom,
-    url(../img/index/screen-desk.jpg) no-repeat 715px 270px,
-    url(../img/index/back-desk.jpg) no-repeat 0 0;
+    background: url(../img/common/iphone-desk.png) no-repeat 145px bottom,
+    url(../img/common/screen-desk.jpg) no-repeat 715px 270px,
+    url(../img/common/back-desk.jpg) no-repeat center 0;
     padding: 169px 0 85px 0;
   }
 
@@ -142,5 +157,5 @@
   .intro__text {
     margin-top: 45px;
   }
-}
+}*/
 
