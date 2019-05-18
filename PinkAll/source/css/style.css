@@ -1090,7 +1090,9 @@ body {
   .footer__block {
     align-items: center;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    margin-top: 50px;
     min-height: 127px;
     padding: 0 20px; }
   .footer__logo {
@@ -1263,16 +1265,69 @@ body {
   border-color: #d22856; }
 
 @media (min-width: 660px) {
-  .achievments__field {
-    order: 4; } }
+  .form__block .achievments__field {
+    background: none;
+    border: 2px solid #e5e5e5;
+    margin-top: 56.5px;
+    order: 4;
+    padding-top: 12px;
+    width: 598px; }
+  .achievments__field .form__legend {
+    width: 436px; }
+  .field__item {
+    margin: 37px 0 51px 49px; }
+  .field__item:last-of-type {
+    margin-bottom: 36px; }
+  .achievments__field input[type='checkbox'] + label {
+    padding: 0 0 15px 59px; }
+  .field__item:last-of-type {
+    margin-bottom: 42px; } }
 
 /*Поле контактов*/
 .contact__field {
   margin-top: 27px; }
 
+.contact--legend {
+  display: none; }
+
 @media (min-width: 660px) {
-  .contact__field {
-    order: 3; } }
+  .form__block .contact__field {
+    border: 2px solid #e5e5e5;
+    margin-top: 57px;
+    order: 3;
+    padding: 38px 0 0 0;
+    width: 616px; }
+  .form__block .contact--legend {
+    display: block;
+    width: 252px; }
+  .contact__field .form__item {
+    flex-direction: column-reverse;
+    margin: 0 0 30px 40px;
+    width: 502px;
+    position: relative; }
+    .contact__field .form__item::after {
+      background: #e5e5e5;
+      content: '';
+      height: 62px;
+      right: -15px;
+      position: absolute;
+      top: 0;
+      width: 62px;
+      z-index: -1; }
+  .contact__field .form__item:last-of-type {
+    margin-bottom: 26px; }
+  .contact__field .form__input {
+    margin-left: 18px;
+    position: relative;
+    width: 476px; }
+  .contact__field .form__label {
+    margin: 10px 0 0 36px; }
+  .input--phone {
+    background: url(../img/form/phone.svg) no-repeat 455px center;
+    background-size: 20px 20px; }
+  .input--email {
+    background: url(../img/form/mail.svg) no-repeat 455px center;
+    background-size: 20px 20px; } }
 
 /*Поле платформы*/
 .os__field {
@@ -1402,12 +1457,37 @@ body {
   color: #d22856; }
 
 @media (min-width: 660px) {
-  .message__field {
-    order: 5; }
+  .form__block .message__field {
+    border: 2px solid #e5e5e5;
+    margin-top: 57px;
+    order: 5;
+    width: 596px; }
+  .message__field .form__legend {
+    width: 258px; }
+  .message__box {
+    border: 2px solid #e5e5e5;
+    height: 159px;
+    margin: 32px 0 33px 47px;
+    width: 460px; }
+  .form__options {
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+    order: 6;
+    width: 620px; }
   .form__btn {
-    order: 6; }
-  .important__string {
-    order: 7; } }
+    background: #2aab6d;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    height: 63px;
+    line-height: 30px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    width: 300px; } }
 
 /*Модальные окна*/
 .modal {
@@ -1452,3 +1532,35 @@ body {
 .error__text {
   margin: 23px 0 43px 0;
   width: 280px; }
+
+@media (min-width: 660px) {
+  .modal {
+    display: flex;
+    left: 98px;
+    width: 464px; }
+  .success__modal {
+    bottom: 1194px;
+    height: 460px; }
+  .modal__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 65px 0 0 -2px;
+    text-align: center;
+    width: 205px; }
+  .modal__text {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 22px;
+    text-align: center;
+    width: 320px; }
+  .error__modal {
+    bottom: 1735px;
+    height: 365px; }
+  .error__title {
+    margin-top: 36px;
+    width: 215px; }
+  .error__text {
+    margin: 24px 0 43px 0;
+    width: 300px; }
+  .mob__gap {
+    display: none; } }

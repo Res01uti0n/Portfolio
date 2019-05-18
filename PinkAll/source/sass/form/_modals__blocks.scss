@@ -50,4 +50,51 @@
   width: 280px;
 }
 
+@media (min-width: 660px) {
+  .modal {
+    display: flex;
+    left: 98px;
+    width: 464px;
+  }
+
+  .success__modal {
+    bottom: 1194px;
+    height: 460px;
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 65px 0 0 -2px;
+    text-align: center;
+    width: 205px;
+  }
+
+  .modal__text {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 22px;
+    text-align: center;
+    width: 320px;
+  }
+
+  .error__modal {
+    bottom: 1735px;
+    height: 365px;
+  }
+
+  .error__title {
+    margin-top: 36px;
+    width: 215px;
+  }
+
+  .error__text {
+    margin: 24px 0 43px 0;
+    width: 300px;
+  }
+
+  .mob__gap {
+    display: none;
+  }
+}
 

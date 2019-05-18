@@ -86,7 +86,9 @@
   .footer__block {
     align-items: center;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    margin-top: 50px;
     min-height: 127px;
     padding: 0 20px;
   }

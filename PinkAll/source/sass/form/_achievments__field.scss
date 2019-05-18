@@ -80,7 +80,32 @@
 }
 
 @media (min-width: 660px) {
-  .achievments__field {
+  .form__block .achievments__field {
+    background: none;
+    border: 2px solid $tableBorder;
+    margin-top: 56.5px;
     order: 4;
+    padding-top: 12px;
+    width: 598px;
+  }
+
+  .achievments__field .form__legend{
+    width: 436px;
+  }
+
+  .field__item {
+    margin: 37px 0 51px 49px;
+  }
+
+  .field__item:last-of-type {
+    margin-bottom: 36px;
+  }
+
+  .achievments__field input[type='checkbox'] + label {
+    padding: 0 0 15px 59px;
+  }
+
+  .field__item:last-of-type {
+    margin-bottom: 42px;
   }
 }

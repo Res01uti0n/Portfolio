@@ -63,15 +63,44 @@
 }
 
 @media (min-width: 660px) {
-  .message__field {
+  .form__block .message__field {
+    border: 2px solid $tableBorder;
+    margin-top: 57px;
     order: 5;
+    width: 596px;
+  }
+
+  .message__field .form__legend {
+    width: 258px;
+  }
+
+  .message__box {
+    border: 2px solid $tableBorder;
+    height: 159px;
+    margin: 32px 0 33px 47px;
+    width: 460px;
+  }
+
+  .form__options {
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+    order: 6;
+    width: 620px;
   }
 
   .form__btn {
-    order: 6;
-  }
-
-  .important__string {
-    order: 7;
+    background: $formBtnBack;
+    border: none;
+    border-radius: 3px;
+    color: $wh;
+    font-size: 18px;
+    font-weight: bold;
+    height: 63px;
+    line-height: 30px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    width: 300px;
   }
 }

@@ -3,8 +3,62 @@
   margin-top: 27px;
 }
 
+.contact--legend {
+  display: none;
+}
+
 @media (min-width: 660px) {
-  .contact__field {
+  .form__block .contact__field {
+    border: 2px solid $tableBorder;
+    margin-top: 57px;
     order: 3;
+    padding: 38px 0 0 0;
+    width: 616px;
+  }
+
+  .form__block .contact--legend {
+    display: block;
+    width: 252px;
+  }
+
+  .contact__field  .form__item {
+    flex-direction: column-reverse;
+    margin: 0 0 30px 40px;
+    width: 502px;
+    position: relative;
+    &::after {
+      background: $tableBorder;
+      content: '';
+      height: 62px;
+      right: -15px;
+      position: absolute;
+      top: 0;
+      width: 62px;
+      z-index: -1;
+    }
+  }
+
+  .contact__field  .form__item:last-of-type {
+    margin-bottom: 26px;
+  }
+
+  .contact__field .form__input {
+    margin-left: 18px;
+    position: relative;
+    width: 476px;
+  }
+
+  .contact__field .form__label {
+    margin: 10px 0 0 36px;
+  }
+
+  .input--phone {
+    background: url(../img/form/phone.svg) no-repeat 455px center;
+    background-size: 20px 20px;
+  }
+
+  .input--email {
+    background: url(../img/form/mail.svg) no-repeat 455px center;
+    background-size: 20px 20px;
   }
 }
