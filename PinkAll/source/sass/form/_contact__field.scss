@@ -10,6 +10,7 @@
 @media (min-width: 660px) {
   .form__block .contact__field {
     border: 2px solid $tableBorder;
+    border-radius: 3px;
     margin-top: 57px;
     order: 3;
     padding: 38px 0 0 0;
@@ -24,8 +25,8 @@
   .contact__field  .form__item {
     flex-direction: column-reverse;
     margin: 0 0 30px 40px;
-    width: 502px;
     position: relative;
+    width: 502px;
     &::after {
       background: $tableBorder;
       content: '';
@@ -62,3 +63,47 @@
     background-size: 20px 20px;
   }
 }
+
+@media (min-width: 1200px) {
+  .form__block .contact__field {
+    margin: -3px 0 0 12px;
+    padding-top: 35px;
+    width: 938px;
+  }
+
+  .contact__box {
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    width: 840px;
+  }
+
+  .contact__field  .form__item {
+    margin: 0 0 0 40px;
+    width: 354px;
+    &::after {
+      right: -38px;
+      top: 0;
+    }
+  }
+
+  .input--phone {
+    background: url(../img/form/phone.svg) no-repeat 332px center;
+    background-size: 20px 20px;
+  }
+
+  .input--email {
+    background: url(../img/form/mail.svg) no-repeat 332px center;
+    background-size: 20px 20px;
+  }
+
+  .contact__field .form__input {
+    position: relative;
+    width: 352px;
+  }
+
+  .contact__field  .form__item:last-of-type {
+    margin-bottom: 6px;
+  }
+}
+

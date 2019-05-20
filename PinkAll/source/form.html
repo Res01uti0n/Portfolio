@@ -29,7 +29,7 @@
       </section>
       <section class="form__block">
         <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="desk__text">Пожалуйста, заполните форму ниже:</span></p>
-        <form action="#" class="form__block">
+        <form action="#" class="form__block form__wrapper">
           <fieldset class="personal__field">
             <div class="form__item">
               <label class="form__label" for="surname">Фамилия:</label>
@@ -46,40 +46,44 @@
           </fieldset>
           <fieldset class="achievments__field">
             <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
-            <div class="field__item">
-              <input id="shark" type="checkbox" name="shark" checked>
-              <label for="shark">Сделал селфи с акулой</label>
-            </div>
-            <div class="field__item">
-              <input id="beach" type="checkbox" name="beach" checked>
-              <label for="beach">Обгорел на пляже</label>
-            </div>
-            <div class="field__item">
-              <input id="Chak" type="checkbox" name="Chak">
-              <label for="Chak">Видел Чака Норриса</label>
-            </div>
-            <div class="field__item">
-              <input id="shopping" type="checkbox" name="shopping">
-              <label for="shopping">Накупил сувениров</label>
-            </div>
-            <div class="field__item">
-              <input id="tower" type="checkbox" name="tower" checked>
-              <label for="tower">Удержал башню</label>
-            </div>
-            <div class="field__item">
-              <input id="hotel" type="checkbox" name="hotel">
-              <label for="hotel">Разгромил отель</label>
+            <div class="achievments__list">
+              <div class="field__item item--shark">
+                <input id="shark" type="checkbox" name="shark" checked>
+                <label for="shark">Сделал селфи с акулой</label>
+              </div>
+              <div class="field__item item--beach">
+                <input id="beach" type="checkbox" name="beach" checked>
+                <label for="beach">Обгорел на пляже</label>
+              </div>
+              <div class="field__item item--Chak">
+                <input id="Chak" type="checkbox" name="Chak">
+                <label for="Chak">Видел Чака Норриса</label>
+              </div>
+              <div class="field__item item--shopping">
+                <input id="shopping" type="checkbox" name="shopping">
+                <label for="shopping">Накупил сувениров</label>
+              </div>
+              <div class="field__item item--tower">
+                <input id="tower" type="checkbox" name="tower" checked>
+                <label for="tower">Удержал башню</label>
+              </div>
+              <div class="field__item item--hotel">
+                <input id="hotel" type="checkbox" name="hotel">
+                <label for="hotel">Разгромил отель</label>
+              </div>
             </div>
           </fieldset>
           <fieldset class="contact__field">
             <legend class="form__legend contact--legend">Контактная информация</legend>
-            <div class="form__item">
-              <label class="form__label" for="phone">Номер телефона</label>
-              <input class="form__input input--phone" id="phone" type="text" minlength="11" maxlength="15" name="phone" value="Номер, пожалуйста">
-            </div>
-            <div class="form__item">
-              <label class="form__label" for="email">Адрес почты</label>
-              <input class="form__input input--email" id="email" type="email" minlength="5" value="Введите почту *" required>
+            <div class="contact__box">
+              <div class="form__item">
+                <label class="form__label" for="phone">Номер телефона</label>
+                <input class="form__input input--phone" id="phone" type="text" minlength="11" maxlength="15" name="phone" value="Номер, пожалуйста">
+              </div>
+              <div class="form__item">
+                <label class="form__label" for="email">Адрес почты</label>
+                <input class="form__input input--email" id="email" type="email" minlength="5" value="Введите почту *" required>
+              </div>
             </div>
           </fieldset>
           <fieldset class="os__field">
@@ -104,12 +108,12 @@
           </fieldset>
           <div class="form__options">
             <button class="form__btn">Отправить форму</button>
-            <p class="important__string"><span class="sign">*</span> — обязательные поля</p>
+            <p class="important__string"><span class="sign">*</span> — обязательные <span class="desk__text">для заполенеия</span> поля</p>
           </div>
          </form>
       </section>
     </main>
-    <footer class="footer__block">
+    <footer class="footer__block footer--page">
       <a href="#" class="footer__logo">Лого</a>
       <ul class="list__media">
         <li><a href="#" class="media__item"><img class="twitter__img" src="img/common/twitter.svg" alt="Твиттер" width="17" height="14"></a></li>

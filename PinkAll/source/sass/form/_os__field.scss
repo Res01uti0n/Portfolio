@@ -92,3 +92,16 @@
     padding: 0 0 15px 59px;
   }
 }
+
+@media (min-width: 1200px) {
+  .form__block .os__field {
+    margin: -7px 16px 0 0;
+    padding: 18px 0 18px 0;
+    width: 428px;
+  }
+
+  .os__field .field__item {
+    margin: 33px 0 43px 74px;
+  }
+}
+

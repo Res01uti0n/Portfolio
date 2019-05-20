@@ -91,12 +91,12 @@ body {
   }
 }
 
-/*@media (min-width: 1200px) {
+@media (min-width: 1200px) {
   .container {
     position: relative;
     width: 1200px;
   }
-}*/
+}
 
 @import "common/header__block";
 @import "common/intro__block";

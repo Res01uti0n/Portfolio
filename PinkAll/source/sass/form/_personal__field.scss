@@ -58,7 +58,7 @@
 
 @media (min-width: 660px) {
   .desk__text {
-    display: block;
+    display: inline;
   }
 
   .form__text {
@@ -88,3 +88,24 @@
     padding-left: 19px;
   }
 }
+
+@media (min-width: 1200px) {
+  .form__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 968px;
+  }
+
+  .form__text {
+    font-size: 18px;
+    margin-top: 92px;
+    width: 760px;
+  }
+
+  .personal__field {
+    margin-top: 15px;
+    width: 435px;
+  }
+}
+

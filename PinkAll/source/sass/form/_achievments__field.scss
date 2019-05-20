@@ -83,6 +83,7 @@
   .form__block .achievments__field {
     background: none;
     border: 2px solid $tableBorder;
+    border-radius: 3px;
     margin-top: 56.5px;
     order: 4;
     padding-top: 12px;
@@ -109,3 +110,51 @@
     margin-bottom: 42px;
   }
 }
+
+@media (min-width: 1200px) {
+  .form__block .achievments__field {
+    margin: 56.5px 0 0 15px;
+    padding: 12px 0 20px 0;
+    width: 934px;
+  }
+
+  .achievments__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 57px;
+    width: 840px;
+  }
+
+  .field__item {
+    margin: 37px 0 13px 0;
+    width: 260px;
+  }
+
+  .item--shark {
+    order: 1;
+  }
+
+  .item--Chak {
+    order: 2;
+    margin-right: -48px;
+  }
+
+  .item--tower {
+    order: 3;
+    margin-right: -48px;
+  }
+
+  .item--beach {
+    order: 4;
+  }
+
+  .item--shopping {
+    order: 5;
+  }
+
+  .item--hotel {
+    order: 6;
+  }
+}
+

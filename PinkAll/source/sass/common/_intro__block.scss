@@ -138,7 +138,7 @@
   }
 }
 
-/*@media (min-width: 1200px) {
+@media (min-width: 1200px) {
   .intro__block {
     background: url(../img/common/iphone-desk.png) no-repeat 145px bottom,
     url(../img/common/screen-desk.jpg) no-repeat 715px 270px,
@@ -169,5 +169,15 @@
   .intro__text {
     margin-top: 45px;
   }
-}*/
+
+  .intro--catalog {
+    background: url(../img/common/back-desk.jpg) no-repeat center 0;
+    padding: 115px 0 68px 0;
+  }
+
+  .title--form {
+    margin-top: 58px;
+    width: 750px;
+  }
+}
 
