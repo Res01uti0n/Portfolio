@@ -937,7 +937,7 @@ body {
     opacity: .3;
     text-decoration: none; }
 
-.contact__box {
+.contacts__box {
   margin: 0 0 8px 0; }
 
 .contact__map {
@@ -1090,7 +1090,9 @@ body {
     min-height: 188px;
     padding: 0 130px; }
   .list__media {
-    margin: 7px 0 0 5px; }
+    margin: 5px 0 0 5px; }
+  .footer--page .list__media {
+    margin: 8px 0 0 12px; }
   .footer__logo {
     background: url(../img/common/footer-logo-desk.svg) no-repeat 0 0; }
     .footer__logo:active {
@@ -1292,17 +1294,21 @@ body {
   .item--shark {
     order: 1; }
   .item--Chak {
-    order: 2;
-    margin-right: -48px; }
+    margin-left: 48px;
+    order: 2; }
   .item--tower {
+    left: 30px;
     order: 3;
-    margin-right: -48px; }
+    position: relative; }
   .item--beach {
     order: 4; }
   .item--shopping {
+    margin-left: 48px;
     order: 5; }
   .item--hotel {
-    order: 6; } }
+    left: 30px;
+    order: 6;
+    position: relative; } }
 
 /*Поле контактов*/
 .contact__field {
@@ -1377,7 +1383,9 @@ body {
     position: relative;
     width: 352px; }
   .contact__field .form__item:last-of-type {
-    margin-bottom: 6px; } }
+    margin-bottom: 6px; }
+  .contact__field .form__label {
+    margin: 10px 0 0 38px; } }
 
 /*Поле платформы*/
 .os__field {
@@ -1540,7 +1548,9 @@ body {
     order: 6;
     width: 620px; }
   .form__btn {
-    width: 300px; } }
+    width: 300px; }
+  .important {
+    display: none; } }
 
 @media (min-width: 1200px) {
   .form__block .message__field {
@@ -1552,7 +1562,9 @@ body {
     width: 780px; }
   .form__options {
     margin-left: 15px;
-    width: 936px; } }
+    width: 938px; }
+  .important {
+    display: inline; } }
 
 /*Модальные окна*/
 .modal {
@@ -1625,3 +1637,38 @@ body {
     width: 300px; }
   .mob__gap {
     display: none; } }
+
+@media (min-width: 1200px) {
+  .modal {
+    left: 210px;
+    width: 780px; }
+  .success__modal {
+    bottom: 395px;
+    height: 370px; }
+  .modal__title {
+    margin: 33px 0 0 -2px;
+    width: 400px; }
+  .modal__text {
+    width: 420px; }
+  .btn__box {
+    margin-top: 21px; }
+  .btn__close {
+    width: 460px; }
+  .error__modal {
+    bottom: 855px;
+    height: 375px; }
+  .error__title {
+    margin-top: 42px; }
+  .error__text {
+    margin: 23px 0 43px -4px;
+    width: 400px; }
+  .btn__box--error {
+    align-items: center;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    height: 163px;
+    margin-top: 18px;
+    width: 100%; }
+  .error__modal .btn__close {
+    width: 300px; } }

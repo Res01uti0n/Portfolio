@@ -99,6 +99,10 @@
   .form__btn {
     width: 300px;
   }
+
+  .important {
+    display: none;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -115,7 +119,11 @@
 
   .form__options {
     margin-left: 15px;
-    width: 936px;
+    width: 938px;
+  }
+
+  .important {
+    display: inline;
   }
 }
 

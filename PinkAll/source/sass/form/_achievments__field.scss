@@ -136,13 +136,14 @@
   }
 
   .item--Chak {
+    margin-left: 48px;
     order: 2;
-    margin-right: -48px;
   }
 
   .item--tower {
+    left: 30px;
     order: 3;
-    margin-right: -48px;
+    position: relative;
   }
 
   .item--beach {
@@ -150,11 +151,14 @@
   }
 
   .item--shopping {
+    margin-left: 48px;
     order: 5;
   }
 
   .item--hotel {
+    left: 30px;
     order: 6;
+    position: relative;
   }
 }
 
