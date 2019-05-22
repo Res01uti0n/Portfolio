@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+  <html lang="ru" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <title>PinkAll</title>
+  </head>
+  <body>
+  <div class="container">
+    <header class="header__block">
+      <div class="header__box">
+        <a href="#" class="header__logo">Лого</a>
+        <button class="nav__btn">Навигация</button>
+      </div>
+      <nav class="nav__box">
+        <ul class="nav__list">
+          <li><a href="#" class="nav__item">Главная</a></li>
+          <li><a href="#" class="nav__item">Фотографии</a></li>
+          <li><a href="#" class="nav__item">Конкурс</a></li>
+          <li><a href="#" class="nav__item">HTML Academy</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="intro__block intro--catalog">
+        <h1 class="title--form">Фотографии пользователей</h1>
+      </section>
+      <section>
+        <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <div>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo/panorama-desk.jpg">
+            <source media="(min-width: 660px)" srcset="img/photo/panorama-tab.jpg">
+            <img src="img/photo/panorama-mob.jpg" alt="Панорама">
+          </picture>
+          <div>
+            <h3>Анна<span>(5 минут назад)</span></h3>
+            <p>Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <div>
+              <button>Лайк</button>
+              <span>Нравится: 215</span>
+            </div>
+          </div>
+          <div>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo/photo-1-desk.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo/photo-1-tab.jpg">
+              <img src="img/photo/photo-1-mob.jpg" alt="Фото">
+            </picture>
+            <h3>Левон<span>(5 часов назад)</span></h3>
+            <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <div>
+              <button>Лайк</button>
+              <span>Нравится: 356</span>
+            </div>
+          </div>
+          <div>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo/photo-2-desk.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo/photo-2-tab.jpg">
+              <img src="img/photo/photo-2-mob.jpg" alt="Фото">
+            </picture>
+            <h3>Антон<span>(12 часов назад)</span></h3>
+            <p>Соседи будут рады!</p>
+            <div>
+              <button>Лайк</button>
+              <span>Нравится: 666</span>
+            </div>
+          </div>
+          <div>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo/photo-3-desk.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo/photo-3-tab.jpg">
+              <img src="img/photo/photo-3-mob.jpg" alt="Фото">
+            </picture>
+            <h3>Борис<span>(20 часов назад)</span></h3>
+            <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <div>
+              <button>Лайк</button>
+              <span>Нравится: 215</span>
+            </div>
+          </div>
+          <div>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo/photo-4-desk.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo/photo-4-tab.jpg">
+              <img src="img/photo/photo-4-mob.jpg" alt="Фото">
+            </picture>
+            <h3>Сергей<span>(25 часов назад)</span></h3>
+            <p>Самая кубанская в мире!</p>
+            <div>
+              <button>Лайк</button>
+              <span>Нравится: 4</span>
+            </div>
+          </div>
+          <div>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo/photo-5-desk.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo/photo-5-tab.jpg">
+              <img src="img/photo/photo-5-mob.jpg" alt="Фото">
+            </picture>
+            <h3>Максим<span>(40 часов назад)</span></h3>
+            <p>Где снег-то?</p>
+            <div>
+              <button>Лайк</button>
+              <span>Нравится: 150</span>
+            </div>
+          </div>
+          <div>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo/photo-6-desk.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo/photo-6-tab.jpg">
+              <img src="img/photo/photo-6-mob.jpg" alt="Фото">
+            </picture>
+            <h3>Надежда<span>(45 часов назад)</span></h3>
+            <p>Всем GM и взаимные лайки</p>
+            <div>
+              <button>Лайк</button>
+              <span>Нравится: 2563</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
+        <div>
+          <input type="file">
+          <div>
+            <input id="corp" type="checkbox">
+            <label for="corp">Масштаб</label>
+            <label for="corp__size">Размер масштаба</label>
+            <input id="corp__size" type="range">
+          </div>
+          <div>
+            <input id="fill" type="checkbox">
+            <label for="fill">Заливка</label>
+            <label for="fill__depth">Глубина заливки</label>
+            <input id="fill__depth" type="range">
+          </div>
+          <div>
+            <input id="contrast" type="checkbox">
+            <label for="contrast">Заливка</label>
+            <label for="contrast__depth">Глубина контраста</label>
+            <input id="contrast__depth" type="range">
+          </div>
+          <div>
+            <button>Запостить</button>
+            <button>Отмена</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer__block">
+      <a href="#" class="footer__logo">Лого</a>
+      <ul class="list__media">
+        <li><a href="#" class="media__item"><img class="twitter__img" src="img/common/twitter.svg" alt="Твиттер" width="17" height="14"></a></li>
+        <li><a href="#" class="media__item"><img src="img/common/facebook.svg" alt="Фейсбук" width="8" height="18"></a></li>
+        <li><a href="#" class="media__item"><img src="img/common/youtube.svg" alt="Ютуб" width="14" height="14"></a></li>
+      </ul>
+      <div class="creator__box">
+        <span>Разработано</span>
+        <a class="html-academy" href="#">HtmlAcademy</a>
+      </div>
+    </footer>
+  </div>
+  </body>
+</html>
